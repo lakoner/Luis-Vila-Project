@@ -27,9 +27,9 @@ class PageController extends Controller
         return view('actualitat');
     }
 
-    public function bibliografia()
+    public function prensa()
     {
-        return view('bibliografia');
+        return view('prensa');
     }
 
     public function contactar()
