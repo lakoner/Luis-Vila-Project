@@ -1,5 +1,5 @@
 
-@extends('templates.header_front')
+@extends('templates.header_footer_front')
 
 
 @section('content')
@@ -58,6 +58,7 @@
     </div>
   </div>
 </div>
+<script src="{{ asset('js/scripts.js') }}" defer></script>
 
 
 @endsection

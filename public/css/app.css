@@ -10937,7 +10937,6 @@ header {
   height: 150px;
   display: flex;
   margin-top: 0px;
-  border-bottom: solid 1px black;
 }
 
 .logo {
@@ -10967,6 +10966,7 @@ nav {
 nav a {
   margin: 0px 0px 0px 30px;
   color: rgba(0, 0, 0, 0.5);
+  font-family: "saira" !important;
 }
 
 nav a:hover {
@@ -10983,6 +10983,7 @@ nav a:hover {
 
 .lang a {
   color: rgba(0, 0, 0, 0.5);
+  font-family: "saira" !important;
 }
 
 .lang a:hover {
@@ -11079,6 +11080,7 @@ footer {
 
 .carousel-inner {
   height: 610px !important;
+  border-bottom: solid 1px black;
 }
 
 .modal {
@@ -11121,5 +11123,90 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+.content-framwork-1 {
+  padding: 100px 100px 100px 100px;
+}
+
+.two-colums {
+  display: flex;
+  margin: 50px 0px 50px 0px;
+}
+
+h2 {
+  font-family: "futura-bold" !important;
+  margin: 0 !important;
+}
+
+.p-half-wide {
+  width: 600px !important;
+  margin-left: 25px;
+}
+
+.p-half-wide p {
+  font-size: 20px !important;
+  text-align: justify;
+  margin: 0 !important;
+}
+
+.p-all-wide {
+  width: 100%;
+  margin: 50px 0px 0px 0px;
+}
+
+.p-all-wide p {
+  font-size: 20px !important;
+  text-align: justify;
+  margin: 0 !important;
+}
+
+.p-center p {
+  text-align: center;
+}
+
+.half-wide1 {
+  width: 600px;
+  height: 659px;
+  background-image: url(/images/lluisvila-07.jpg?abbea0a3b64b2b7f52dce44ff8054d09);
+  background-size: cover;
+  margin-right: 25px;
+  border: solid 1px black;
+}
+
+.half-wide2 {
+  width: 600px;
+  height: 600px;
+  background-image: url(/images/fullsizeoutput.jpg?f64fd3d5033de8228d616db088fbc10e);
+  background-size: cover;
+  margin-right: 25px;
+  border: solid 1px black;
+}
+
+.half-wide3 {
+  width: 600px;
+  height: 600px;
+  background-image: url(/images/LluisVila_04.jpg?0a0fa3bb46cfb2e51e5cf23d92236bba);
+  background-size: cover;
+  margin-left: 25px;
+  border: solid 1px black;
+}
+
+.half-wide4 {
+  width: 600px;
+  height: 900px;
+  background-image: url(/images/LluisVila_02.jpg?efc44b1c8b9185015bb9f8cacebf4f15);
+  background-size: cover;
+  margin-right: 25px;
+  border: solid 1px black;
+}
+
+.half-wide5 {
+  width: 600px;
+  height: 900px;
+  background-image: url(/images/LluisVila_CastellDAro.jpg?799314f4792474735903e8b6af7ad384);
+  background-size: cover;
+  margin-left: 25px;
+  border: solid 1px black;
 }
 
