@@ -10928,3 +10928,141 @@ a.text-dark:focus {
   }
 }
 
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  height: 175px;
+}
+
+.logo {
+  width: 157px !important;
+  margin: 80px 0px 0px 100px;
+}
+
+.logo a {
+  color: black;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+  width: auto !important;
+  margin: -30px 75px 0px 0px !important;
+  float: right;
+}
+
+nav a {
+  margin: 0px 0px 0px 30px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.lang {
+  float: right;
+  margin: -100px 85px 0px 0px !important;
+}
+
+.lang a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.lang a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100% !important;
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  margin: 0 auto;
+  width: 900px;
+  padding: 15px 0px 15px 0px;
+}
+
+.content ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content li {
+  margin: 0 auto !important;
+  height: 50px;
+  line-height: 50px;
+  color: white !important;
+  padding: 0px 10px 0px 10px;
+}
+
+.content a {
+  color: white !important;
+}
+
+.content a:hover {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.lv {
+  width: 1px;
+  background-color: white;
+  height: 50px;
+}
+
+.f5 {
+  width: 80px;
+  height: 40px;
+  background-image: url(/images/FactoriF5_white.png?0f5969f94c638b8390c35fcbd86a2076);
+  background-size: cover;
+  position: relative;
+  float: right;
+  margin: 5px 0px 0px 50px;
+}
+
+.insta {
+  width: 25px;
+  height: 25px;
+  background-image: url(/images/insta.png?7b34b71c5cd909cc1b0d2b7695683e22);
+  background-size: cover;
+  margin: 15px 10px 10px 15px;
+}
+
+.insta:hover {
+  width: 25px;
+  height: 25px;
+  background-image: url(/images/insta_hover.png?e939fed7c8c257abeb2935bc3d7657a8);
+  background-size: cover;
+  margin: 15px 10px 10px 15px;
+}
+
+.f5:hover {
+  width: 80px;
+  height: 40px;
+  background-image: url(/images/FactoriF5_hover.png?b3ae1dd13073590ff652d60b135c7f22);
+  background-size: cover;
+  position: relative;
+  float: right;
+  margin: 5px 0px 0px 50px;
+}
+
