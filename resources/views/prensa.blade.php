@@ -6,6 +6,9 @@
 
 @endsection
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> biografia/frontend
 
 
