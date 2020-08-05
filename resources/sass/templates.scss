@@ -1,12 +1,15 @@
 
-html {
-    min-height: 100%;
-    position: relative;
-  }
 //HEADER//
+
+header{
+    position: relative;
+}
 .header{
     width: 100%;
-    height: 175px;
+    height: 150px;
+    display: flex;
+    margin-top: 0px;
+    border-bottom: solid 1px black;
 }
 .logo {
     width: 157px!important;
@@ -21,21 +24,27 @@ color: rgba($color: #000000, $alpha: 0.5);
 }
 .menu
 {
+    width:100%;
+}
+nav{
     width: auto!important;
+    float: right!important;
     margin: -30px 75px 0px 0px!important;
-    float: right;
 }
 nav a{
    margin: 0px 0px 0px 30px;
    color: rgba($color: #000000, $alpha: 0.5);
+
     }
 nav a:hover{
     text-decoration: none;
     color: black;
 }
 .lang{
+    width: 50px;
     float: right;
-    margin: -100px 85px 0px 0px!important;
+    margin: -110px 15px 0px 0px;
+    position: relative;
 }
 .lang a {
     color: rgba($color: #000000, $alpha: 0.5);
@@ -48,15 +57,21 @@ nav a:hover{
 //FOOTER//
 
 footer{
-position: absolute;
-bottom: 0;
+
+
 width: 100%!important;
+display: flex;
+flex-direction: row;
 }
 
 .footer{
     width: 100%;
     height: 80px;
-    background-color: rgba($color: #000000, $alpha: 0.5);
+    border-top: solid 1px black;
+    background-color: white;
+    bottom:0px;
+    z-index:10;
+
 
 }
 .content{
@@ -76,15 +91,15 @@ padding: 15px 0px 15px 0px;
         margin: 0 auto!important;
         height: 50px;
         line-height: 50px;
-        color:white!important;
+        color:black!important;
         padding: 0px 10px 0px 10px;
     }
     a {
-        color:white!important;
+        color:black!important;
     }
     a:hover {
     text-decoration: none!important;
-    color:black!important;
+    color: rgba($color: #000000, $alpha: 0.5)!important;
 
     }
 }
@@ -92,14 +107,14 @@ padding: 15px 0px 15px 0px;
 
 .lv{
     width: 1px;
-    background-color: white;
+    background-color: black;
     height: 50px;
 }
 
 .f5{
     width: 80px;
     height: 40px;
-    background-image: url("../../public/img/FactoriF5_white.png");
+    background-image: url("../../public/img/FactoriF5.png");
     background-size: cover;
     position: relative;
     float: right;
@@ -108,7 +123,7 @@ padding: 15px 0px 15px 0px;
 .insta{
     width: 25px;
     height: 25px;
-    background-image: url("../../public/img/insta.png");
+    background-image: url("../../public/img/insta_.png");
     background-size: cover;
     margin: 15px 10px 10px 15px;
 }
