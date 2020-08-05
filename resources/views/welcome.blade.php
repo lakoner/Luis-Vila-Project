@@ -1,5 +1,5 @@
 
-@extends('templates.header_front')
+@extends('templates.header_footer_front')
 
 
 @section('content')

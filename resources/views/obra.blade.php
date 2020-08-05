@@ -1,12 +1,8 @@
-
-@extends('templates.header_front')
-
+@extends('templates.header_footer_front')
 
 
 @section('content')
-<main>
-<h1>Hellow</h1>
-</main>
+
 @endsection
 
 

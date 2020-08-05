@@ -1,11 +1,9 @@
-@extends('templates.footer_front')
-
-
+@extends('templates.header_footer_front')
 
 
 @section('content')
 
 
 @endsection
-@extends('templates.header_front')
+
 

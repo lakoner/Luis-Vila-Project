@@ -1,4 +1,4 @@
-@extends('templates.footer_front')
+@extends('templates.header_footer_front')
 
 
 
@@ -7,5 +7,5 @@
 
 
 @endsection
-@extends('templates.header_front')
+
 
