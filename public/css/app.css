@@ -11080,7 +11080,7 @@ footer {
 
 .carousel-inner {
   height: 610px !important;
-  border-bottom: solid 1px black;
+  border-top: solid 1px black;
 }
 
 .modal {
@@ -11126,10 +11126,10 @@ html {
 }
 
 .content-framwork-1 {
-  padding: 100px 100px 100px 100px;
+  padding: 100px 100px 50px 100px;
 }
 
-.two-colums {
+.content-colums {
   display: flex;
   margin: 50px 0px 50px 0px;
 }

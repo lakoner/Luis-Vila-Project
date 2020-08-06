@@ -3,12 +3,7 @@
 
 @section('content')
 
-
 @endsection
 
-<<<<<<< HEAD
-
-=======
->>>>>>> biografia/frontend
 
 

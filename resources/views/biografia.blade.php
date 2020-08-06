@@ -5,7 +5,7 @@
 
 @section('content')
 <main class="content-framwork-1">
-    <div class="two-colums">
+    <div class="content-colums">
         <div class="half-wide1"></div>
         <div class="p-half-wide">
             <h2>Lluís Vilà i Vendrell </h2>
@@ -52,7 +52,7 @@
 
         </div>
 
-        <div class="two-colums">
+        <div class="content-colums">
             <div class="half-wide2"></div>
             <div class="half-wide3"></div>
         </div>
@@ -90,7 +90,7 @@
             <p><i>Eudald Camps</i></p>
         </div>
 
-        <div class="two-colums">
+        <div class="content-colums">
             <div class="half-wide4"></div>
             <div class="half-wide5"></div>
         </div>
