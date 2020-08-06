@@ -1,0 +1,31 @@
+
+.modal {
+    position: fixed;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+  }
+
+.modal-body{
+    width: 600px!important;
+    height: 700px!important;
+}
+.modal-header{
+    border-bottom: none!important;
+}
+.modal-footer{
+    border-top: none!important;
+}
+.modal-content1{
+    background-image: url("/img/slideWelcome/LluisVila_Absolut_nosaltres.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.modal-content2{
+    background-image: url("/img/slideWelcome/LluisVila_Absolut_HarmoniaCaotica.jpg");
+    background-size: cover;
+    background-position: center;
+}
