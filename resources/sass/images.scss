@@ -44,7 +44,27 @@
     border: solid 1px black;
 
 }
-//Prensa
-.img-prensa-1{
+ //Eat Art
 
-}
+ .eat_art1{
+    width: 385px;
+    height: 385px;
+    background-image: url("../../public/img/Eat_art/fundacio_miro1.jpg");
+    background-size: cover;
+
+ }
+ .eat_art2{
+    width: 385px;
+    height: 385px;
+    background-image: url("../../public/img/Eat_art/fundacio_miro3.jpg");
+    background-size: cover;
+    margin: 0px 15px 0px 15px;
+
+ }
+ .eat_art3{
+    width: 385px;
+    height: 385px;
+    background-image: url("../../public/img/Eat_art/fundacio_miro2.jpg");
+    background-size: cover;
+
+ }

@@ -17,6 +17,11 @@ class PageController extends Controller
         return view('obra');
     }
 
+    public function eat_art()
+    {
+        return view('eat_art');
+    }
+
     public function biografia()
     {
         return view('biografia');

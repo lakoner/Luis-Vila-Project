@@ -3,7 +3,7 @@
 
 
 @section('content')
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="carouselExampleFade" class="carousel slide carousel-fade welcome" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
     <a href="#"><img src="/img/slideWelcome/LluisVila_Absolut_nosaltres_slide.jpg" class="d-block w-100" alt="..." data-toggle="modal" data-target="#exampleModal1">
