@@ -11256,6 +11256,7 @@ h3 {
 .eat-art:hover {
   background-image: url("/img/obra/eat-art_hover.jpg");
   background-size: cover;
+  transition: background-image 2s;
 }
 
 .eat-art:hover a {
@@ -11301,6 +11302,7 @@ h3 {
   height: 735px;
   background-image: url("/img/obra/escultura.jpg");
   background-size: cover;
+  transition: background-image 2s;
 }
 
 .escultura h3 {
@@ -11329,6 +11331,7 @@ h3 {
   height: 735px;
   background-image: url("/img/obra/pintura.jpg");
   background-size: cover;
+  transition: background-image 2s;
 }
 
 .pintura h3 {
@@ -11357,6 +11360,7 @@ h3 {
   height: 735px;
   background-image: url("/img/obra/volca.jpg");
   background-size: cover;
+  transition: background-image 2s;
 }
 
 .volca h3 {

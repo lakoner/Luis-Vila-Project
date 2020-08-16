@@ -78,6 +78,7 @@ float:left;
     background-image: url("/img/obra/eat-art.jpg");
     background-size: cover;
     transition:  background-image 2s;
+
     h3{
         line-height: 735px;
         text-align: center;
@@ -90,6 +91,7 @@ float:left;
 .eat-art:hover{
     background-image: url("/img/obra/eat-art_hover.jpg");
     background-size: cover;
+    transition:  background-image 2s;
     a{
         text-decoration:none!important
     }
@@ -128,6 +130,7 @@ float:left;
     height: 735px;
     background-image: url("/img/obra/escultura.jpg");
     background-size: cover;
+    transition:  background-image 2s;
     h3{
         line-height: 735px;
         text-align: center;
@@ -151,6 +154,7 @@ float:left;
     height: 735px;
     background-image: url("/img/obra/pintura.jpg");
     background-size: cover;
+    transition:  background-image 2s;
     h3{
         line-height: 735px;
         text-align: center;
@@ -174,6 +178,7 @@ float:left;
     height: 735px;
     background-image: url("/img/obra/volca.jpg");
     background-size: cover;
+    transition:  background-image 2s;
     h3{
         line-height: 735px;
         text-align: center;
