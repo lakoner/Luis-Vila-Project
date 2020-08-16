@@ -10928,3 +10928,522 @@ a.text-dark:focus {
   }
 }
 
+header {
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  margin-top: 0px;
+}
+
+.logo {
+  width: 157px !important;
+  margin: 80px 0px 0px 100px;
+}
+
+.logo a {
+  color: black;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+  width: 100%;
+}
+
+nav {
+  width: auto !important;
+  float: right !important;
+  margin: -30px 75px 0px 0px !important;
+}
+
+nav a {
+  margin: 0px 0px 0px 30px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "saira" !important;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.lang {
+  width: 50px;
+  float: right;
+  margin: -110px 15px 0px 0px;
+  position: relative;
+}
+
+.lang a {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "saira" !important;
+}
+
+.lang a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  width: 100% !important;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  border-top: solid 1px black;
+  background-color: white;
+  bottom: 0px;
+  z-index: 10;
+}
+
+.content {
+  margin: 0 auto;
+  width: 900px;
+  padding: 15px 0px 15px 0px;
+}
+
+.content ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content li {
+  margin: 0 auto !important;
+  height: 50px;
+  line-height: 50px;
+  color: black !important;
+  padding: 0px 10px 0px 10px;
+}
+
+.content a {
+  color: black !important;
+}
+
+.content a:hover {
+  text-decoration: none !important;
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.lv {
+  width: 1px;
+  background-color: black;
+  height: 50px;
+}
+
+.f5 {
+  width: 80px;
+  height: 40px;
+  background-image: url(/images/FactoriF5.png?b3ae1dd13073590ff652d60b135c7f22);
+  background-size: cover;
+  position: relative;
+  float: right;
+  margin: 5px 0px 0px 50px;
+}
+
+.insta {
+  width: 25px;
+  height: 25px;
+  background-image: url(/images/insta_.png?e939fed7c8c257abeb2935bc3d7657a8);
+  background-size: cover;
+  margin: 15px 10px 10px 15px;
+}
+
+.insta:hover {
+  width: 25px;
+  height: 25px;
+  background-image: url(/images/insta_hover.png?caeee487d4d4b5f74a8094d6151429da);
+  background-size: cover;
+  margin: 15px 10px 10px 15px;
+}
+
+.f5:hover {
+  width: 80px;
+  height: 40px;
+  background-image: url(/images/FactoriF5_hover.png?64fab2642f0dedf75218e448d811549e);
+  background-size: cover;
+  position: relative;
+  float: right;
+  margin: 5px 0px 0px 50px;
+}
+
+.welcome {
+  height: 610px !important;
+  border-top: solid 1px black;
+}
+
+.slide_eat {
+  padding: 50px;
+}
+
+.eat {
+  border: solid 1px black;
+  height: 584px !important;
+}
+
+.carousel-item {
+  z-index: -1 !important;
+  position: relative;
+}
+
+.carousel-item div {
+  padding: 0 !important;
+  margin: 0px 10px 0px 11.2px !important;
+  width: 260px !important;
+}
+
+.carousel-item div img {
+  z-index: 2 !important;
+}
+
+.black-text1 {
+  z-index: 2;
+  position: absolute;
+  color: black;
+  float: left;
+  margin-top: 65px;
+}
+
+.black-text2 {
+  z-index: 2;
+  color: black;
+  float: right;
+  margin-top: 65px;
+}
+
+.modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+}
+
+.modal-body {
+  width: 600px !important;
+  height: 700px !important;
+}
+
+.modal-header {
+  border-bottom: none !important;
+}
+
+.modal-footer {
+  border-top: none !important;
+}
+
+.modal-content1 {
+  background-image: url("/img/slideWelcome/LluisVila_Absolut_nosaltres.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.modal-content2 {
+  background-image: url("/img/slideWelcome/LluisVila_Absolut_HarmoniaCaotica.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.content-framwork-1 {
+  padding: 100px 100px 50px 100px;
+}
+
+.content-colums {
+  display: flex;
+  margin: 50px 0px 50px 0px;
+}
+
+.content-colums-miro {
+  display: flex;
+  margin: 50px 0px 0px 0px;
+}
+
+.content-colums-miro p {
+  font-size: 20px;
+}
+
+h2 {
+  font-family: "futura-bold" !important;
+  margin: 0 !important;
+}
+
+h3 {
+  font-family: "futura-bold" !important;
+  color: white !important;
+}
+
+.p-half-wide {
+  width: 600px !important;
+  margin-left: 25px;
+}
+
+.p-half-wide p {
+  font-size: 20px !important;
+  text-align: justify;
+  margin: 0 !important;
+}
+
+.p-all-wide {
+  width: 100%;
+  margin: 50px 0px 50px 0px;
+}
+
+.p-all-wide p {
+  font-size: 20px !important;
+  text-align: justify;
+  margin: 0 !important;
+}
+
+.p-center p {
+  text-align: center;
+}
+
+.inter-menu {
+  float: left;
+}
+
+.inter-menu nav a {
+  margin: 0px 30px 0px 0px !important;
+}
+
+.content-obra-menu {
+  width: 975px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.eat-art {
+  width: 195px;
+  height: 735px;
+  background-image: url("/img/obra/eat-art.jpg");
+  background-size: cover;
+  transition: background-image 2s;
+}
+
+.eat-art h3 {
+  line-height: 735px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.eat-art:hover {
+  background-image: url("/img/obra/eat-art_hover.jpg");
+  background-size: cover;
+}
+
+.eat-art:hover a {
+  text-decoration: none !important;
+}
+
+.eat-art:hover h3 {
+  opacity: 1;
+  line-height: 735px;
+}
+
+.disseny {
+  width: 195px;
+  height: 735px;
+  background-image: url("/img/obra/disseny.jpg");
+  background-size: cover;
+  transition: background-image 2s;
+}
+
+.disseny h3 {
+  line-height: 735px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.disseny:hover {
+  background-image: url("/img/obra/disseny_hover.jpg");
+  background-size: cover;
+}
+
+.disseny:hover a {
+  text-decoration: none !important;
+}
+
+.disseny:hover h3 {
+  opacity: 1;
+  line-height: 735px;
+}
+
+.escultura {
+  width: 195px;
+  height: 735px;
+  background-image: url("/img/obra/escultura.jpg");
+  background-size: cover;
+}
+
+.escultura h3 {
+  line-height: 735px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.escultura:hover {
+  background-image: url("/img/obra/escultura_hover.jpg");
+  background-size: cover;
+}
+
+.escultura:hover a {
+  text-decoration: none !important;
+}
+
+.escultura:hover h3 {
+  opacity: 1;
+  line-height: 735px;
+}
+
+.pintura {
+  width: 195px;
+  height: 735px;
+  background-image: url("/img/obra/pintura.jpg");
+  background-size: cover;
+}
+
+.pintura h3 {
+  line-height: 735px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.pintura:hover {
+  background-image: url("/img/obra/pintura_hover.jpg");
+  background-size: cover;
+}
+
+.pintura:hover a {
+  text-decoration: none !important;
+}
+
+.pintura:hover h3 {
+  opacity: 1;
+  line-height: 735px;
+}
+
+.volca {
+  width: 195px;
+  height: 735px;
+  background-image: url("/img/obra/volca.jpg");
+  background-size: cover;
+}
+
+.volca h3 {
+  line-height: 735px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.volca:hover {
+  background-image: url("/img/obra/volca_hover.jpg");
+  background-size: cover;
+}
+
+.volca:hover a {
+  text-decoration: none !important;
+}
+
+.volca:hover h3 {
+  opacity: 1;
+  line-height: 735px;
+}
+
+.half-wide1 {
+  width: 600px;
+  height: 659px;
+  background-image: url(/images/lluisvila-07.jpg?abbea0a3b64b2b7f52dce44ff8054d09);
+  background-size: cover;
+  margin-right: 25px;
+  border: solid 1px black;
+}
+
+.half-wide2 {
+  width: 600px;
+  height: 600px;
+  background-image: url(/images/fullsizeoutput.jpg?f64fd3d5033de8228d616db088fbc10e);
+  background-size: cover;
+  margin-right: 25px;
+  border: solid 1px black;
+}
+
+.half-wide3 {
+  width: 600px;
+  height: 600px;
+  background-image: url(/images/LluisVila_04.jpg?0a0fa3bb46cfb2e51e5cf23d92236bba);
+  background-size: cover;
+  margin-left: 25px;
+  border: solid 1px black;
+}
+
+.half-wide4 {
+  width: 600px;
+  height: 900px;
+  background-image: url(/images/LluisVila_02.jpg?efc44b1c8b9185015bb9f8cacebf4f15);
+  background-size: cover;
+  margin-right: 25px;
+  border: solid 1px black;
+}
+
+.half-wide5 {
+  width: 600px;
+  height: 900px;
+  background-image: url(/images/LluisVila_CastellDAro.jpg?799314f4792474735903e8b6af7ad384);
+  background-size: cover;
+  margin-left: 25px;
+  border: solid 1px black;
+}
+
+.eat_art1 {
+  width: 385px;
+  height: 350px;
+  background-image: url("/img/Eat_art/fundacio_miro1.jpg");
+  background-size: cover;
+}
+
+.eat_art2 {
+  width: 385px;
+  height: 350px;
+  background-image: url("/img/Eat_art/fundacio_miro3.jpg");
+  background-size: cover;
+  margin: 0px 30px 0px 30px;
+}
+
+.eat_art3 {
+  width: 385px;
+  height: 350px;
+  background-image: url("/img/Eat_art/fundacio_miro2.jpg");
+  background-size: cover;
+}
+

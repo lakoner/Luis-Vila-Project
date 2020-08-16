@@ -17,6 +17,11 @@ class PageController extends Controller
         return view('obra');
     }
 
+    public function eat_art()
+    {
+        return view('eat_art');
+    }
+
     public function biografia()
     {
         return view('biografia');
@@ -27,9 +32,9 @@ class PageController extends Controller
         return view('actualitat');
     }
 
-    public function bibliografia()
+    public function prensa()
     {
-        return view('bibliografia');
+        return view('prensa');
     }
 
     public function contactar()

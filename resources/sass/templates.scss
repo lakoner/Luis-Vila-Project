@@ -1,0 +1,148 @@
+
+//HEADER//
+
+header{
+    position: relative;
+}
+.header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    margin-top: 0px;
+
+}
+.logo {
+    width: 157px!important;
+    margin: 80px 0px 0px 100px;
+    a{
+        color: black;
+    }
+}
+.logo a:hover{
+text-decoration: none;
+color: rgba($color: #000000, $alpha: 0.5);
+}
+.menu
+{
+    width:100%;
+}
+nav{
+    width: auto!important;
+    float: right!important;
+    margin: -30px 75px 0px 0px!important;
+}
+nav a{
+   margin: 0px 0px 0px 30px;
+   color: rgba($color: #000000, $alpha: 0.5);
+   font-family:'saira'!important;
+
+    }
+nav a:hover{
+    text-decoration: none;
+    color: black;
+}
+.lang{
+    width: 50px;
+    float: right;
+    margin: -110px 15px 0px 0px;
+    position: relative;
+}
+.lang a {
+    color: rgba($color: #000000, $alpha: 0.5);
+    font-family:'saira'!important;
+}
+.lang a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+//FOOTER//
+
+footer{
+
+
+width: 100%!important;
+display: flex;
+flex-direction: row;
+}
+
+.footer{
+    width: 100%;
+    height: 80px;
+    border-top: solid 1px black;
+    background-color: white;
+    bottom:0px;
+    z-index:10;
+
+
+}
+.content{
+margin: 0 auto;
+width: 900px;
+padding: 15px 0px 15px 0px;
+    ul{
+
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    }
+    li{
+
+        margin: 0 auto!important;
+        height: 50px;
+        line-height: 50px;
+        color:black!important;
+        padding: 0px 10px 0px 10px;
+    }
+    a {
+        color:black!important;
+    }
+    a:hover {
+    text-decoration: none!important;
+    color: rgba($color: #000000, $alpha: 0.5)!important;
+
+    }
+}
+
+
+.lv{
+    width: 1px;
+    background-color: black;
+    height: 50px;
+}
+
+.f5{
+    width: 80px;
+    height: 40px;
+    background-image: url("../../public/img/FactoriF5.png");
+    background-size: cover;
+    position: relative;
+    float: right;
+    margin: 5px 0px 0px 50px;
+}
+.insta{
+    width: 25px;
+    height: 25px;
+    background-image: url("../../public/img/insta_.png");
+    background-size: cover;
+    margin: 15px 10px 10px 15px;
+}
+.insta:hover{
+    width: 25px;
+    height: 25px;
+    background-image: url("../../public/img/insta_hover.png");
+    background-size: cover;
+    margin: 15px 10px 10px 15px;
+}
+.f5:hover{
+    width: 80px;
+    height: 40px;
+    background-image: url("../../public/img/FactoriF5_hover.png");
+    background-size: cover;
+    position: relative;
+    float: right;
+    margin: 5px 0px 0px 50px;
+
+}

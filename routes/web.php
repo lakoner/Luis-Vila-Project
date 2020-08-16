@@ -19,14 +19,16 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/inici', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/obra','PageController@obra');
 
+Route::get('/eat_art','PageController@eat_art');
+
 Route::get('/biografia','PageController@biografia');
 
-Route::get('/actulitat','PageController@actualitat');
+Route::get('/actualitat','PageController@actualitat');
 
-Route::get('/bibliografia','PageController@bibliografia');
+Route::get('/prensa','PageController@prensa');
 
 Route::get('/contactar','PageController@contactar');
