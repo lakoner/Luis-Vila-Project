@@ -3,6 +3,9 @@ body, html {
     padding:0;
     scroll-behavior: smooth;
 }
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
 
 .content-framwork-1{
     padding: 100px 100px 50px 100px;
@@ -25,6 +28,14 @@ h2{
     font-family: 'futura-bold'!important;
     margin: 0!important;
 }
+h3{
+    font-family: 'futura-bold'!important;
+    color:white!important;
+}
+
+
+
+
 .p-half-wide{
 width: 600px!important;
 margin-left: 25px;
@@ -47,6 +58,7 @@ margin-left: 25px;
     text-align: center;
 }
 
+//menus
 .inter-menu {
 float:left;
     nav a{
@@ -54,6 +66,130 @@ float:left;
     }
 }
 
+.content-obra-menu
+{
+    width: 975px;
+    display: flex;
+    margin: 0 auto;
+}
+.eat-art{
+    width: 195px;
+    height: 735px;
+    background-image: url("/img/obra/eat-art.jpg");
+    background-size: cover;
+    transition:  background-image 2s;
+    h3{
+        line-height: 735px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 2s;
 
+    }
+}
 
+.eat-art:hover{
+    background-image: url("/img/obra/eat-art_hover.jpg");
+    background-size: cover;
+    a{
+        text-decoration:none!important
+    }
+    h3{
+        opacity: 1;
+        line-height: 735px;
+
+    }
+}
+.disseny{
+    width: 195px;
+    height: 735px;
+    background-image: url("/img/obra/disseny.jpg");
+    background-size: cover;
+    transition:  background-image 2s;
+    h3 {
+        line-height: 735px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 2s;
+    }
+}
+.disseny:hover{
+    background-image: url("/img/obra/disseny_hover.jpg");
+    background-size: cover;
+    a{
+        text-decoration:none!important
+    }
+    h3{
+        opacity: 1;
+        line-height: 735px;
+    }
+}
+.escultura{
+   width: 195px;
+    height: 735px;
+    background-image: url("/img/obra/escultura.jpg");
+    background-size: cover;
+    h3{
+        line-height: 735px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 2s;
+    }
+}
+.escultura:hover{
+     background-image: url("/img/obra/escultura_hover.jpg");
+     background-size: cover;
+     a{
+        text-decoration:none!important
+    }
+     h3{
+        opacity: 1;
+        line-height: 735px;
+     }
+ }
+.pintura{
+    width: 195px;
+    height: 735px;
+    background-image: url("/img/obra/pintura.jpg");
+    background-size: cover;
+    h3{
+        line-height: 735px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 2s;
+    }
+}
+.pintura:hover{
+    background-image: url("/img/obra/pintura_hover.jpg");
+    background-size: cover;
+    a{
+        text-decoration:none!important
+    }
+    h3{
+        opacity: 1;
+        line-height: 735px;
+     }
+}
+.volca{
+    width: 195px;
+    height: 735px;
+    background-image: url("/img/obra/volca.jpg");
+    background-size: cover;
+    h3{
+        line-height: 735px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 2s;
+    }
+}
+.volca:hover{
+    background-image: url("/img/obra/volca_hover.jpg");
+    background-size: cover;
+    a{
+        text-decoration:none!important
+    }
+    h3{
+        opacity: 1;
+        line-height: 735px;
+     }
+}
 

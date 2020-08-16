@@ -11093,7 +11093,7 @@ footer {
 }
 
 .carousel-item {
-  z-index: -1;
+  z-index: -1 !important;
   position: relative;
 }
 
@@ -11103,8 +11103,12 @@ footer {
   width: 260px !important;
 }
 
+.carousel-item div img {
+  z-index: 2 !important;
+}
+
 .black-text1 {
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   color: black;
   float: left;
@@ -11160,6 +11164,12 @@ html {
   scroll-behavior: smooth;
 }
 
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
 .content-framwork-1 {
   padding: 100px 100px 50px 100px;
 }
@@ -11181,6 +11191,11 @@ html {
 h2 {
   font-family: "futura-bold" !important;
   margin: 0 !important;
+}
+
+h3 {
+  font-family: "futura-bold" !important;
+  color: white !important;
 }
 
 .p-half-wide {
@@ -11215,6 +11230,154 @@ h2 {
 
 .inter-menu nav a {
   margin: 0px 30px 0px 0px !important;
+}
+
+.content-obra-menu {
+  width: 975px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.eat-art {
+  width: 195px;
+  height: 735px;
+  background-image: url("/img/obra/eat-art.jpg");
+  background-size: cover;
+  transition: background-image 2s;
+}
+
+.eat-art h3 {
+  line-height: 735px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.eat-art:hover {
+  background-image: url("/img/obra/eat-art_hover.jpg");
+  background-size: cover;
+}
+
+.eat-art:hover a {
+  text-decoration: none !important;
+}
+
+.eat-art:hover h3 {
+  opacity: 1;
+  line-height: 735px;
+}
+
+.disseny {
+  width: 195px;
+  height: 735px;
+  background-image: url("/img/obra/disseny.jpg");
+  background-size: cover;
+  transition: background-image 2s;
+}
+
+.disseny h3 {
+  line-height: 735px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.disseny:hover {
+  background-image: url("/img/obra/disseny_hover.jpg");
+  background-size: cover;
+}
+
+.disseny:hover a {
+  text-decoration: none !important;
+}
+
+.disseny:hover h3 {
+  opacity: 1;
+  line-height: 735px;
+}
+
+.escultura {
+  width: 195px;
+  height: 735px;
+  background-image: url("/img/obra/escultura.jpg");
+  background-size: cover;
+}
+
+.escultura h3 {
+  line-height: 735px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.escultura:hover {
+  background-image: url("/img/obra/escultura_hover.jpg");
+  background-size: cover;
+}
+
+.escultura:hover a {
+  text-decoration: none !important;
+}
+
+.escultura:hover h3 {
+  opacity: 1;
+  line-height: 735px;
+}
+
+.pintura {
+  width: 195px;
+  height: 735px;
+  background-image: url("/img/obra/pintura.jpg");
+  background-size: cover;
+}
+
+.pintura h3 {
+  line-height: 735px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.pintura:hover {
+  background-image: url("/img/obra/pintura_hover.jpg");
+  background-size: cover;
+}
+
+.pintura:hover a {
+  text-decoration: none !important;
+}
+
+.pintura:hover h3 {
+  opacity: 1;
+  line-height: 735px;
+}
+
+.volca {
+  width: 195px;
+  height: 735px;
+  background-image: url("/img/obra/volca.jpg");
+  background-size: cover;
+}
+
+.volca h3 {
+  line-height: 735px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.volca:hover {
+  background-image: url("/img/obra/volca_hover.jpg");
+  background-size: cover;
+}
+
+.volca:hover a {
+  text-decoration: none !important;
+}
+
+.volca:hover h3 {
+  opacity: 1;
+  line-height: 735px;
 }
 
 .half-wide1 {
@@ -11264,23 +11427,23 @@ h2 {
 
 .eat_art1 {
   width: 385px;
-  height: 385px;
-  background-image: url(/images/fundacio_miro1.jpg?43667e8d09083b919b90b601ea4bba94);
+  height: 350px;
+  background-image: url("/img/Eat_art/fundacio_miro1.jpg");
   background-size: cover;
 }
 
 .eat_art2 {
   width: 385px;
-  height: 385px;
-  background-image: url(/images/fundacio_miro3.jpg?2d46657ded5437c13a8af0df488e2f25);
+  height: 350px;
+  background-image: url("/img/Eat_art/fundacio_miro3.jpg");
   background-size: cover;
-  margin: 0px 15px 0px 15px;
+  margin: 0px 30px 0px 30px;
 }
 
 .eat_art3 {
   width: 385px;
-  height: 385px;
-  background-image: url(/images/fundacio_miro2.jpg?6d20af3beebbbe562b2e00ad8e9f6527);
+  height: 350px;
+  background-image: url("/img/Eat_art/fundacio_miro2.jpg");
   background-size: cover;
 }
 
