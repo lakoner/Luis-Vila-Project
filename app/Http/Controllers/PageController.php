@@ -21,6 +21,10 @@ class PageController extends Controller
     {
         return view('eat_art');
     }
+    public function volca()
+    {
+        return view('volca');
+    }
 
     public function biografia()
     {

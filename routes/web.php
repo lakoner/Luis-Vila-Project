@@ -25,6 +25,8 @@ Route::get('/obra','PageController@obra');
 
 Route::get('/eat_art','PageController@eat_art');
 
+Route::get('/volca','PageController@volca');
+
 Route::get('/biografia','PageController@biografia');
 
 Route::get('/actualitat','PageController@actualitat');
