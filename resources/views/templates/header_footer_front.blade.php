@@ -39,7 +39,7 @@
         <div class="header">
             <div class="menu"><h1 class="logo"><a href="{{url('/')}}">LLUÍS VILÀ</a></h1>
                 <nav>
-                    <a href="{{url('/obra/')}}">OBRA</a>
+                    <a href="{{url('/obras/')}}">OBRA</a>
                     <a href="{{url('/biografia/')}}">BIOGRAFÍA</a>
                     <a href="{{url('/actualitat/')}}">ACTCUALITAT</a>
                     <a href="{{url('/prensa/')}}">PRENSA</a>

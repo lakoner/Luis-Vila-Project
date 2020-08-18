@@ -21,7 +21,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/obra','PageController@obra');
+Route::get('/obras','PageController@obras');
 
 Route::get('/eat_art','PageController@eat_art');
 
@@ -32,3 +32,5 @@ Route::get('/actualitat','PageController@actualitat');
 Route::get('/prensa','PageController@prensa');
 
 Route::get('/contactar','PageController@contactar');
+
+Route::resource('obra', 'ObraController');
