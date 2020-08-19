@@ -67,8 +67,14 @@ margin-left: 25px;
 float:left;
     nav a{
         margin: 0px 30px 0px 0px!important;
+        font-family:'saira'!important;
+        color: rgba($color: #000000, $alpha: 0.5);
+    }
+    nav a:hover{
+        color:black!important;
     }
 }
+
 
 .content-obra-menu
 {

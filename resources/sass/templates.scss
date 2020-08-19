@@ -1,9 +1,9 @@
 
 //HEADER FRONT//
 
-header{
-    position: relative;
-}
+// header{
+//     position: relative;
+// }
 .header{
     width: 100%;
     height: 150px;
@@ -26,15 +26,17 @@ color: rgba($color: #000000, $alpha: 0.5);
 {
     width:100%;
 }
-nav{
+.menu nav{
     width: auto!important;
     float: right!important;
+    position: relative!important;
     margin: -30px 75px 0px 0px!important;
 }
-nav a{
+.menu nav a{
    margin: 0px 0px 0px 30px;
    color: rgba($color: #000000, $alpha: 0.5);
    font-family:'saira'!important;
+
 
     }
 nav a:hover{
@@ -182,10 +184,18 @@ padding: 15px 0px 15px 0px;
     margin-top:25px;
     width: 15%;
     height: 100%!important;
+    padding: 25px;
     nav li{
         margin:0;
         text-align: left!important;
         list-style: none;
+        a{
+            color: rgba($color: #000000, $alpha: 0.5);
+            font-size: 16px;
+        }
+        a:hover{
+            color:black!important;
+        }
     }
 }
 
