@@ -40,10 +40,11 @@ class DatabaseSeeder extends Seeder
         factory(Serie::class)->create(['id' => 17, 'name' => 'Regions Intermitges']);
         factory(Serie::class)->create(['id' => 18, 'name' => 'Tokyo']);
 
-        // factory(Obra::class)->create(['id' => 1, 'name' => 'Obra1','image'=>'LluisVila__450.jpg','style'=>'mixta','year'=>'1985','categoria_id'=>1]);
+        factory(Obra::class)->create(['id' => 1, 'name' => 'Obra1','image'=>'LluisVila__450.jpg','style'=>'mixta','year'=>'1985','categoria_id'=>1]);
+
 
         $this->call(CategoriaSeeder::class);
         $this->call(SerieSeeder::class);
-        // $this->call(ObraSeeder::class);
+        $this->call(ObraSeeder::class);
     }
 }
