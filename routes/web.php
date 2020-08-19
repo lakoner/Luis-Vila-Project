@@ -16,3 +16,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/obras','PageController@obras');
+
+Route::get('/eat_art','PageController@eat_art');
+
+Route::get('/biografia','PageController@biografia');
+
+Route::get('/actualitat','PageController@actualitat');
+
+Route::get('/prensa','PageController@prensa');
+
+Route::get('/contactar','PageController@contactar');
+
+Route::resource('obra', 'ObraController');
