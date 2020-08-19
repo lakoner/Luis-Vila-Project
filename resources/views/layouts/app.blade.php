@@ -85,11 +85,13 @@
 
                     <li><a href="enlacepagina.html">Editar obras</a></li>
 
-                    <li><a href="{{url('/obra/create')}}">Subir nueva obra</a></li>
+                    <li><a href="{{url('/obra/create')}}">Pujar obra</a></li>
 
-                    <li><a href="enlacepagina.html">noticias</a></li>
+                    <li><a href="{{url('/noticia')}}">Noticies</a></li>
 
-                    <li> <a href="enlacepagina.html">Editar noticias</a></li>
+                    <li> <a href="enlacepagina.html">Editar noticies</a></li>
+
+                    <li> <a href="{{url('/noticia/create')}}">Pujar Noticies</a></li>
 
                     <li><a href="enlacepagina.html">comments</a></li>
 

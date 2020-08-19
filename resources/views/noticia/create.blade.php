@@ -13,22 +13,23 @@
                 @csrf
 
                      <div class="form-group">
-                    <label for="">Titol</label>
-                    <input class="form-control" type="text" name="name">
+                    <label for="">Títol Notícia</label>
+                    <input class="form-control" type="text" name="title">
                 </div>
+
                 <div class="form-group">
-                    <label for="">Imatge</label>
-                    <input type="file" name="image">
-                </div>
-                <div class="form-group">
-                    <label for="">Subtitol</label>
+                    <label for="">Subtítol Noticia</label>
                     <input class="form-control" type="text" name="subtitle">
                 </div>
                 <div class="form-group">
-                    <label for="">Text</label>
-                    <input class="form-control" type="text" name="text">
+                    <label for="exampleFormControlTextarea1">Text Notícia</label>
+                    <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-                <
+                <div class="form-group">
+                    <label for="">Imatge Noticia</label><br>
+                    <input type="file" name="image">
+                </div>
+
 
                 <button class="btn btn-primary">Afegir Noticia</button>
 

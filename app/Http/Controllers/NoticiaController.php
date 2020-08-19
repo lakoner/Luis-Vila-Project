@@ -25,7 +25,7 @@ class NoticiaController extends Controller
      */
     public function create()
     {
-        return view('actualidad.create');
+        return view('noticia.create');
     }
 
     /**
