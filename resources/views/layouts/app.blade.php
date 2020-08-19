@@ -13,14 +13,14 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="{{ asset('css/fonts.css') }}" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 </head>
 <body>
-    <div id="app">
+  <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -72,9 +72,40 @@
             </div>
         </nav>
 
+
+
         <main class="py-4">
+
             @yield('content')
         </main>
+        <div class="column card">
+            <div class=admin-menu>
+                <nav>
+                    <li><a href="{{url('/obra')}}">Obras</a></li>
+
+                    <li><a href="enlacepagina.html">Editar obras</a></li>
+
+                    <li><a href="{{url('/obra/create')}}">Subir nueva obra</a></li>
+
+                    <li><a href="enlacepagina.html">noticias</a></li>
+
+                    <li> <a href="enlacepagina.html">Editar noticias</a></li>
+
+                    <li><a href="enlacepagina.html">comments</a></li>
+
+                    <li><a href="enlacepagina.html">table users</a></li>
+                </nav>
+            </div>
+
+
+
+</div>
+
+
+
+
     </div>
+
 </body>
 </html>
+

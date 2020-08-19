@@ -12,9 +12,14 @@ class PageController extends Controller
         return view('inici');
     }
 
-    public function obra()
+    public function obras()
     {
-        return view('obra');
+        return view('obras');
+    }
+
+    public function eat_art()
+    {
+        return view('eat_art');
     }
 
     public function biografia()
