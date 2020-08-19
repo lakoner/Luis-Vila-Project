@@ -12,10 +12,12 @@ class ObraController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $obras = Obra::all();
-        return view('obra.index',['obras' => $obras]);
+
+        return view('obra.index',['obras'=> $obras]);
+
     }
 
     /**
@@ -46,6 +48,7 @@ class ObraController extends Controller
             $obra->image = $name;
             $obra->style = $request->input('style');
             $obra->year = $request->input('year');
+            $obra->categoria_id = $request->input('categoria_id');
             $obra->save();
 
         return redirect(route('obra.index'));
@@ -59,7 +62,7 @@ class ObraController extends Controller
      */
     public function show(Obra $obra)
     {
-        //
+
     }
 
     /**

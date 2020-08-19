@@ -1,5 +1,5 @@
 
-//HEADER//
+//HEADER FRONT//
 
 header{
     position: relative;
@@ -56,7 +56,7 @@ nav a:hover{
     color: black;
 }
 
-//FOOTER//
+//FOOTER FRONT//
 
 footer{
 
@@ -146,3 +146,47 @@ padding: 15px 0px 15px 0px;
     margin: 5px 0px 0px 50px;
 
 }
+
+
+ //HEADER ADMIN
+
+ nav{
+     width: 100%!important;
+     margin: 0!important;
+     position:absolute!important;
+ }
+
+ //APP.BLADE
+ .py-4{
+     width: 100%!important;
+     height: 100%!important;
+     padding: 0!important;
+ }
+
+
+ //MENU ADMIN
+
+ .column {
+    float: left;
+    width: 15%;
+    height: 100%!important;
+    position: absolute;
+    z-index: -1;
+    padding: 10px;
+    margin: 50px 0px 0px 0px;
+    text-align: center;
+    border-top: 0!important;
+}
+
+.admin-menu{
+    margin-top:25px;
+    width: 15%;
+    height: 100%!important;
+    nav li{
+        margin:0;
+        text-align: left!important;
+        list-style: none;
+    }
+}
+
+

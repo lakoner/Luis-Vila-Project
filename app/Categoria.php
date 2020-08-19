@@ -11,6 +11,6 @@ class Categoria extends Model
 
     public function obras()
     {
-    return $this->hasMany(obra::class);
+    return $this->hasMany(Obra::class);
     }
 }

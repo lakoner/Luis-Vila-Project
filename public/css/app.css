@@ -11078,6 +11078,42 @@ footer {
   margin: 5px 0px 0px 50px;
 }
 
+nav {
+  width: 100% !important;
+  margin: 0 !important;
+  position: absolute !important;
+}
+
+.py-4 {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+}
+
+.column {
+  float: left;
+  width: 15%;
+  height: 100% !important;
+  position: absolute;
+  z-index: -1;
+  padding: 10px;
+  margin: 50px 0px 0px 0px;
+  text-align: center;
+  border-top: 0 !important;
+}
+
+.admin-menu {
+  margin-top: 25px;
+  width: 15%;
+  height: 100% !important;
+}
+
+.admin-menu nav li {
+  margin: 0;
+  text-align: left !important;
+  list-style: none;
+}
+
 .welcome {
   height: 610px !important;
   border-top: solid 1px black;
@@ -11186,6 +11222,12 @@ a:active {
 
 .content-colums-miro p {
   font-size: 20px;
+}
+
+.content-admin {
+  width: 85%;
+  float: right;
+  padding: 56px 0px 0px 25px;
 }
 
 h2 {
@@ -11454,5 +11496,9 @@ h3 {
 .obras-img {
   width: 150px;
   height: 150px;
+}
+
+.categorias-obra-index {
+  width: 15%;
 }
 

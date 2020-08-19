@@ -20,7 +20,7 @@ class CreateObrasTable extends Migration
             $table->string('style')->nullable();
             $table->string('year')->nullable();
             $table->foreignId('categoria_id')->nullable();
-            // $table->foreign('categoria_id')->references('id')->on('categorias');
+            $table->foreign('categoria_id')->references('id')->on('categorias');
             $table->timestamps();
         });
     }
@@ -33,5 +33,6 @@ class CreateObrasTable extends Migration
     public function down()
     {
         Schema::dropIfExists('obras');
+
     }
 }

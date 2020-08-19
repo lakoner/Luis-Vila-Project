@@ -1,41 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Lluís Vilà') }}</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
+    <!-- Fonts -->
+    <link href="{{ asset('css/fonts.css') }}" rel="stylesheet">
 
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-        <!-- Fonts -->
-        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"crossorigin="anonymous"/>
-
-        <!-- Styles -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/fonts.css') }}" rel="stylesheet">
-
-
-        <!-- Scripts ajax y bootstrap -->
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-
-
-    </head>
+</head>
 <body>
-   <br> <div id="app">
+  <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -87,10 +72,40 @@
             </div>
         </nav>
 
+
+
         <main class="py-4">
+
             @yield('content')
         </main>
+        <div class="column card">
+            <div class=admin-menu>
+                <nav>
+                    <li><a href="{{url('/obra')}}">Obras</a></li>
+
+                    <li><a href="enlacepagina.html">Editar obras</a></li>
+
+                    <li><a href="{{url('/obra/create')}}">Subir nueva obra</a></li>
+
+                    <li><a href="enlacepagina.html">noticias</a></li>
+
+                    <li> <a href="enlacepagina.html">Editar noticias</a></li>
+
+                    <li><a href="enlacepagina.html">comments</a></li>
+
+                    <li><a href="enlacepagina.html">table users</a></li>
+                </nav>
+            </div>
+
+
+
+</div>
+
+
+
+
     </div>
+
 </body>
 </html>
 

@@ -6,10 +6,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class Obra extends Model
 {
-    protected $fillable = ['name','image','style','year'];
+    protected $fillable = ['name','image','style','year','categoria_id'];
 
-    public function categorias()
+    public function categoria()
     {
-    return $this->hasMany(categoria::class);
+    return $this->belongsTo(Categoria::class);
+    }
+
+    static function filterByCategory($id)
+    {
+
+        $obras = Obra::where('categoria_id','=', $id)
+           ->get('categoria_id');
+
+        return $obras;
     }
 }
