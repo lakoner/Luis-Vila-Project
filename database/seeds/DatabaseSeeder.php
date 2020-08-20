@@ -6,6 +6,7 @@ use App\Categoria;
 use App\Serie;
 use App\Obra;
 use App\Noticia;
+use App\Actualidad;
 
 class DatabaseSeeder extends Seeder
 {
@@ -42,10 +43,11 @@ class DatabaseSeeder extends Seeder
         factory(Serie::class)->create(['id' => 18, 'name' => 'Tokyo']);
 
         factory(Obra::class)->create(['id' => 1, 'name' => 'Obra1','image'=>'LluisVila__450.jpg','style'=>'mixta','year'=>'1985','categoria_id'=>1]);
-        factory(Noticia::class)->create(['id' => 1, 'title' => 'Noticia1','image'=>'LluisVila__450.jpg','subtitle'=>'subtile1','text'=>'Hola que tal esto es el articulo o el texto de la noticia']);
+        factory(Actualidad::class)->create(['id' => 1, 'title' => 'Noticia1','image'=>'LluisVila__450.jpg','subtitle'=>'subtile1','text'=>'Hola que tal esto es el articulo o el texto de la noticia']);
 
         $this->call(CategoriaSeeder::class);
         $this->call(SerieSeeder::class);
         $this->call(ObraSeeder::class);
+        $this->call(ActualidadSeeder::class);
     }
 }

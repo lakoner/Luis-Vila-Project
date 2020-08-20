@@ -11439,6 +11439,10 @@ h3 {
   line-height: 735px;
 }
 
+.far {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
 .half-wide1 {
   width: 600px;
   height: 659px;
@@ -11509,6 +11513,16 @@ h3 {
 .obras-img {
   width: 150px;
   height: 150px;
+}
+
+.img-news {
+  width: 200px;
+  height: 200px;
+}
+
+.img-obra {
+  width: 200px;
+  height: 200px;
 }
 
 .categorias-obra-index {

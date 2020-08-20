@@ -4,98 +4,83 @@ namespace App\Http\Controllers;
 
 use App\Obra;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ObraController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index(Request $request)
-    {
-        $obras = Obra::all();
 
-        return view('obra.index',['obras'=> $obras]);
+    public function index()
+    {
+        $datos['obras'] = Obra::paginate(5);
+        return view('obra.index',$datos);
+
 
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
     {
         return view('obra.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(Request $request)
     {
+        $obra = request()->except('_token');
+
         if($request->hasFile('image')){
-            $file = $request->file('image');
-            $name = $file->getClientOriginalName();
-            $file->move(public_path().'/ObrasImg',$name);
+
+
+            $obra['image'] = $request->file('image')->store('obres','public');
+
         }
-            $obra = new Obra();
-            $obra->name = $request->input('name');
-            $obra->image = $name;
-            $obra->style = $request->input('style');
-            $obra->year = $request->input('year');
-            $obra->categoria_id = $request->input('categoria_id');
-            $obra->save();
+
+        Obra::insert($obra);
 
         return redirect(route('obra.index'));
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Obra  $obra
-     * @return \Illuminate\Http\Response
-     */
+
     public function show(Obra $obra)
     {
 
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Obra  $obra
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Obra $obra)
+
+    public function edit($id)
     {
-        //
+        $obra = Obra::FindOrFail($id);
+
+        return view('obra.edit',compact('obra'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Obra  $obra
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Obra $obra)
+
+    public function update(Request $request, $id)
     {
-        //
+        // dd($id);
+        $obra=request()->except(['_token','_method']);
+
+        if($request->hasFile('image')){
+
+            $obres = Obra::findOrFail($id);
+
+            Storage::delete('public/'.$obres->image);
+
+            $obra['image'] = $request->file('image')->store('obres','public');
+
+        }
+
+        // $actualidad->update($request->all());
+        Obra::where('id','=',$id)->update($obra);
+
+        $obra = Obra::findOrFail($id);
+        return view('obra.edit',compact('obra'));
+        //  return redirect(route('actualidad.index'));
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Obra  $obra
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Obra $obra)
+    public function destroy($id)
     {
-        //
+        Obra::destroy($id);
+        return redirect(route('obra.index'));
     }
 }

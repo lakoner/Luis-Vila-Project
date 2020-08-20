@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,4 +36,7 @@ Route::get('/contactar','PageController@contactar');
 
 Route::resource('obra', 'ObraController');
 
-Route::resource('noticia', 'NoticiaController');
+Route::resource('actualidad', 'ActualidadController');
+
+
+

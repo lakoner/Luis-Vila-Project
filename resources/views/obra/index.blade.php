@@ -17,23 +17,25 @@
 
 <table class="table">
             <tr>
-                <th>Imagen</th>
-                <th>Nombre</th>
-                <th>Ténica</th>
-                <th>Año</th>
-                <th>Categoria</th>
 
+                <th>Nom</th>
+                <th>Tecnica</th>
+                <th>Any</th>
+                <th>Categoría</th>
+                <th>Imatge</th>
             </tr>
 
             @foreach($obras as $obra)
             <tr>
 
-                <td> <img class="obras-img" src="Obrasimg/{{$obra->image}}" alt=""> </td>
+
                 <td>{{$obra->name}}</td>
                 <td>{{$obra->style}}</td>
                 <td>{{$obra->year}}</td>
                 <td>{{$obra->categoria->name}}</td>
-<!--
+                <td>
+                <img class="img-obra" src="{{asset('storage').'/'.$obra->image}}" alt="">
+                </td>
                 <td>
                     <form action="{{Route('obra.destroy', $obra->id)}}" method="post">
                     @method('delete')
@@ -41,13 +43,12 @@
                         <button class="btn btn-danger">
                         <i class="far fa-trash-alt"></i>
                     </form>
-                </td> -->
+                </td>
 
-                <!-- <td>
-                    <a href="{{Route('obra.edit', $obra->id)}}" class="btn btn-secondary" >
-                    <i class="fas fa-plus"></i>
-                    </a>
-                </td> -->
+                 <td>
+                   <a href="{{Route('obra.edit', $obra->id)}}"><button class="btn btn-secondary">
+                    <i class="far fa-edit"></i> </a>
+                </td>
 
             </tr>
 
