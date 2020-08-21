@@ -1,0 +1,37 @@
+header{
+    border-bottom-style: solid ;
+}
+
+.HeaderAdmin{
+    display: flex;
+}
+
+.Referencia{
+    flex-grow: 1;
+    justify-content: center;
+}
+
+
+
+.Pagina{
+    flex-grow: 10;
+    border-left-style: solid ;
+    border-right-style: solid ;
+}
+
+.Sesion{
+    flex-grow: 1;
+}
+
+.column {
+    float: left;
+    width: 205px;
+    padding: 10px;
+    height: 861px;
+    margin-left: 15px;
+} 
+
+.row:after {
+    display: table;
+    clear: both;
+}
