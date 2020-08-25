@@ -38,5 +38,7 @@ Route::resource('obra', 'ObraController');
 
 Route::resource('actualidad', 'ActualidadController');
 
+Route::get('/filter', 'ObraController@filter')->name('obra.filter');
+
 
 

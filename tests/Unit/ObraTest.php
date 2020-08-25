@@ -23,8 +23,8 @@ use RefreshDatabase;
 
         $obras_filtradas = Obra::filterByCategory($categorias[0]->id);
 
-        $this->assertEquals($obras_filtradas,$obras_devolver);
-
+        $this->assertEquals(2,count($obras_filtradas));
+        $this->assertEquals($categorias[0]->id,$obras_filtradas[0]->categoria_id);
 
 
     }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Actualidad;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -11,8 +12,9 @@ class ActualidadController extends Controller
 
     public function index()
     {
-        $datos['actualidades'] = Actualidad::paginate(5);
-        return view('actualidad.index',$datos);
+        $actualidades = Actualidad::all();
+
+        return view('actualidad.index',compact('actualidades'));
 
         // $actualidades = Actualidad::all();
         // return view('actualidad.index',['actualidades' => $actualidades]);

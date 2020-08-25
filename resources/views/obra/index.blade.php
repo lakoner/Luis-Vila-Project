@@ -4,14 +4,17 @@
 <main class="content-admin">
     <br><br>
     <div class="categorias-obra-index">
-
+<form action="{{Route('obra.filter')}}">
         <label for="">Categorias</label>
             <select class="form-control" name="categoria_id">
                 <option hidden selected> </option>
-                <option value="1">Pintura</option>
-                <option value="2">Escultura</option>
-                <option value="3">Disseny</option>
+
+                @foreach($categorias as $categoria)
+                <option value="{{$categoria->id}}">{{$categoria->name}}</option>
+                @endforeach
             </select>
+            <input class="btn btn-primary" type="submit" value="filtrar">
+     </form>
     </div>
  <br><br>
 
@@ -22,6 +25,8 @@
                 <th>Tecnica</th>
                 <th>Any</th>
                 <th>Categoría</th>
+                <th>Data de Creació</th>
+                <th>Última modificació</th>
                 <th>Imatge</th>
             </tr>
 
@@ -33,6 +38,8 @@
                 <td>{{$obra->style}}</td>
                 <td>{{$obra->year}}</td>
                 <td>{{$obra->categoria->name}}</td>
+                <td>{{$obra->created_at}}</td>
+                <td>{{$obra->updated_at}}</td>
                 <td>
                 <img class="img-obra" src="{{asset('storage').'/'.$obra->image}}" alt="">
                 </td>

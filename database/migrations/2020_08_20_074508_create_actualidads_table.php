@@ -19,7 +19,9 @@ class CreateActualidadsTable extends Migration
             $table->string('subtitle');
             $table->longText('text');
             $table->string('image');
-            $table->timestamps();
+            $table->date('date');
+            $table->timestamp('created_at')->default(\DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->default(\DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
 
     }

@@ -14,7 +14,7 @@ class CategotiaController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**

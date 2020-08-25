@@ -9,7 +9,7 @@
     <a href="#"><img src="/img/slideWelcome/LluisVila_Absolut_nosaltres_slide.jpg" class="d-block w-100" alt="..." data-toggle="modal" data-target="#exampleModal1">
     </a></div>
     <div class="carousel-item">
-     <a href="#"> <img src="/img/slideWelcome/LluisVila_Absolut_HarmoniaCaotica_slide.jpg" class="d-block w-100" alt="..." data-toggle="modal" data-target="#exampleModal2">
+     <a href="#"> <img src="/img/slideWelcome/LluisVila_Absolut_HarmoniaCaotica_slide.jpg" class="d-block w-100" alt="..." data-toggle="modal" data-target="#exampleModal2">º
     </a></div>
     <!-- <div class="carousel-item">
       <img src="..." class="d-block w-100" alt="...">

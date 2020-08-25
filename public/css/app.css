@@ -11079,6 +11079,7 @@ nav {
   width: 100% !important;
   margin: 0 !important;
   position: absolute !important;
+  z-index: 1;
 }
 
 .py-4 {
@@ -11087,26 +11088,20 @@ nav {
   padding: 0 !important;
 }
 
-.column {
-  float: left;
+.content-menu {
+  height: 100%;
   width: 15%;
-  height: 100% !important;
-  position: absolute;
-  z-index: -1;
-  padding: 10px;
+  z-index: 0;
   margin: 50px 0px 0px 0px;
-  text-align: center;
-  border-top: 0 !important;
 }
 
 .admin-menu {
-  margin-top: 25px;
-  width: 15%;
-  height: 100% !important;
+  z-index: 1;
   padding: 25px;
 }
 
 .admin-menu nav li {
+  width: 190px !important;
   margin: 0;
   text-align: left !important;
   list-style: none;
@@ -11200,11 +11195,39 @@ nav {
   background-position: center;
 }
 
+.modal-news {
+  width: 798px;
+  height: 825px !important;
+}
+
+.modal-body-news {
+  padding: 0 !important;
+  box-sizing: content-box !important;
+}
+
+#exampleModal-text {
+  width: 500px !important;
+  height: 500px !important;
+}
+
+.modal-content-text {
+  width: 650px;
+  background-color: white;
+}
+
+.modal-body-text p {
+  margin: 0 auto;
+  padding: 16px;
+  width: 100%;
+  height: 100%;
+}
+
 body,
 html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 a:link,
@@ -11229,12 +11252,6 @@ a:active {
 
 .content-colums-miro p {
   font-size: 20px;
-}
-
-.content-admin {
-  width: 85%;
-  float: right;
-  padding: 56px 0px 0px 25px;
 }
 
 h2 {
@@ -11439,8 +11456,87 @@ h3 {
   line-height: 735px;
 }
 
-.far {
+.content-framework-2 {
+  display: flex;
+  height: 600px;
+}
+
+.content-admin {
+  width: 100%;
+  margin-top: 56px;
+  padding: 0px 50px 0px 50px;
+}
+
+td {
+  width: 100px;
+  padding: 10px 0px 10px 0px !important;
+  text-align: center;
+  height: 55px !important;
+  font-size: 13px;
+  vertical-align: middle !important;
+}
+
+td .img {
+  padding: 5px 5px 5px 5px !important;
+}
+
+.text {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 50px;
+  height: 40px;
+  padding: 0;
+  overflow: hidden !important;
+  margin: 0 !important;
+}
+
+.text div {
+  width: 30px !important;
+  overflow: hidden;
+  padding: 0px !important;
+  margin: 0 auto !important;
+}
+
+table th {
+  text-align: center;
+}
+
+.cta {
+  width: 45px !important;
+  padding: 0.75em 0.25em 0.75em 0.25em !important;
+}
+
+.timestamp {
+  padding: 0 !important;
+}
+
+.timestamp div {
+  width: 139 !important;
+}
+
+.fa-edit {
   color: rgba(0, 0, 0, 0.5) !important;
+  padding: 0;
+}
+
+.fa-trash-alt {
+  color: rgba(0, 0, 0, 0.5) !important;
+  padding: 0;
+}
+
+.fa-eye {
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.5) !important;
+  text-align: left;
+  vertical-align: middle !important;
+}
+
+.fa-eye:hover {
+  color: black !important;
+}
+
+.card {
+  padding: 0px 15px !important;
 }
 
 .half-wide1 {
@@ -11515,17 +11611,72 @@ h3 {
   height: 150px;
 }
 
-.img-news {
-  width: 200px;
-  height: 200px;
+.img-news-index {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  vertical-align: middle !important;
 }
 
-.img-obra {
+.img-news-edit {
   width: 200px;
   height: 200px;
 }
 
 .categorias-obra-index {
   width: 15%;
+}
+
+.content-news {
+  display: flex !important;
+  padding: 0;
+  width: 100%;
+  height: 250px;
+  position: relative;
+  box-shadow: 5px 5px 10px grey;
+  box-sizing: content-box;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.content-data-news {
+  width: 100%;
+  height: 100%;
+  padding: 25px 50px 25px 250px;
+  position: absolute;
+}
+
+.content-data-news h1 {
+  margin-top: 0 !important;
+}
+
+.content-data-news h4 {
+  margin-bottom: 25px;
+}
+
+.text-news-front {
+  font-size: 16px;
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  font-size: 16px !important;
+}
+
+.date {
+  width: 100% !important;
+  vertical-align: bottom !important;
+  margin: 10px 0px 0px 0px !important;
+}
+
+.content-image-news {
+  margin: 25px;
+  width: 200px;
+  height: 200px !important;
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+.content-image-news img {
+  width: 200px;
+  height: 200px;
 }
 

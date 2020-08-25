@@ -82,31 +82,12 @@
 
             @yield('content')
         </main>
-        <div class="column card">
-            <div class=admin-menu>
-                <nav>
-                    <li><a href="{{url('/obra')}}">Obres</a></li>
 
-                    <li><a href="{{url('/obra/create')}}">Pujar obra</a></li>
-
-                    <li><a href="{{url('/actualidad')}}">Noticies</a></li>
-
-                    <li> <a href="{{url('/actualidad/create')}}">Pujar Noticies</a></li>
-
-                    <li><a href="enlacepagina.html">comments</a></li>
-
-                    <li><a href="enlacepagina.html">table users</a></li>
-                </nav>
-            </div>
 
 
 
 </div>
 
-
-
-
-    </div>
 
 </body>
 </html>

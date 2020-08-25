@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Actualidad;
 
 class PageController extends Controller
 {
@@ -29,7 +30,10 @@ class PageController extends Controller
 
     public function actualitat()
     {
-        return view('actualitat');
+
+        $actualidades = Actualidad::all();
+
+        return view('actualitat',compact('actualidades'));
     }
 
     public function prensa()

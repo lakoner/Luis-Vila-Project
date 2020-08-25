@@ -2,8 +2,27 @@
 
 
 @section('content')
-<main class="content-admin">
+<main class="content-framework-2">
+<div class="content-menu card">
+            <div class="admin-menu">
+                <nav>
+                    <li><a href="{{url('/obra')}}">Obra</a></li>
+
+                    <li><a href="{{url('/obra/create')}}">Pujar obra</a></li>
+
+                    <li><a href="{{url('/actualidad')}}">Noticies</a></li>
+
+                    <li> <a href="{{url('/actualidad/create')}}">Pujar Noticies</a></li>
+
+                    <li><a href="{{url('/register')}}">Crear nou usuari</a></li>
+
+
+                </nav>
+            </div>
+</div>
+<div class="content-admin">
     <br><br>
+
 
     <div class="row">
 
@@ -33,7 +52,7 @@
                 <div class="form-group">
                     <label for="">Imatge Noticia</label><br>
                     <div>
-                    <img class="img-news" src="{{asset('storage').'/'.$actualidad->image}}" alt="">
+                    <img class="img-news-edit" src="{{asset('storage').'/'.$actualidad->image}}" alt="">
                     </div>
 
                     <input type="file" name="image" >
@@ -49,6 +68,7 @@
         </div>
         <div class="col-md-3"></div>
     </div>
+</div>
 
 </main>
 

@@ -156,6 +156,7 @@ padding: 15px 0px 15px 0px;
      width: 100%!important;
      margin: 0!important;
      position:absolute!important;
+     z-index:1;
  }
 
  //APP.BLADE
@@ -168,24 +169,28 @@ padding: 15px 0px 15px 0px;
 
  //MENU ADMIN
 
- .column {
-    float: left;
+ .content-menu {
+    // float: left;
+
+   height:100%;
     width: 15%;
-    height: 100%!important;
-    position: absolute;
-    z-index: -1;
-    padding: 10px;
+    z-index: 0;
+    // padding: 10px;
     margin: 50px 0px 0px 0px;
-    text-align: center;
-    border-top: 0!important;
+    // text-align: center;
+    // border-top: 0!important;
 }
 
 .admin-menu{
-    margin-top:25px;
-    width: 15%;
-    height: 100%!important;
+    // margin-top:25px;
+    // width: 15%;
+    // height: 100%!important;
+    z-index: 1;
+    // width:80%;
+
     padding: 25px;
     nav li{
+        width: 190px!important;
         margin:0;
         text-align: left!important;
         list-style: none;

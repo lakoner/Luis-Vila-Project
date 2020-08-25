@@ -17,7 +17,7 @@ class Obra extends Model
     {
 
         $obras = Obra::where('categoria_id','=', $id)
-           ->get('categoria_id');
+           ->get();
 
         return $obras;
     }
