@@ -30,6 +30,8 @@ Route::get('/biografia','PageController@biografia');
 
 Route::get('/actualitat','PageController@actualitat');
 
+Route::get('/noticia/{actualidad}','ActualidadController@show');
+
 Route::get('/prensa','PageController@prensa');
 
 Route::get('/contactar','PageController@contactar');
@@ -39,6 +41,8 @@ Route::resource('obra', 'ObraController');
 Route::resource('actualidad', 'ActualidadController');
 
 Route::get('/filter', 'ObraController@filter')->name('obra.filter');
+
+Route::get('/pintura','PageController@pintura');
 
 
 

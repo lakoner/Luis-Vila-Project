@@ -28,10 +28,6 @@ class ObraController extends Controller
         $categorias = Categoria::all();
         return view('obra.index',compact('categorias','obras'));
 
-
-
-
-
     }
 
 

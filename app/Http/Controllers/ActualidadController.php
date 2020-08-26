@@ -47,7 +47,7 @@ class ActualidadController extends Controller
 
     public function show(actualidad $actualidad)
     {
-        //
+        return view('noticia', compact('actualidad'));
     }
 
 

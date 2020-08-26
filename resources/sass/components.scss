@@ -61,7 +61,7 @@ margin-left: 25px;
     text-align: center;
 }
 
-//menus
+//MENU INTERNO OBRAS
 .inter-menu {
 float:left;
     nav a{
@@ -74,7 +74,7 @@ float:left;
     }
 }
 
-
+//MENU PRINCIPAL OBRAS
 .content-obra-menu
 {
     width: 975px;
@@ -220,53 +220,7 @@ float:left;
     margin-top:56px;
     padding: 0px 50px 0px 50px;
 }
-td{
-    width: 100px;
-    padding:10px 0px 10px 0px!important;
-    text-align:center;
-    height: 55px!important;
 
-    font-size: 13px;
-    vertical-align: middle!important;
-
-    .img{
-        padding: 5px 5px 5px 5px!important;
-    }
-}
-.text{
-
-    padding: 0!important;
-    margin: 0!important;
-      width: 50px;
-        height: 40px;
-    padding: 0;
-        overflow:hidden!important;
-        margin: 0!important;
-    div{
-        width: 30px!important;
-        overflow: hidden;
-        padding:0px!important;
-        margin: 0 auto!important;
-        }
-}
-
-table th{
-    text-align: center;
-
-}
-
-.cta{
-    width: 45px!important;
-    padding: 0.75em 0.25em 0.75em 0.25em!important;
-}
-
-.timestamp{
-
-    padding: 0!important;
-    div{
-        width: 139!important;
-    }
-}
 //icons
 .fa-edit{
     color: rgba($color: #000000, $alpha: 0.5)!important;

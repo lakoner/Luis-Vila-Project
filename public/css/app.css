@@ -11467,53 +11467,6 @@ h3 {
   padding: 0px 50px 0px 50px;
 }
 
-td {
-  width: 100px;
-  padding: 10px 0px 10px 0px !important;
-  text-align: center;
-  height: 55px !important;
-  font-size: 13px;
-  vertical-align: middle !important;
-}
-
-td .img {
-  padding: 5px 5px 5px 5px !important;
-}
-
-.text {
-  padding: 0 !important;
-  margin: 0 !important;
-  width: 50px;
-  height: 40px;
-  padding: 0;
-  overflow: hidden !important;
-  margin: 0 !important;
-}
-
-.text div {
-  width: 30px !important;
-  overflow: hidden;
-  padding: 0px !important;
-  margin: 0 auto !important;
-}
-
-table th {
-  text-align: center;
-}
-
-.cta {
-  width: 45px !important;
-  padding: 0.75em 0.25em 0.75em 0.25em !important;
-}
-
-.timestamp {
-  padding: 0 !important;
-}
-
-.timestamp div {
-  width: 139 !important;
-}
-
 .fa-edit {
   color: rgba(0, 0, 0, 0.5) !important;
   padding: 0;
@@ -11624,11 +11577,16 @@ table th {
 }
 
 .categorias-obra-index {
-  width: 15%;
+  width: 100%;
+}
+
+.categorias-obra-index select {
+  width: 20%;
 }
 
 .content-news {
   display: flex !important;
+  margin-bottom: 25px;
   padding: 0;
   width: 100%;
   height: 250px;
@@ -11653,12 +11611,22 @@ table th {
   margin-bottom: 25px;
 }
 
+.news-front {
+  width: 200px !important;
+  height: 200px !important;
+}
+
 .text-news-front {
   font-size: 16px;
   width: 100%;
   height: 80px;
+  line-height: 20px;
   overflow: hidden;
-  font-size: 16px !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis !important;
+  margin: auto;
 }
 
 .date {
@@ -11671,12 +11639,67 @@ table th {
   margin: 25px;
   width: 200px;
   height: 200px !important;
-  overflow: hidden;
   padding: 0 !important;
 }
 
 .content-image-news img {
-  width: 200px;
-  height: 200px;
+  width: 200px !important;
+  height: 200px !important;
+}
+
+td {
+  width: 100px;
+  padding: 10px 0px 10px 0px !important;
+  text-align: center;
+  height: 55px !important;
+  font-size: 13px;
+  vertical-align: middle !important;
+}
+
+td .img {
+  padding: 5px 5px 5px 5px !important;
+}
+
+.text-news-back {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 50px;
+  height: 40px;
+  padding: 0;
+  overflow: hidden !important;
+  margin: 0 !important;
+}
+
+.text-news-back div {
+  width: 30px !important;
+  overflow: hidden;
+  padding: 0px !important;
+  margin: 0 auto !important;
+}
+
+.ellipsis {
+  width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis !important;
+  margin: auto;
+}
+
+table th {
+  text-align: center;
+  width: 150px;
+}
+
+.cta {
+  width: 45px !important;
+  padding: 0.75em 0.25em 0.75em 0.25em !important;
+}
+
+.timestamp {
+  padding: 0 !important;
+}
+
+.timestamp div {
+  width: 139 !important;
 }
 

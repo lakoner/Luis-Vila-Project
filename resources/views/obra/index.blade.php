@@ -1,21 +1,44 @@
 @extends('layouts.app')
 
 @section('content')
-<main class="content-admin">
-    <br><br>
+<main class="content-framework-2">
+    <div class="content-menu card">
+        <div class="admin-menu">
+            <nav>
+                <li><a href="{{url('/obra')}}">Obra</a></li>
+
+                <li><a href="{{url('/obra/create')}}">Pujar obra</a></li>
+
+                <li><a href="{{url('/actualidad')}}">Noticies</a></li>
+
+                <li> <a href="{{url('/actualidad/create')}}">Pujar Noticies</a></li>
+
+                <li><a href="{{url('/register')}}">Crear nou usuari</a></li>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content-admin">
+        <br><br>
+            <h1>Obras</h1>
+
     <div class="categorias-obra-index">
-<form action="{{Route('obra.filter')}}">
+        <form action="{{Route('obra.filter')}}">
         <label for="">Categorias</label>
             <select class="form-control" name="categoria_id">
                 <option hidden selected> </option>
-
                 @foreach($categorias as $categoria)
                 <option value="{{$categoria->id}}">{{$categoria->name}}</option>
                 @endforeach
             </select>
-            <input class="btn btn-primary" type="submit" value="filtrar">
+            <br>
+            <input class="btn btn-primary" type="submit" value="Filtra por Categorias"><a href="{{url('/obras/create')}}">
+            <button class="btn btn-success float-right">Crear una Obra</button><br><br><br></a>
+            </div>
+
      </form>
-    </div>
+
+
  <br><br>
 
 <table class="table">
