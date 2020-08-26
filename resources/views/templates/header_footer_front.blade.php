@@ -12,8 +12,6 @@
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
 
-
-
         <!-- Fonts -->
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"/>
@@ -24,61 +22,48 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/fonts.css') }}" rel="stylesheet">
 
-
         <!-- Scripts ajax y bootstrap -->
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-
-
     </head>
     <body>
-    <header>
-        <div class="header">
-            <div class="menu"><h1 class="logo"><a href="{{url('/')}}">LLUÍS VILÀ</a></h1>
-                <nav>
-                    <a href="{{url('/obra/')}}">OBRA</a>
-                    <a href="{{url('/biografia/')}}">BIOGRAFÍA</a>
-                    <a href="{{url('/actualitat/')}}">ACTCUALITAT</a>
-                    <a href="{{url('/prensa/')}}">PRENSA</a>
-                    <a href="{{url('/contactar/')}}">CONTACTAR</a>
-                </nav>
-                <div class="lang">
-                    <a href="">CAT</a>
-                    <a href="">ES</a>
+        <header>
+            <div class="header">
+                <div class="menu">
+                    <h1 class="logo">
+                        <a href="{{url('/')}}">LLUÍS VILÀ</a>
+                    </h1>
+                    <nav>
+                        <a href="{{url('/obra/')}}">OBRA</a>
+                        <a href="{{url('/biografia/')}}">BIOGRAFÍA</a>
+                        <a href="{{url('/actualitat/')}}">ACTCUALITAT</a>
+                        <a href="{{url('/prensa/')}}">PRENSA</a>
+                        <a href="{{url('/contactar/')}}">CONTACTAR</a>
+                    </nav>
+                    <div class="lang">
+                        <a href="">CAT</a>
+                        <a href="">ES</a>
+                    </div>
                 </div>
-
             </div>
-
-        </div>
-
-    </header>
-
-    <body>
-
-    @yield('content')
-
-    <footer>
-    <div class="footer">
-        <div class="content">
-            <ul>
-                <li>LLUÍS VILÀ</li><div class="lv"></div>
-                <a href="http://www.fundaciolluiscoromina.org/"> <li> &copy  Fundació Lluís Coromina</a></li><div class="lv"></div>
-                <a href="mailto:fundacio@fundaciolluiscoromina.org"> <li> fundacio@fundaciolluiscoromina.org</a></li><div class="lv"></div>
-                <a href="tel:+3400972583477"> <li>Telf. 972 58 34 77</a></li><a href="#"><div class="insta"></a></div><a href="http://www.factoriaf5.org/"><div class="f5"></div></a>
-            </ul>
-        </div>
-
-    </div>
-
-</footer>
-
-
-
-</body>
-    </html>
+        </header>
+        @yield('content')
+        <footer>
+            <div class="footer">
+                <div class="content">
+                    <ul>
+                    <li>LLUÍS VILÀ</li><div class="lv"></div>
+                    <a href="http://www.fundaciolluiscoromina.org/"> <li> &copy  Fundació Lluís Coromina</a></li><div class="lv"></div>
+                    <a href="mailto:fundacio@fundaciolluiscoromina.org"> <li> fundacio@fundaciolluiscoromina.org</a></li><div class="lv"></div>
+                    <a href="tel:+3400972583477"> <li>Telf. 972 58 34 77</a></li><a href="#"><div class="insta"></a></div><a href="http://www.factoriaf5.org/"><div class="f5"></div></a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
 
 
 

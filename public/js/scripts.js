@@ -19,4 +19,7 @@ if (event.deltaY > 0)
  }
 });
 
-
+// MDB Lightbox Init
+$(function () {
+    $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+    });
