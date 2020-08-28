@@ -5,7 +5,7 @@
 
 <main class="content-framwork-1">
         @foreach($actualidades as $actualidad)
-            <a href="{{url('/noticia/'.$actualidad->id)}}">
+            <a href="{{url('/noticia/{actualidad}/'.$actualidad->id)}}">
                 <div class="content-news card">
                     <div class="content-image-news card">
                         <img src="{{asset('storage').'/'.$actualidad->image}}" alt="">

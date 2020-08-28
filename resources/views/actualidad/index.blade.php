@@ -5,8 +5,6 @@
 
     <div class="row">
         <div class="col-md-2 admin-panel">
-
-
                     <br><br><br><br><br><br>
                     <ul class="nav nav-pils nav-stacked">
                         <li><a href="{{url('/obra')}}">Obra</a></li>
@@ -15,10 +13,6 @@
                         <li> <a href="{{url('/actualidad/create')}}">Pujar Noticies</a></li>
                         <li class="bottom"><a href="{{url('/register')}}">Crear nou usuari</a></li>
                     </ul>
-
-
-
-
         </div>
 
 

@@ -10,21 +10,17 @@ body{
     box-sizing: border-box;
 
 }
+//header admin
 .navbar{
     background-color: #545b62!important;
     height:75px;
-
-
-
-
 }
 
 .navbar-brand{
     color:white!important;
 
-
 }
-
+ //menu-admin
 .admin-panel{
     padding: 0!important;
     border-right: solid 1px grey;
@@ -43,8 +39,6 @@ body{
         padding-left: 70px;
         line-height: 40px;
         color:white;
-
-
     }
     }
 }
