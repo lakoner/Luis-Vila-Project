@@ -46,8 +46,8 @@ class ActualidadController extends Controller
     public function show(actualidad $actualidad)
 
     {
-        $id =
-        $actualidades = Actualidad::where('id','=',$id);
+
+        $actualidades = Actualidad::noticia($actualidad->id);
 
         return view('noticia',compact('actualidades'));
     }

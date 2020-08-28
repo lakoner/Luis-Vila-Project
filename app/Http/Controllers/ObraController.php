@@ -26,7 +26,7 @@ class ObraController extends Controller
     {
         $obras = Obra::filterByCategory($request->categoria_id);
 
-        // $series = Serie::filterBySerie($request->categoria_id);
+
         $categorias = Categoria::all();
         return view('obra.index',compact('categorias','obras'));
 

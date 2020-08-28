@@ -3,46 +3,37 @@
 
 @section('content')
 
-    <div class="row">
-        <div class="col-md-2 admin-panel">
-                    <br><br><br><br><br><br>
-                    <ul class="nav nav-pils nav-stacked">
-                        <li><a href="{{url('/obra')}}">Obra</a></li>
-                        <li><a href="{{url('/obra/create')}}">Pujar obra</a></li>
-                        <li><a href="{{url('/actualidad')}}">Noticies</a></li>
-                        <li> <a href="{{url('/actualidad/create')}}">Pujar Noticies</a></li>
-                        <li class="bottom"><a href="{{url('/register')}}">Crear nou usuari</a></li>
-                    </ul>
-        </div>
+<main>
+
+<div class="content-admin">
 
 
-        <div class="col-md-10 content-admin">
-            <br><br><br><br><br><br>
-
-
-                <h1><b> Noticies</b>
-
-            <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-                <label class="btn btn-secondary">
-                    <a href="{{url('/actualitat')}}">
-                        <input type="radio" name="options" id="option1" checked> Vista previa
-                    </a>
-                </label>
-                <label class="btn btn-secondary">
-                    <a href="{{url('/actualidad/create')}}">
-                        <input type="radio" name="options" id="option2"> Nova Noticia
-                    </a>
-                </label>
+    <div class="actualidad-content">
+            <div class="content-header">
+                <h1><b>Noticies</b>
+                    <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
+                        <label class="btn btn-secondary">
+                            <a href="{{url('/actualitat')}}" target="_blank">
+                                <input type="radio" name="options" id="option1" > Vista previa
+                            </a>
+                        </label>
+                        <label class="btn btn-secondary">
+                            <a href="{{url('/actualidad/create')}}">
+                                <input type="radio" name="options" id="option2"> Nova Noticia
+                            </a>
+                        </label>
+                    </div>
+                </h1>
             </div>
-        </h1>
+
 
             <br><br><br>
 
             <table class="table">
             <thead class="thead-dark">
                 <tr>
-                    <th>Imagen</th>
-                    <th class="thTitulo">Titulo</th>
+                    <th class="th-left">Imagen</th>
+                    <th class="th-Titulo">Titulo</th>
                     <th>Subtitulo</th>
                     <th class="th-small">Texto</th>
                     <th>Fecha </th>
@@ -125,8 +116,14 @@
             @endforeach
 
             </table>
-        </div>
+
     </div>
+</div>
+</div>
+
+
+
+</main>
 
 
 @endsection

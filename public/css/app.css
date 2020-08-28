@@ -11299,58 +11299,6 @@ body {
   overflow-x: hidden;
 }
 
-.content-admin {
-  padding: 0px 50px 0px 50px;
-  position: relative;
-}
-
-#app {
-  box-sizing: border-box;
-}
-
-.navbar {
-  background-color: #545b62 !important;
-  height: 75px;
-}
-
-.navbar-brand {
-  color: white !important;
-}
-
-.admin-panel {
-  padding: 0 !important;
-  border-right: solid 1px grey;
-  background-color: #6c757d;
-}
-
-.admin-panel li {
-  height: 40px;
-  color: white;
-  width: 100% !important;
-  padding: 0;
-  border-top: solid 1px white;
-  border-right: none;
-}
-
-.admin-panel li a {
-  padding-left: 70px;
-  line-height: 40px;
-  color: white;
-}
-
-.bottom {
-  border-bottom: solid 1px white;
-}
-
-li:hover {
-  background-color: #545b62;
-  cursor: pointer;
-}
-
-.btn-group {
-  margin-top: 5px;
-}
-
 .fa-edit {
   color: white;
   padding: 0;
@@ -11372,34 +11320,128 @@ li:hover {
   color: black !important;
 }
 
-.card {
-  padding: 0px 15px !important;
+.fa-long-arrow-alt-left {
+  margin-top: 5px;
 }
 
-.fondo-login {
-  background-color: #e7e2e2;
+.actualidad-content table {
+  margin-top: 100px !important;
+  z-index: -2;
+}
+
+.content-header {
+  height: 110px;
   z-index: 1;
-  background-size: cover;
-  -ms-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+  width: 80% !important;
+  box-sizing: border-box;
+  border-bottom: 2px solid grey;
+  margin-top: 0;
+  padding: 0px 25px 0px 25px;
+  float: right !important;
+  position: fixed;
+  background-color: #dbd5d5;
 }
 
-.noticies-top {
-  width: 100%;
-  display: flex;
+.content-header h1 {
+  margin-top: 35px;
 }
 
-.noticies-top div {
-  margin-left: 500px;
+.actualidad-content {
+  z-index: 1;
+}
+
+.content-admin {
+  width: 80%;
+  margin-top: 75px;
+  float: right;
+  position: relative;
+}
+
+#app {
+  box-sizing: border-box;
+}
+
+#app a {
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: #545b62 !important;
+}
+
+.dropdown-menu a:hover {
+  background-color: #6c757d !important;
+}
+
+.navbar {
+  background-color: #545b62 !important;
+  height: 75px;
+  position: fixed !important;
+  z-index: 1;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.admin-panel {
+  width: 20%;
+  height: 100%;
+  float: left;
+  position: fixed;
+  padding: 0 !important;
+  border-right: solid 1px grey;
+  background-color: #6c757d;
+}
+
+.admin-panel ul {
+  margin-top: 27px;
+}
+
+.admin-panel ul li {
+  height: 40px;
+  color: white;
+  width: 100% !important;
+  padding: 0;
+  border-top: solid 1px white;
+  border-right: none;
+}
+
+.admin-panel ul li a {
+  padding-left: 70px;
+  line-height: 40px;
+  color: white;
+}
+
+.admin-panel div {
+  margin-top: 113px;
+}
+
+.admin-panel div h1 {
+  padding: 0px 25px 0px 25px;
+  text-align: center;
+  color: white;
+}
+
+.bottom {
+  border-bottom: solid 1px white;
+}
+
+li:hover {
+  background-color: #545b62;
+  cursor: pointer;
+}
+
+.btn-group {
+  margin-top: 5px;
+  float: right;
 }
 
 .btn-group a {
   color: white;
 }
 
-table td {
+td {
   width: 100px;
   padding: 10px 0px 10px 0px !important;
   text-align: center;
@@ -11409,7 +11451,7 @@ table td {
   vertical-align: middle !important;
 }
 
-table td .img {
+td .img {
   padding: 5px 5px 5px 5px !important;
 }
 
@@ -11445,7 +11487,6 @@ table th {
 
 .th-small {
   width: 50px !important;
-  padding: 0.75em 0.25em 0.75em 0.25em !important;
 }
 
 .timestamp {
@@ -11456,12 +11497,52 @@ table th {
   width: 139 !important;
 }
 
+.actualidad-create {
+  margin-top: 80px !important;
+  padding: 50px 50px 0px 50px;
+  background-color: #dbd5d5;
+}
+
+.actualidad-create form {
+  margin: 0;
+}
+
+.actualidad-create form .card {
+  border: solid 1px #545b62;
+}
+
+.actualidad-create form .card input {
+  border: solid 1px #dbd5d5;
+}
+
+select {
+  overflow: auto !important;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.form-group {
+  padding: 20px !important;
+}
+
 .categorias-obra-index {
   width: 100%;
 }
 
 .categorias-obra-index select {
   width: 20%;
+}
+
+.fondo-login {
+  background-color: #e7e2e2;
+  z-index: 1;
+  background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 
 body,

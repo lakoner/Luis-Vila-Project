@@ -11,4 +11,13 @@ class Actualidad extends Model
 
     public $timestamps = false;
 
+    static function noticia($id)
+    {
+
+        $actualidades = Actualidad::where('id','=', $id)
+           ->get();
+
+        return $actualidades;
+    }
+
 }

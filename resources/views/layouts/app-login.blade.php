@@ -75,21 +75,6 @@
                 </div>
             </div>
         </nav>
-        <div class="admin-panel">
-
-                    <div><h1><b>Lluís Vilà</b></h1></div>
-
-
-                    <ul class="nav nav-pils nav-stacked">
-                        <li><a href="{{url('/obra')}}"><i class="fas fa-palette"></i>&nbsp;<b>Obres</b></a></li>
-                        <li><a href="{{url('/obra/create')}}"><i class="fas fa-upload"></i>&nbsp;<b>Pujar una Obra</b></a></li>
-                        <li><a href="{{url('/actualidad')}}"><i class="fas fa-newspaper"></i>&nbsp;<b>Noticies</b></a></li>
-                        <li> <a href="{{url('/actualidad/create')}}"><i class="fas fa-upload"></i>&nbsp;<b>Pujar una Noticia</b></a></li>
-                        <li class="bottom"><a href="{{url('/register')}}"><i class="fas fa-user"></i>&nbsp;<b>Usuaris</b></a></li>
-                    </ul>
-        </div>
-
-
 
         <main class="py-4">
             @yield('content')
