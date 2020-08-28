@@ -1,0 +1,185 @@
+//BACKEND
+body{
+    overflow-x:hidden;
+}
+.content-admin{
+    padding: 0px 50px 0px 50px;
+    position:relative;
+}
+#app{
+    box-sizing: border-box;
+
+}
+.navbar{
+    background-color: #545b62!important;
+    height:75px;
+
+
+}
+nav{
+    position: fixed;
+
+}
+.navbar-brand{
+    color:white!important;
+}
+
+.admin-panel{
+    padding: 0!important;
+    border-right: solid 1px grey;
+    background-color: #6c757d;
+
+
+    li{
+        height:40px;
+        color:white;
+        width: 100%!important;
+        padding: 0;
+        border-top: solid 1px white;
+        border-right: none;
+    a{
+        padding-left: 70px;
+        line-height: 40px;
+        color:white;
+
+
+    }
+    }
+}
+.bottom{
+    border-bottom:solid 1px white;
+}
+li:hover{
+    background-color: #545b62;
+    cursor:pointer;
+}
+.btn-group {
+    margin-top:5px;
+}
+//icons
+.fa-edit{
+    color: white;
+    padding:0;
+}
+
+.fa-trash-alt{
+    color: white;
+    padding:0;
+}
+
+.fa-eye{
+margin-right: 10px;
+color: rgba($color: #000000, $alpha: 0.5)!important;
+text-align: left;
+vertical-align: middle!important;
+}
+.fa-eye:hover{
+    color: rgba($color: #000000, $alpha: 1)!important;
+}
+
+.card{
+    padding: 0px 15px!important;
+}
+
+
+//LOGIN
+
+.fondo-login{
+
+    background-color: rgb(231, 226, 226);
+    z-index: 1;
+
+    background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+//ACTUALIDAD
+.noticies-top{
+    width: 100%;
+    display: flex;
+
+    div{
+
+        margin-left: 500px;
+
+
+    }
+}
+
+.btn-group a{
+    color:white;
+}
+table
+td{
+    width: 100px;
+    padding:10px 0px 10px 0px!important;
+    text-align:center;
+    height: 55px!important;
+    background-color: white;
+    font-size: 13px;
+    vertical-align: middle!important;
+
+    .img{
+        padding: 5px 5px 5px 5px!important;
+    }
+}
+.text-news-back{
+
+    padding: 0!important;
+    margin: 0!important;
+      width: 50px;
+        height: 40px;
+    padding: 0;
+        overflow:hidden!important;
+        margin: 0!important;
+    div{
+        width: 30px!important;
+        overflow: hidden;
+        padding:0px!important;
+        margin: 0 auto!important;
+        }
+}
+
+.ellipsis{
+    width: 100px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis!important;
+    margin: auto;
+}
+
+table th{
+    text-align: center;
+    width: 150px;
+
+}
+
+.th-small{
+    width: 50px!important;
+    padding: 0.75em 0.25em 0.75em 0.25em!important;
+}
+
+.timestamp{
+
+    padding: 0!important;
+    div{
+        width: 139!important;
+    }
+}
+
+//obras
+
+.categorias-obra-index{
+    width: 100%;
+        select{
+            width:20%;
+        }
+    }
+

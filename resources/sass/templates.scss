@@ -43,6 +43,9 @@ nav a:hover{
     text-decoration: none;
     color: black;
 }
+nav a:focus{
+    color:black;
+}
 .lang{
     width: 50px;
     float: right;
@@ -57,6 +60,8 @@ nav a:hover{
     text-decoration: none;
     color: black;
 }
+
+
 
 //FOOTER FRONT//
 
@@ -167,41 +172,5 @@ padding: 15px 0px 15px 0px;
  }
 
 
- //MENU ADMIN
-
- .content-menu {
-    // float: left;
-
-   height:100%;
-    width: 15%;
-    z-index: 0;
-    // padding: 10px;
-    margin: 50px 0px 0px 0px;
-    // text-align: center;
-    // border-top: 0!important;
-}
-
-.admin-menu{
-    // margin-top:25px;
-    // width: 15%;
-    // height: 100%!important;
-    z-index: 1;
-    // width:80%;
-
-    padding: 25px;
-    nav li{
-        width: 190px!important;
-        margin:0;
-        text-align: left!important;
-        list-style: none;
-        a{
-            color: rgba($color: #000000, $alpha: 0.5);
-            font-size: 16px;
-        }
-        a:hover{
-            color:black!important;
-        }
-    }
-}
 
 

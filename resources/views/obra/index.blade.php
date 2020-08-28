@@ -23,62 +23,68 @@
             <h1>Obras</h1>
 
     <div class="categorias-obra-index">
-        <form action="{{Route('obra.filter')}}">
-        <label for="">Categorias</label>
+    <form action="{{Route('obra.filter')}}">
+        <label for="">Filtrar Categorias</label>
             <select class="form-control" name="categoria_id">
                 <option hidden selected> </option>
+
                 @foreach($categorias as $categoria)
                 <option value="{{$categoria->id}}">{{$categoria->name}}</option>
                 @endforeach
             </select>
             <br>
-            <input class="btn btn-primary" type="submit" value="Filtra por Categorias"><a href="{{url('/obras/create')}}">
-            <button class="btn btn-success float-right">Crear una Obra</button><br><br><br></a>
+            <input class="btn btn-primary" type="submit" value="Filtra Categories">
+
             </div>
 
      </form>
-
+     <a href="{{url('/obra')}}"><button class="btn btn-danger">Totes</button></a>
+    <a href="{{url('/obra/create')}}"><button class="btn btn-success float-right">Afegeix Obra</button></a><br><br><br>
 
  <br><br>
 
 <table class="table">
             <tr>
 
-                <th>Nom</th>
-                <th>Tecnica</th>
-                <th>Any</th>
-                <th>Categoría</th>
-                <th>Data de Creació</th>
-                <th>Última modificació</th>
                 <th>Imatge</th>
+                <th>Nom</th>
+                <th class="th-small">Tecnica</th>
+                <th class="th-small">Any</th>
+                <th>Categoría</th>
+                <th>Creació</th>
+                <th>Modificació</th>
+                <th class="th-small">Edita</th>
+                <th class="th-small">Elimina</th>
             </tr>
 
             @foreach($obras as $obra)
             <tr>
-
-
-                <td>{{$obra->name}}</td>
-                <td>{{$obra->style}}</td>
+                <td class="img">
+                        <a href="#">
+                            <i class="far fa-eye fa-2x" data-toggle="modal" data-target="#image{{ $obra->id }}" data-whatever="@mdo"></i>
+                        </a>
+                    <img class="img-obras-index" src="{{asset('storage').'/'.$obra->image}}" alt="">
+                </td>
+                <td><div class="ellipsis"><a href="#">{{$obra->name}}</a></div></td>
+                <td><div class="ellipsis"><a href="#">{{$obra->technique}}</a></div></td>
                 <td>{{$obra->year}}</td>
                 <td>{{$obra->categoria->name}}</td>
-                <td>{{$obra->created_at}}</td>
-                <td>{{$obra->updated_at}}</td>
-                <td>
-                <img class="img-obra" src="{{asset('storage').'/'.$obra->image}}" alt="">
+
+                <td class="timestamp" >{{$obra->created_at}}</td>
+                <td class="timestamp">{{$obra->updated_at}}</td>
+                <td class="cta"><a href="{{Route('obra.edit', $obra->id)}}"><button class="btn btn-primary button-td">
+                        <i class="far fa-edit"></i> </a>
                 </td>
-                <td>
-                    <form action="{{Route('obra.destroy', $obra->id)}}" method="post">
-                    @method('delete')
-                    @csrf
-                        <button class="btn btn-danger">
+                    <td class="cta">
+                    <form action="{{Route('obra.destroy', $obra->id)}}" method="post"> @method('delete')@csrf
+                        <button class=" btn btn-danger button-td" onclick="return confirm ('¿Estas segura de borrar esta noticia?')">
                         <i class="far fa-trash-alt"></i>
                     </form>
                 </td>
 
-                 <td>
-                   <a href="{{Route('obra.edit', $obra->id)}}"><button class="btn btn-secondary">
-                    <i class="far fa-edit"></i> </a>
-                </td>
+
+
+
 
             </tr>
 

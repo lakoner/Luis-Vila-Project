@@ -16,8 +16,7 @@ class CreateSeriesTable extends Migration
         Schema::create('series', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable();
-            // $table->foreignId('categoria_id')->nullable();
-            // $table->foreign('categoria_id')->references('id')->on('categorias');
+            $table->string('year')->nullable();
             $table->timestamps();
         });
     }

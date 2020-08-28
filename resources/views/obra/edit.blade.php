@@ -18,10 +18,6 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="">Técnica Obra</label>
-                    <input class="form-control" type="text" name="style" value="{{$obra->style}}">
-                </div>
-                <div class="form-group">
                     <label for="">Any Obra</label>
                     <input class="form-control" type="text" name="year" value="{{$obra->year}}">
                 </div>

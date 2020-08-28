@@ -1,4 +1,6 @@
 
+//FRONT
+
 //Biografia
 .half-wide1{
     width: 600px;
@@ -68,13 +70,35 @@
     background-size: cover;
 
  }
+//pintura
+.content-pintura-img{
+    width: 350px;
+     height:350px;
+     padding: 10px;
+}
+ .img-pintura{
+    width: 100%;
+    height:100%;
+ }
 
+ //actualidad
+
+ .img-news-edit{
+    width: 200px;
+    height: 200px;
+
+ }
+ //BACK
  //obras
 
- .obras-img{
-     width: 150px;
-     height: 150px;
+ .img-obras-index{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    vertical-align: middle!important;
+
  }
+
 
  //actuaidad
 
@@ -87,8 +111,4 @@
  }
 
 
- .img-news-edit{
-    width: 200px;
-    height: 200px;
 
- }

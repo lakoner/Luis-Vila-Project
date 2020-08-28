@@ -11,28 +11,27 @@
         <form class="form-group" method="POST" action="{{Route('obra.store')}}" enctype="multipart/form-data">
                 @csrf
 
-                     <div class="form-group">
+                <div class="form-group">
                     <label for="">Nom Obra</label>
                     <input class="form-control" type="text" name="name">
                 </div>
 
                 <div class="form-group">
-                    <label for="">Técnica Obra</label>
-                    <input class="form-control" type="text" name="style">
-                </div>
-                <div class="form-group">
-                    <label for="">Any obra</label>
-                    <input class="form-control" type="text" name="year">
-                </div>
-                <div class="form-group">
-                    <label for="">Categoría Obra</label>
+                <label for="">Categoría Obra</label>
                     <select class="form-control" name="categoria_id">
-                    <option hidden selected> </option>
+                        <option hidden selected> </option>
                         <option value="1">Pintura</option>
                         <option value="2">Escultura</option>
                         <option value="3">Disseny</option>
                     </select>
                 </div>
+
+
+                <div class="form-group">
+                    <label for="">Any obra</label>
+                    <input class="form-control" type="text" name="year">
+                </div>
+
                 <div class="form-group">
                     <label for="">Imatge obra</label>
                     <input type="file" name="image">

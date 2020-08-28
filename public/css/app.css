@@ -10971,6 +10971,10 @@ nav a:hover {
   color: black;
 }
 
+nav a:focus {
+  color: black;
+}
+
 .lang {
   width: 50px;
   float: right;
@@ -11088,34 +11092,6 @@ nav {
   padding: 0 !important;
 }
 
-.content-menu {
-  height: 100%;
-  width: 15%;
-  z-index: 0;
-  margin: 50px 0px 0px 0px;
-}
-
-.admin-menu {
-  z-index: 1;
-  padding: 25px;
-}
-
-.admin-menu nav li {
-  width: 190px !important;
-  margin: 0;
-  text-align: left !important;
-  list-style: none;
-}
-
-.admin-menu nav li a {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-}
-
-.admin-menu nav li a:hover {
-  color: black !important;
-}
-
 .welcome {
   height: 610px !important;
   border-top: solid 1px black;
@@ -11220,6 +11196,276 @@ nav {
   padding: 16px;
   width: 100%;
   height: 100%;
+}
+
+.half-wide1 {
+  width: 600px;
+  height: 659px;
+  background-image: url(/images/lluisvila-07.jpg?abbea0a3b64b2b7f52dce44ff8054d09);
+  background-size: cover;
+  margin-right: 25px;
+  border: solid 1px black;
+}
+
+.half-wide2 {
+  width: 600px;
+  height: 600px;
+  background-image: url(/images/fullsizeoutput.jpg?f64fd3d5033de8228d616db088fbc10e);
+  background-size: cover;
+  margin-right: 25px;
+  border: solid 1px black;
+}
+
+.half-wide3 {
+  width: 600px;
+  height: 600px;
+  background-image: url(/images/LluisVila_04.jpg?0a0fa3bb46cfb2e51e5cf23d92236bba);
+  background-size: cover;
+  margin-left: 25px;
+  border: solid 1px black;
+}
+
+.half-wide4 {
+  width: 600px;
+  height: 900px;
+  background-image: url(/images/LluisVila_02.jpg?efc44b1c8b9185015bb9f8cacebf4f15);
+  background-size: cover;
+  margin-right: 25px;
+  border: solid 1px black;
+}
+
+.half-wide5 {
+  width: 600px;
+  height: 900px;
+  background-image: url(/images/LluisVila_CastellDAro.jpg?799314f4792474735903e8b6af7ad384);
+  background-size: cover;
+  margin-left: 25px;
+  border: solid 1px black;
+}
+
+.eat_art1 {
+  width: 385px;
+  height: 350px;
+  background-image: url("/img/Eat_art/fundacio_miro1.jpg");
+  background-size: cover;
+}
+
+.eat_art2 {
+  width: 385px;
+  height: 350px;
+  background-image: url("/img/Eat_art/fundacio_miro3.jpg");
+  background-size: cover;
+  margin: 0px 30px 0px 30px;
+}
+
+.eat_art3 {
+  width: 385px;
+  height: 350px;
+  background-image: url("/img/Eat_art/fundacio_miro2.jpg");
+  background-size: cover;
+}
+
+.content-pintura-img {
+  width: 350px;
+  height: 350px;
+  padding: 10px;
+}
+
+.img-pintura {
+  width: 100%;
+  height: 100%;
+}
+
+.img-news-edit {
+  width: 200px;
+  height: 200px;
+}
+
+.img-obras-index {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  vertical-align: middle !important;
+}
+
+.img-news-index {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  vertical-align: middle !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.content-admin {
+  padding: 0px 50px 0px 50px;
+  position: relative;
+}
+
+#app {
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #545b62 !important;
+  height: 75px;
+}
+
+nav {
+  position: fixed;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.admin-panel {
+  padding: 0 !important;
+  border-right: solid 1px grey;
+  background-color: #6c757d;
+}
+
+.admin-panel li {
+  height: 40px;
+  color: white;
+  width: 100% !important;
+  padding: 0;
+  border-top: solid 1px white;
+  border-right: none;
+}
+
+.admin-panel li a {
+  padding-left: 70px;
+  line-height: 40px;
+  color: white;
+}
+
+.bottom {
+  border-bottom: solid 1px white;
+}
+
+li:hover {
+  background-color: #545b62;
+  cursor: pointer;
+}
+
+.btn-group {
+  margin-top: 5px;
+}
+
+.fa-edit {
+  color: white;
+  padding: 0;
+}
+
+.fa-trash-alt {
+  color: white;
+  padding: 0;
+}
+
+.fa-eye {
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.5) !important;
+  text-align: left;
+  vertical-align: middle !important;
+}
+
+.fa-eye:hover {
+  color: black !important;
+}
+
+.card {
+  padding: 0px 15px !important;
+}
+
+.fondo-login {
+  background-color: #e7e2e2;
+  z-index: 1;
+  background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.noticies-top {
+  width: 100%;
+  display: flex;
+}
+
+.noticies-top div {
+  margin-left: 500px;
+}
+
+.btn-group a {
+  color: white;
+}
+
+table td {
+  width: 100px;
+  padding: 10px 0px 10px 0px !important;
+  text-align: center;
+  height: 55px !important;
+  background-color: white;
+  font-size: 13px;
+  vertical-align: middle !important;
+}
+
+table td .img {
+  padding: 5px 5px 5px 5px !important;
+}
+
+.text-news-back {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 50px;
+  height: 40px;
+  padding: 0;
+  overflow: hidden !important;
+  margin: 0 !important;
+}
+
+.text-news-back div {
+  width: 30px !important;
+  overflow: hidden;
+  padding: 0px !important;
+  margin: 0 auto !important;
+}
+
+.ellipsis {
+  width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis !important;
+  margin: auto;
+}
+
+table th {
+  text-align: center;
+  width: 150px;
+}
+
+.th-small {
+  width: 50px !important;
+  padding: 0.75em 0.25em 0.75em 0.25em !important;
+}
+
+.timestamp {
+  padding: 0 !important;
+}
+
+.timestamp div {
+  width: 139 !important;
+}
+
+.categorias-obra-index {
+  width: 100%;
+}
+
+.categorias-obra-index select {
+  width: 20%;
 }
 
 body,
@@ -11456,134 +11702,6 @@ h3 {
   line-height: 735px;
 }
 
-.content-framework-2 {
-  display: flex;
-  height: 600px;
-}
-
-.content-admin {
-  width: 100%;
-  margin-top: 56px;
-  padding: 0px 50px 0px 50px;
-}
-
-.fa-edit {
-  color: rgba(0, 0, 0, 0.5) !important;
-  padding: 0;
-}
-
-.fa-trash-alt {
-  color: rgba(0, 0, 0, 0.5) !important;
-  padding: 0;
-}
-
-.fa-eye {
-  margin-right: 10px;
-  color: rgba(0, 0, 0, 0.5) !important;
-  text-align: left;
-  vertical-align: middle !important;
-}
-
-.fa-eye:hover {
-  color: black !important;
-}
-
-.card {
-  padding: 0px 15px !important;
-}
-
-.half-wide1 {
-  width: 600px;
-  height: 659px;
-  background-image: url(/images/lluisvila-07.jpg?abbea0a3b64b2b7f52dce44ff8054d09);
-  background-size: cover;
-  margin-right: 25px;
-  border: solid 1px black;
-}
-
-.half-wide2 {
-  width: 600px;
-  height: 600px;
-  background-image: url(/images/fullsizeoutput.jpg?f64fd3d5033de8228d616db088fbc10e);
-  background-size: cover;
-  margin-right: 25px;
-  border: solid 1px black;
-}
-
-.half-wide3 {
-  width: 600px;
-  height: 600px;
-  background-image: url(/images/LluisVila_04.jpg?0a0fa3bb46cfb2e51e5cf23d92236bba);
-  background-size: cover;
-  margin-left: 25px;
-  border: solid 1px black;
-}
-
-.half-wide4 {
-  width: 600px;
-  height: 900px;
-  background-image: url(/images/LluisVila_02.jpg?efc44b1c8b9185015bb9f8cacebf4f15);
-  background-size: cover;
-  margin-right: 25px;
-  border: solid 1px black;
-}
-
-.half-wide5 {
-  width: 600px;
-  height: 900px;
-  background-image: url(/images/LluisVila_CastellDAro.jpg?799314f4792474735903e8b6af7ad384);
-  background-size: cover;
-  margin-left: 25px;
-  border: solid 1px black;
-}
-
-.eat_art1 {
-  width: 385px;
-  height: 350px;
-  background-image: url("/img/Eat_art/fundacio_miro1.jpg");
-  background-size: cover;
-}
-
-.eat_art2 {
-  width: 385px;
-  height: 350px;
-  background-image: url("/img/Eat_art/fundacio_miro3.jpg");
-  background-size: cover;
-  margin: 0px 30px 0px 30px;
-}
-
-.eat_art3 {
-  width: 385px;
-  height: 350px;
-  background-image: url("/img/Eat_art/fundacio_miro2.jpg");
-  background-size: cover;
-}
-
-.obras-img {
-  width: 150px;
-  height: 150px;
-}
-
-.img-news-index {
-  width: 50px;
-  height: 50px;
-  margin-right: 20px;
-  vertical-align: middle !important;
-}
-
-.img-news-edit {
-  width: 200px;
-  height: 200px;
-}
-
-.categorias-obra-index {
-  width: 100%;
-}
-
-.categorias-obra-index select {
-  width: 20%;
-}
-
 .content-news {
   display: flex !important;
   margin-bottom: 25px;
@@ -11647,59 +11765,17 @@ h3 {
   height: 200px !important;
 }
 
-td {
-  width: 100px;
-  padding: 10px 0px 10px 0px !important;
-  text-align: center;
-  height: 55px !important;
-  font-size: 13px;
-  vertical-align: middle !important;
+.content-obra-img {
+  display: flex;
+  margin: 0 auto;
 }
 
-td .img {
-  padding: 5px 5px 5px 5px !important;
+.content-obra-img img {
+  width: 100% !important;
+  height: 100% !important;
 }
 
-.text-news-back {
-  padding: 0 !important;
-  margin: 0 !important;
-  width: 50px;
-  height: 40px;
-  padding: 0;
-  overflow: hidden !important;
-  margin: 0 !important;
-}
-
-.text-news-back div {
-  width: 30px !important;
-  overflow: hidden;
-  padding: 0px !important;
-  margin: 0 auto !important;
-}
-
-.ellipsis {
-  width: 100px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis !important;
-  margin: auto;
-}
-
-table th {
-  text-align: center;
-  width: 150px;
-}
-
-.cta {
-  width: 45px !important;
-  padding: 0.75em 0.25em 0.75em 0.25em !important;
-}
-
-.timestamp {
-  padding: 0 !important;
-}
-
-.timestamp div {
-  width: 139 !important;
+.content-pintura-data {
+  margin: 0 auto;
 }
 

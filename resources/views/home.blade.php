@@ -1,30 +1,28 @@
 @extends('layouts.app')
 
-
-
 @section('content')
-<main class="content-admin">
+<main class="content-framework-2">
+    <div class="content-menu card">
+        <div class="admin-menu">
+            <nav>
+                <li><a href="{{url('/obra')}}">Obra</a></li>
 
-    <br><br><br>
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <li><a href="{{url('/obra/create')}}">Pujar obra</a></li>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                <li><a href="{{url('/actualidad')}}">Noticies</a></li>
 
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
+                <li> <a href="{{url('/actualidad/create')}}">Pujar Noticies</a></li>
+
+                <li><a href="{{url('/register')}}">Crear nou usuari</a></li>
+            </nav>
         </div>
     </div>
-</div>
-</main
+
+    <div class="content-admin">
+
+    <br><br><br>
+
+</main>
 
 @endsection
 

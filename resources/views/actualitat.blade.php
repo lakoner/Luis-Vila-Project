@@ -8,7 +8,7 @@
             <a href="{{url('/noticia/'.$actualidad->id)}}">
                 <div class="content-news card">
                     <div class="content-image-news card">
-                        <img  src="{{asset('storage').'/'.$actualidad->image}}" alt="">
+                        <img src="{{asset('storage').'/'.$actualidad->image}}" alt="">
                     </div>
                     <div class="content-data-news">
                         <h1>{{$actualidad->title}}</h1>

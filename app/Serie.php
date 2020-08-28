@@ -6,10 +6,18 @@ use Illuminate\Database\Eloquent\Model;
 
 class Serie extends Model
 {
-    protected $fillable = ['name'];
+    protected $fillable = ['name','year'];
 
-    public function categorias()
+    public function obra()
     {
-        return $this->belongsTo(Categoria::class);
+    return $this->belongsTo(Obra::class);
     }
+
+    // static function filter(){
+
+    //     $series = Serie::filterBySerie($categoria->id);
+
+    //     return $series;
+    // }
+
 }

@@ -3,41 +3,63 @@
 
 @section('content')
 
-<main class="content-framework-2">
-    <div class="content-menu card">
-        <div class="admin-menu">
-            <nav>
-                <li><a href="{{url('/obra')}}">Obra</a></li>
+    <div class="row">
+        <div class="col-md-2 admin-panel">
 
-                <li><a href="{{url('/obra/create')}}">Pujar obra</a></li>
 
-                <li><a href="{{url('/actualidad')}}">Noticies</a></li>
+                    <br><br><br><br><br><br>
+                    <ul class="nav nav-pils nav-stacked">
+                        <li><a href="{{url('/obra')}}">Obra</a></li>
+                        <li><a href="{{url('/obra/create')}}">Pujar obra</a></li>
+                        <li><a href="{{url('/actualidad')}}">Noticies</a></li>
+                        <li> <a href="{{url('/actualidad/create')}}">Pujar Noticies</a></li>
+                        <li class="bottom"><a href="{{url('/register')}}">Crear nou usuari</a></li>
+                    </ul>
 
-                <li> <a href="{{url('/actualidad/create')}}">Pujar Noticies</a></li>
 
-                <li><a href="{{url('/register')}}">Crear nou usuari</a></li>
-            </nav>
+
+
         </div>
-    </div>
 
-    <div class="content-admin">
-        <br><br>
-            <h1>Noticias</h1>
-                <a href="{{url('/actualidad/create')}}"><button class="btn btn-success float-right">Crear Noticia</button><br><br><br></a>
+
+        <div class="col-md-10 content-admin">
+            <br><br><br><br><br><br>
+
+
+                <h1><b> Noticies</b>
+
+            <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
+                <label class="btn btn-secondary">
+                    <a href="{{url('/actualitat')}}">
+                        <input type="radio" name="options" id="option1" checked> Vista previa
+                    </a>
+                </label>
+                <label class="btn btn-secondary">
+                    <a href="{{url('/actualidad/create')}}">
+                        <input type="radio" name="options" id="option2"> Nova Noticia
+                    </a>
+                </label>
+            </div>
+        </h1>
+
+            <br><br><br>
+
             <table class="table">
+            <thead class="thead-dark">
                 <tr>
                     <th>Imagen</th>
                     <th class="thTitulo">Titulo</th>
                     <th>Subtitulo</th>
-                    <th>Texto</th>
+                    <th class="th-small">Texto</th>
                     <th>Fecha </th>
                     <th>Creación</th>
                     <th>Modificación</th>
-                    <th class="cta">Editar</th>
-                    <th class="cta">Eliminar</th>
+                    <th class="th-small">Editar</th>
+                    <th class="th-small">Eliminar</th>
                 </tr>
+            </thead>
 
-        @foreach($actualidades as $actualidad)
+            @foreach($actualidades as $actualidad)
 
                 <tr>
                     <td class="img">
@@ -58,12 +80,12 @@
                     <td>{{$actualidad->date}}</td>
                     <td class="timestamp"><div >{{$actualidad->created_at}}</div></td>
                     <td>{{$actualidad->updated_at}}</td>
-                    <td class="cta"><a href="{{Route('actualidad.edit', $actualidad->id)}}"><button class="button-edit">
-                        <i class="far fa-edit"></i> </a>
+                    <td class="cta"><a href="{{Route('actualidad.edit', $actualidad->id)}}">
+                        <button class="button-edit btn btn-primary"><i class="far fa-edit"></i></button> </a>
                     </td>
                     <td class="cta">
                         <form action="{{Route('actualidad.destroy', $actualidad->id)}}" method="post"> @method('delete')@csrf
-                            <button class="button-delete" onclick="return confirm ('¿Estas segura de borrar esta noticia?')">
+                            <button class="btn btn-danger button-delete" onclick="return confirm ('¿Estas segura de borrar esta noticia?')">
                             <i class="far fa-trash-alt"></i>
                         </form>
                     </td>
@@ -106,10 +128,11 @@
                         </div>
                     </div>
                 </div>
-        @endforeach
+            @endforeach
 
             </table>
         </div>
     </div>
-</main>
+
+
 @endsection

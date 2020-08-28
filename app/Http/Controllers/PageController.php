@@ -5,10 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Actualidad;
 use App\Obra;
+use App\Serie;
+use App\Categoria;
 
 class PageController extends Controller
 {
-
 
     public function obras()
     {
@@ -21,9 +22,22 @@ class PageController extends Controller
     }
     public function pintura()
     {
-        $obras = Obra::all();
 
-        return view('pintura',compact('obras'));
+        $categoria_pintura = Categoria::id('Pintura');
+
+        $obras = Obra::filterByCategory($categoria_pintura);
+        $series = Serie::all();
+
+        return view('pintura',compact('obras','series'));
+    }
+
+    public function filter(Request $request)
+    {
+        $series = Serie::filterBySerie($request->categoria_id);
+
+
+        return view('pintura',compact('series','obras'));
+
     }
     public function escultura()
     {
@@ -33,7 +47,6 @@ class PageController extends Controller
     {
         return view('eat_art');
     }
-
 
 
     public function biografia()
@@ -61,6 +74,10 @@ class PageController extends Controller
     {
         return view('contactar');
     }
+
+
+
+
 
 
 }
