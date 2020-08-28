@@ -11313,10 +11313,6 @@ body {
   height: 75px;
 }
 
-nav {
-  position: fixed;
-}
-
 .navbar-brand {
   color: white !important;
 }
