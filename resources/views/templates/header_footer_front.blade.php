@@ -39,11 +39,11 @@
         <div class="header">
             <div class="menu"><h1 class="logo"><a href="{{url('/')}}">LLUÍS VILÀ</a></h1>
                 <nav>
-                    <a href="{{url('/obras/')}}">OBRA</a>
-                    <a href="{{url('/biografia/')}}">BIOGRAFÍA</a>
-                    <a href="{{url('/actualitat/')}}">ACTCUALITAT</a>
-                    <a href="{{url('/prensa/')}}">PRENSA</a>
-                    <a href="{{url('/contactar/')}}">CONTACTAR</a>
+                    <a class="{{'obras' == request()->path() ? 'active-front' : '' }}" href="{{url('/obras/')}}">OBRA</a>
+                    <a class="{{'obras' == request()->path() ? 'active-front' : '' }}" href="{{url('/biografia/')}}">BIOGRAFÍA</a>
+                    <a class="{{'obras' == request()->path() ? 'active-front' : '' }}" href="{{url('/actualitat/')}}">ACTCUALITAT</a>
+                    <a class="{{'obras' == request()->path() ? 'active-front' : '' }}" href="{{url('/prensa/')}}">PRENSA</a>
+                    <a class="{{'obras' == request()->path() ? 'active-front' : '' }}" href="{{url('/contactar/')}}">CONTACTAR</a>
                 </nav>
                 <div class="lang">
                     <a href="">CAT</a>

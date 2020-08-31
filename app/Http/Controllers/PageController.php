@@ -20,28 +20,35 @@ class PageController extends Controller
     {
         return view('eat_art');
     }
-    public function pintura()
+    public function pintura(Request $request)
     {
-
         $categoria_pintura = Categoria::id('Pintura');
 
         $obras = Obra::filterByCategory($categoria_pintura);
-        $series = Serie::all();
+
+        $series = Serie::whereIn('id',[1,2,3,4,5,6,7,8,9])->get();
 
         return view('pintura',compact('obras','series'));
     }
 
-    public function filter(Request $request)
+    public function filterSerie(Request $request)
     {
-        $series = Serie::filterBySerie($request->categoria_id);
+        $obras = Obra::filterBySerie($request->serie_id);
 
-
-        return view('pintura',compact('series','obras'));
-
+        $series = Serie::whereIn('id',[1,2,3,4,5,6,7,8,9])->get();
+        return view('/pintura',compact('series','obras'));
     }
+
+
     public function escultura()
     {
-        return view('escultura');
+        $categoria_escultura = Categoria::id('Escultura');
+
+        $obras = Obra::filterByCategory($categoria_escultura);
+        $series = Serie::all();
+
+        return view('escultura',compact('obras','series'));
+
     }
     public function diseño()
     {

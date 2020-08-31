@@ -5,37 +5,66 @@
 <div class="content-admin">
 
 
-    <div class="actualidad-content">
+<div class="actualidad-content">
             <div class="content-header">
-                <h1><b>Obres</b>
-                    <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-                        <label class="btn btn-secondary">
-                            <a href="{{url('/obra')}}" target="_blank">
-                                <input type="radio" name="options" id="option1" > Vista previa
-                            </a>
-                        </label>
-                        <label class="btn btn-secondary">
-                            <a href="{{url('/obra/create')}}">
-                                <input type="radio" name="options" id="option2"> Nova Obra
-                            </a>
-                        </label>
-                    </div>
-                </h1>
-            </div>
 
+ <form action="{{Route('obra.filter')}}">
+               <h1><i class="fas fa-palette"></i>&nbsp;<b>Obras</b>
+
+               <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
+
+                        <a href="{{url('/obra')}}" target="_blank">
+                            <label class="btn btn-secondary header-left-button">
+                                <b>Vista previa</b>
+                            </label>
+                        </a>
+
+                        <a href="{{url('/obra/create')}}">
+                        <label class="btn btn-secondary btn-header-between-buttons">
+                            <b>Nueva Obra</b>
+                        </label>
+                     </a>
+
+                     <label class="btn btn-secondary btn-header-between-buttons">
+
+                                <select class=" form-control" name="categoria_id">
+                                <option class="selected" hidden>Filtra por Categoria</option>
+
+                                @foreach($categorias as $categoria)
+                                <option value="{{$categoria->id}}">{{$categoria->name}}</option>
+                                @endforeach
+                            </select>
+                        </label>
+
+                        <button class="btn btn-secondary btn-header-between-buttons filter-btn">
+                           Filtrar
+                        </button>
+
+                         <a href="{{url('/obra')}}">
+                         <label class="btn btn-secondary header-right-button">
+                               <b>Todas</b>
+                        </label>
+
+                        </a></h1>
+
+
+             </div></form>
 
             <br><br><br>
 
-            <table class="table">
+
+<div class="content-table">
+     <table class="table">
                 <thead class="thead-dark">
                     <tr>
-                        <th>Imatge</th>
-                        <th>Nom</th>
-                        <th class="th-small">Tecnica</th>
-                        <th class="th-small">Any</th>
-                        <th>Categoría</th>
-                        <th>Creació</th>
-                        <th>Modificació</th>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Técnica</th>
+                        <th class="th-small">Año</th>
+                        <th>Categoria</th>
+                        <th>Serie</th>
+                        <th>Creación</th>
+                        <th>Modificación</th>
                         <th class="th-small">Edita</th>
                         <th class="th-small">Elimina</th>
                     </tr>
@@ -48,20 +77,22 @@
                         <a href="#">
                             <i class="far fa-eye fa-2x" data-toggle="modal" data-target="#image{{ $obra->id }}" data-whatever="@mdo"></i>
                         </a>
-                            <img class="img-news-index" src="{{asset('storage').'/'.$obra->image}}" alt="" name="image">
+                            <img class="img-obras-index" src="{{asset('storage').'/'.$obra->image}}" alt="" name="image">
                     </td>
                     <td>{{$obra->name}}</div></td>
-                    <td><div><a href="">{{$obra->Technique}}</a></div></td>
+                    <td>{{$obra->technique}}</td>
                     <td>{{$obra->year}}</td>
                     <td>{{$obra->categoria->name}}</td>
+                    <td>{{$obra->serie->name}}</td>
+
                     <td class="timestamp"><div >{{$obra->created_at}}</div></td>
                     <td>{{$obra->updated_at}}</td>
                     <td class="cta"><a href="{{Route('obra.edit', $obra->id)}}">
-                        <button class="button-edit btn btn-primary"><i class="far fa-edit"></i></button> </a>
+                        <button class="button-edit btn btn-secondary"><i class="far fa-edit"></i></button> </a>
                     </td>
                     <td class="cta">
                         <form action="{{Route('obra.destroy', $obra->id)}}" method="post"> @method('delete')@csrf
-                            <button class="btn btn-danger button-delete" onclick="return confirm ('¿Esta segur que desitja eliminar {{$obra->name}} de manera permanent?')">
+                            <button class="btn btn-secondary button-delete" onclick="return confirm ('¿Esta segur que desitja eliminar {{$obra->name}} de manera permanent?')">
                             <i class="far fa-trash-alt"></i>
                         </form>
                     </td>
@@ -90,6 +121,8 @@
             @endforeach
 
             </table>
+        </div>
+
 
     </div>
 </div>

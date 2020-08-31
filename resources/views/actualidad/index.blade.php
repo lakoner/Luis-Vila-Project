@@ -12,23 +12,22 @@
             <div class="content-header">
                 <h1><b>Noticies</b>
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-                        <label class="btn btn-secondary">
-                            <a href="{{url('/actualitat')}}" target="_blank">
-                                <input type="radio" name="options" id="option1" > Vista previa
-                            </a>
+                        <a href="{{url('/actualitat')}}" target="_blank">
+                        <label class="btn btn-secondary header-left-button">
+                               Vista previa
+                        </label> </a>
+                          <a href="{{url('/actualidad/create')}}">
+                          <label class="btn btn-secondary header-right-button">
+                                 Nova Noticia
                         </label>
-                        <label class="btn btn-secondary">
-                            <a href="{{url('/actualidad/create')}}">
-                                <input type="radio" name="options" id="option2"> Nova Noticia
-                            </a>
-                        </label>
+                    </a>
                     </div>
                 </h1>
             </div>
 
 
             <br><br><br>
-
+        <div class="content-table">
             <table class="table">
             <thead class="thead-dark">
                 <tr>
@@ -66,11 +65,11 @@
                     <td class="timestamp"><div >{{$actualidad->created_at}}</div></td>
                     <td>{{$actualidad->updated_at}}</td>
                     <td class="cta"><a href="{{Route('actualidad.edit', $actualidad->id)}}">
-                        <button class="button-edit btn btn-primary"><i class="far fa-edit"></i></button> </a>
+                        <button class="button-edit btn btn-secondary"><i class="far fa-edit"></i></button> </a>
                     </td>
                     <td class="cta">
                         <form action="{{Route('actualidad.destroy', $actualidad->id)}}" method="post"> @method('delete')@csrf
-                            <button class="btn btn-danger button-delete" onclick="return confirm ('¿Estas segura de borrar esta noticia?')">
+                            <button class="btn btn-secondary button-delete" onclick="return confirm ('¿Estas segura de borrar esta noticia?')">
                             <i class="far fa-trash-alt"></i>
                         </form>
                     </td>
@@ -116,6 +115,7 @@
             @endforeach
 
             </table>
+        </div>
 
     </div>
 </div>

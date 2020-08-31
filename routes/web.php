@@ -24,8 +24,6 @@ Route::get('adminupayp1b4', 'Auth\LoginController@showLoginForm')->name('adminup
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('/obras','PageController@obras');
 
 Route::get('/eat_art','PageController@eat_art');
@@ -44,13 +42,17 @@ Route::resource('obra', 'ObraController')->middleware('auth');
 
 Route::resource('actualidad', 'ActualidadController')->middleware('auth');
 
-Route::resource('serie','SerieController')->middleware('auth');
-
 Route::get('/filter', 'ObraController@filter')->name('obra.filter');
 
-// Route::get('/filter', 'PageController@filter')->name('serie.filter');
+Route::get('/filterSerie', 'PageController@filterSerie')->name('serie.filterSerie');
 
 Route::get('/pintura','PageController@pintura');
+
+Route::get('/escultura','PageController@escultura');
+
+
+
+
 
 
 

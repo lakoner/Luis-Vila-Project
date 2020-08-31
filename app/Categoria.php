@@ -14,6 +14,11 @@ class Categoria extends Model
     return $this->hasMany(Obra::class);
     }
 
+    public function series()
+    {
+    return $this-belongsTo(Serie::class);
+    }
+
     static function filterByCategory($id)
     {
 

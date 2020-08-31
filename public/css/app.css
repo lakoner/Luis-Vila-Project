@@ -10992,6 +10992,10 @@ nav a:focus {
   color: black;
 }
 
+.active-front {
+  color: black !important;
+}
+
 footer {
   width: 100% !important;
   display: flex;
@@ -11079,6 +11083,83 @@ footer {
   margin: 5px 0px 0px 50px;
 }
 
+#app {
+  box-sizing: border-box;
+}
+
+#app a {
+  color: white;
+}
+
+.py-4 {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+}
+
+.navbar {
+  background-color: #545b62 !important;
+  height: 75px;
+  position: fixed !important;
+  z-index: 2;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.dropdown-menu {
+  background-color: #545b62 !important;
+}
+
+.dropdown-menu a:hover {
+  background-color: #6c757d !important;
+}
+
+.dropdown-item {
+  text-align: center;
+}
+
+.admin-panel {
+  width: 20%;
+  height: 100%;
+  float: left;
+  position: fixed;
+  padding: 0 !important;
+  border-right: solid 1px grey;
+  background-color: #6c757d;
+}
+
+.admin-panel ul {
+  margin-top: 27px;
+}
+
+.admin-panel ul li {
+  height: 40px;
+  color: white;
+  width: 100% !important;
+  padding: 0px 0px 0px 70px;
+  border-top: solid 1px white;
+  border-right: none;
+}
+
+.link-a {
+  width: 100% !important;
+  text-align: left;
+  line-height: 40px;
+  color: white;
+}
+
+.admin-panel div {
+  margin-top: 113px;
+}
+
+.admin-panel div h1 {
+  padding: 0px 25px 0px 25px;
+  text-align: center;
+  color: white;
+}
+
 nav {
   width: 100% !important;
   margin: 0 !important;
@@ -11086,10 +11167,21 @@ nav {
   z-index: 1;
 }
 
-.py-4 {
-  width: 100% !important;
-  height: 100% !important;
-  padding: 0 !important;
+.bottom {
+  border-bottom: solid 1px white;
+}
+
+li:hover {
+  background-color: #545b62;
+  cursor: pointer;
+}
+
+.active-back {
+  background-color: #545b62 !important;
+}
+
+.active-back a {
+  color: white;
 }
 
 .welcome {
@@ -11284,8 +11376,15 @@ nav {
 .img-obras-index {
   width: 50px;
   height: 50px;
-  margin-right: 20px;
   vertical-align: middle !important;
+}
+
+.img-obra-edit {
+  width: 120px;
+  height: 120px;
+  float: right;
+  clear: left;
+  top: 0;
 }
 
 .img-news-index {
@@ -11324,11 +11423,6 @@ body {
   margin-top: 5px;
 }
 
-.actualidad-content table {
-  margin-top: 100px !important;
-  z-index: -2;
-}
-
 .content-header {
   height: 110px;
   z-index: 1;
@@ -11339,11 +11433,75 @@ body {
   padding: 0px 25px 0px 25px;
   float: right !important;
   position: fixed;
-  background-color: #dbd5d5;
+  background-color: #e7e1e1;
 }
 
 .content-header h1 {
   margin-top: 35px;
+  font-weight: bold;
+  color: #545b62;
+}
+
+label {
+  color: black;
+  font-size: 16px;
+}
+
+input {
+  border-color: black !important;
+}
+
+select {
+  border-color: black !important;
+  color: black;
+}
+
+.filter-button {
+  padding: 5px 10px 5px 10px !important;
+}
+
+.input-button {
+  border: none !important;
+}
+
+.btn-group {
+  margin-top: 5px;
+  float: right;
+}
+
+.btn-group label {
+  line-height: 35px;
+}
+
+.btn-group a {
+  color: white;
+}
+
+.content-table {
+  padding: 0px 25px 0px 25px;
+}
+
+.create {
+  margin-top: 80px !important;
+  padding: 50px 50px 0px 50px;
+  background-color: #dbd5d5;
+}
+
+.create form {
+  margin: 0;
+}
+
+.create form .card {
+  border: solid 1px #545b62;
+}
+
+.create form .card input {
+  border: solid 1px #dbd5d5;
+}
+
+.actualidad-content table {
+  margin-top: 100px !important;
+  z-index: -2;
 }
 
 .actualidad-content {
@@ -11355,90 +11513,6 @@ body {
   margin-top: 75px;
   float: right;
   position: relative;
-}
-
-#app {
-  box-sizing: border-box;
-}
-
-#app a {
-  color: white;
-}
-
-.dropdown-menu {
-  background-color: #545b62 !important;
-}
-
-.dropdown-menu a:hover {
-  background-color: #6c757d !important;
-}
-
-.navbar {
-  background-color: #545b62 !important;
-  height: 75px;
-  position: fixed !important;
-  z-index: 1;
-}
-
-.navbar-brand {
-  color: white !important;
-}
-
-.admin-panel {
-  width: 20%;
-  height: 100%;
-  float: left;
-  position: fixed;
-  padding: 0 !important;
-  border-right: solid 1px grey;
-  background-color: #6c757d;
-}
-
-.admin-panel ul {
-  margin-top: 27px;
-}
-
-.admin-panel ul li {
-  height: 40px;
-  color: white;
-  width: 100% !important;
-  padding: 0;
-  border-top: solid 1px white;
-  border-right: none;
-}
-
-.admin-panel ul li a {
-  padding-left: 70px;
-  line-height: 40px;
-  color: white;
-}
-
-.admin-panel div {
-  margin-top: 113px;
-}
-
-.admin-panel div h1 {
-  padding: 0px 25px 0px 25px;
-  text-align: center;
-  color: white;
-}
-
-.bottom {
-  border-bottom: solid 1px white;
-}
-
-li:hover {
-  background-color: #545b62;
-  cursor: pointer;
-}
-
-.btn-group {
-  margin-top: 5px;
-  float: right;
-}
-
-.btn-group a {
-  color: white;
 }
 
 td {
@@ -11497,34 +11571,23 @@ table th {
   width: 139 !important;
 }
 
-.actualidad-create {
-  margin-top: 80px !important;
-  padding: 50px 50px 0px 50px;
-  background-color: #dbd5d5;
+.header-left-button {
+  border-radius: 6px 0px 0px 6px !important;
+  height: 51px;
 }
 
-.actualidad-create form {
-  margin: 0;
+.edit-new-button {
+  border-radius: 0px 4px 4px 0px !important;
 }
 
-.actualidad-create form .card {
-  border: solid 1px #545b62;
+.btn-header-between-buttons {
+  border-radius: 0 !important;
+  height: 51px !important;
 }
 
-.actualidad-create form .card input {
-  border: solid 1px #dbd5d5;
-}
-
-select {
-  overflow: auto !important;
-}
-
-.border-none {
-  border: none !important;
-}
-
-.form-group {
-  padding: 20px !important;
+.header-right-button {
+  border-radius: 0px 6px 6px 0px !important;
+  height: 51px;
 }
 
 .categorias-obra-index {
@@ -11533,6 +11596,68 @@ select {
 
 .categorias-obra-index select {
   width: 20%;
+}
+
+.filter {
+  height: 28px;
+  width: 150px;
+  border: none !important;
+}
+
+.filter-btn {
+  background-color: #6c757d;
+  color: white;
+  height: 51px !important;
+  font-weight: bold;
+}
+
+.content-btn {
+  padding: 0;
+}
+
+.filter-btn:hover {
+  background-color: #5a6268;
+}
+
+.form-cards {
+  padding: 20px !important;
+  height: 151px !important;
+}
+
+.card-image-edit {
+  height: 151px !important;
+}
+
+.card-image-edit div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image-create {
+  height: 151px !important;
+}
+
+.form-file-edit {
+  padding: 10 !important;
+}
+
+.file {
+  border: none !important;
+  padding-left: 20px !important;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-buttons {
+  display: flex;
+}
+
+.footer-buttons div {
+  margin-left: 25px;
 }
 
 .fondo-login {
@@ -11777,6 +11902,17 @@ h3 {
 .volca:hover h3 {
   opacity: 1;
   line-height: 735px;
+}
+
+.filter-series {
+  width: auto !important;
+  height: 28px !important;
+}
+
+.filter-series select {
+  margin: 0 !important;
+  width: 160px;
+  color: black;
 }
 
 .content-news {

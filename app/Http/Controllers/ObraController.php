@@ -6,7 +6,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Categoria;
 use App\Obra;
-use app\Serie;
+use App\Serie;
 use Illuminate\Support\Facades\Storage;
 
 class ObraController extends Controller
@@ -16,22 +16,23 @@ class ObraController extends Controller
     {
         $obras = Obra::all();
         $categorias = Categoria::all();
+
         return view('obra.index',compact('categorias','obras'));
 
 
 
     }
+
+
 
     public function filter(Request $request)
     {
         $obras = Obra::filterByCategory($request->categoria_id);
 
-
         $categorias = Categoria::all();
         return view('obra.index',compact('categorias','obras'));
 
     }
-
 
     public function create()
     {

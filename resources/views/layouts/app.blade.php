@@ -62,7 +62,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                       <i class="fas fa-sign-out-alt"></i> {{ __('Cerrar session') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -77,15 +77,17 @@
         </nav>
         <div class="admin-panel">
 
-                    <div><h1><b>Lluís Vilà</b></h1></div>
+
+                    <div><h1><b>{{ auth()->user()->name }} </b></h1></div>
+
 
 
                     <ul class="nav nav-pils nav-stacked">
-                        <li><a href="{{url('/obra')}}"><i class="fas fa-palette"></i>&nbsp;<b>Obres</b></a></li>
-                        <li><a href="{{url('/obra/create')}}"><i class="fas fa-upload"></i>&nbsp;<b>Pujar una Obra</b></a></li>
-                        <li><a href="{{url('/actualidad')}}"><i class="fas fa-newspaper"></i>&nbsp;<b>Noticies</b></a></li>
-                        <li> <a href="{{url('/actualidad/create')}}"><i class="fas fa-upload"></i>&nbsp;<b>Pujar una Noticia</b></a></li>
-                        <li class="bottom"><a href="{{url('/register')}}"><i class="fas fa-user"></i>&nbsp;<b>Usuaris</b></a></li>
+                    <a class="link-a" href="{{url('/obra')}}"><li class="{{'obra' == request()->path() ? 'active-back' : '' }}"><i class="fas fa-palette"></i>&nbsp;<b>Obras</b></li></a>
+                    <a class="link-a" href="{{url('/obra/create')}}"> <li class="{{'obra/create' == request()->path() ? 'active-back' : '' }}"><i class="fas fa-upload"></i>&nbsp;<b>Nueva Obra</b></a></li>
+                    <a class="link-a" href="{{url('/actualidad')}}"> <li class="{{'actualidad' == request()->path() ? 'active-back' : '' }}"><i class="fas fa-newspaper"></i>&nbsp;<b>Noticias</b></a></li>
+                    <a class="link-a" href="{{url('/actualidad/create')}}"> <li class="{{'actualidad/create' == request()->path() ? 'active-back' : '' }}"> <i class="fas fa-upload"></i>&nbsp;<b>Nueva Noticia</b></a></li>
+                    <a class="link-a" href="{{url('/register')}}"><li class="{{'register' == request()->path() ? 'active-back' : '' }} bottom"><i class="fas fa-user"></i>&nbsp;<b>Usuaris</b></a></li>
                     </ul>
         </div>
 

@@ -1,5 +1,8 @@
 @extends('templates.header_footer_front')
 
+@section('content')
+
+
 <body>
   <main class="content-framwork-1">
       <div class="FilaDeImg">
@@ -143,9 +146,7 @@
 
 
 
-@section('content')
 
-@endsection
 
 
 
