@@ -1,55 +1,58 @@
 @extends('templates.header_footer_front')
 
 @section('content')
+<body onload="menuEscultura()">
+
+
 <div class="content-framwork-1">
-    <div class="inter-menu">
-        <nav>
-            <a href="">Eat Art</a>
-            <a href="">Disseny</a>
-            <a href="">Escultura</a>
-            <a href="">Pintura</a>
-            <a href="">Volcà</a>
+        <div class="inter-menu">
+            <nav>
+                <a id="eat_art" href="{{url('/eat_art')}}">Eat Art</a>
+                <a id="diseño" href="{{url('/diseño')}}">Diseño</a>
+                <a id="escultura" href="{{url('/escultura')}}">Escultura</a>
+                <a id="pintura" href="{{url('/pintura')}}">Pintura</a>
+                <a id="volcan" href="{{url('/volcan')}}">volcan</a>
+            </nav>
+        </div><br><br>
 
-        </nav>
-    </div>
-    <br><br>
 
-    <!-- <form action="">
-        <label for="">Filtrar Serie</label>
-            <select class="form-control" name="categoria_id">
-                <option hidden selected> </option>
+        <div class="content-obras">
+            @foreach($obras as $obra)
+            <div class="box">
+            <a href="#"> <img class="obra-img" src="{{asset('storage').'/'.$obra->image}}" data-toggle="modal" data-target="#image{{ $obra->id }}" data-whatever="@mdo" alt="" name="image"></a>
+                <div class="content-info">
+                     <div class="name"> <h4><b>{{$obra->name}}</b></h4></div>
+                    <div> <h4><b>{{$obra->technique}}</b></h4></div>
+                    <div> <h4><b>{{$obra->serie->name}}</b></h4></div>
 
-                @foreach($series as $serie)
-                <option value="{{$serie->id}}">{{$serie->name}}</option>
-                @endforeach
-            </select>
-            <br>
-            <input class="btn btn-primary" type="submit" value="filtrar"><a href="{{url('/actualidad/create')}}"><button class="btn btn-success float-right">Crear Noticia</button><br><br><br></a>
+
+                </div>
             </div>
 
-     </form> -->
-<div class="content-obra-img">
-    @foreach($obras as $obra)
+            <div class="modal fade" id="image{{ $obra->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header modal-close">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal-img" src="{{asset('storage').'/'.$obra->image}}" alt="" name="image">
 
-<div class="content-pintura-data">
-    <div class="content-pintura-img">
-        <img class="img-pintura" src="{{asset('storage').'/'.$obra->image}}" alt="" name="image">
-    </div>
-    <h4><b>{{$obra->name}}</b></h4>
-    <h6>{{$obra->categoria->name}}</h6>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tanca</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            @endforeach
+        </div>
 </div>
-
-
-
-
-
-
-
-
-
-    @endforeach
-</div>
-</div>
+</body>
 @endsection
 
 

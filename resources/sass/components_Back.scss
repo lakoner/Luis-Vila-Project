@@ -26,6 +26,10 @@ vertical-align: middle!important;
 .fa-long-arrow-alt-left{
     margin-top:5px;
 }
+.icon-edit-header{
+    color:#545b62;
+
+}
 
 //COMPONENTS---------------------------------------------------------------------------------------------------------//
 .content-header{
@@ -151,11 +155,13 @@ td{
 .ellipsis{
     width: 100px;
 
+
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis!important;
     margin: auto;
 }
+
 
 table th{
     text-align: center;

@@ -232,11 +232,17 @@ padding: 15px 0px 15px 0px;
 .admin-panel div{
     margin-top:113px;
     h1{
-        padding: 0px 25px 0px 25px;
-        text-align: center;
-        color:white;
+    padding: 0px 25px 0px 25px;
+    text-align: center;
+    color:white;
     }
+
 }
+
+.admin-panel li:hover{
+        background-color: #545b62;
+        cursor:pointer;
+        }
 
  nav{
      width: 100%!important;
@@ -248,10 +254,7 @@ padding: 15px 0px 15px 0px;
  .bottom{
     border-bottom:solid 1px white;
 }
-li:hover{
-    background-color: #545b62;
-    cursor:pointer;
-}
+//
 
 
 .active-back{

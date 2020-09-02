@@ -10,7 +10,7 @@
 
     <div class="actualidad-content">
             <div class="content-header">
-                <h1><b>Noticies</b>
+                <h1><i class="fas fa-newspaper"></i>&nbsp;<b>Noticias</b>
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
                         <a href="{{url('/actualitat')}}" target="_blank">
                         <label class="btn btn-secondary header-left-button">
@@ -52,8 +52,8 @@
                         </a>
                             <img class="img-news-index" src="{{asset('storage').'/'.$actualidad->image}}" alt="" name="image">
                     </td>
-                    <td><div class="ellipsis"><a href="#">{{$actualidad->title}}</a></div></td>
-                    <td><div><a href="">{{$actualidad->subtitle}}</a></div></td>
+                    <td><div class="ellipsis">{{$actualidad->title}}</div></td>
+                    <td><div class="ellipsis">{{$actualidad->subtitle}}</div></td>
                     <td class="text-news-back">
                         <div>
                             <a href="#">
@@ -76,43 +76,50 @@
                 </tr>
 
                 <div class="modal fade" id="image{{ $actualidad->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content ">
+                            <div class="modal-header modal-close-actualidad">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal-img-actualidad" src="{{asset('storage').'/'.$actualidad->image}}" alt="" name="image">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tanca</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="text{{ $actualidad->id }}" data-backdrop="static" data-keyboard="false" tabindex="-1"  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content modal-lg">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body-news">
-                                <img class="img-news-index" src="{{asset('storage').'/'.$actualidad->image}}" alt="" name="image">
+                            <div class="modal-body">
+                                <div class="text"> {{$actualidad->text}}</div>
 
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Tanca</button>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal fade" id="text{{ $actualidad->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body-news">
-                            {{$actualidad->text}}
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tanca</button>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+
             @endforeach
+
+
+
 
             </table>
         </div>

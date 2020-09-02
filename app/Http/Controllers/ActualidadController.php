@@ -48,8 +48,11 @@ class ActualidadController extends Controller
     {
 
         $actualidades = Actualidad::noticia($actualidad->id);
+        $noticiaSlide = Actualidad::orderBy('date', 'desc')
+        ->get();
 
-        return view('noticia',compact('actualidades'));
+
+        return view('noticia',compact('actualidades','noticiaSlide'));
     }
 
 

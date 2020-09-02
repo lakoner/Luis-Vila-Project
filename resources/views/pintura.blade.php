@@ -1,63 +1,57 @@
 @extends('templates.header_footer_front')
 
 @section('content')
+<body onload="menuPintura()">
+
+
 <div class="content-framwork-1">
-    <div class="inter-menu">
-        <nav>
-            <a href="">Eat Art</a>
-            <a href="">Disseny</a>
-            <a href="">Escultura</a>
-            <a class="active" href="">Pintura</a>
-            <a href="">Volcà</a>
-
-        </nav>
-    </div>
-    <br><br>
+        <div class="inter-menu">
+            <nav>
+                <a id="eat_art" href="{{url('/eat_art')}}">Eat Art</a>
+                <a id="diseño" href="{{url('/diseño')}}">Diseño</a>
+                <a id="escultura" href="{{url('/escultura')}}">Escultura</a>
+                <a id="pintura" href="{{url('/pintura')}}">Pintura</a>
+                <a id="volcan" href="{{url('/volcan')}}">volcan</a>
+            </nav>
+        </div><br><br>
 
 
-               <div class="filter-series float-right">
+        <div class="content-obras">
+            @foreach($obras as $obra)
+            <div class="box">
+            <a href="#"> <img class="obra-img" src="{{asset('storage').'/'.$obra->image}}" data-toggle="modal" data-target="#image{{ $obra->id }}" data-whatever="@mdo" alt="" name="image"></a>
+                <div class="content-info">
+                     <div class="name"> <h4><b>{{$obra->name}}</b></h4></div>
+                    <div> <h4><b>{{$obra->technique}}</b></h4></div>
+                    <div> <h4><b>{{$obra->serie->name}}</b></h4></div>
 
-               <form action="{{Route('serie.filterSerie')}}">
 
-               <label class="btn btn-secondary">
-               <select class="form-group" name="serie_id">
-                            <option hidden selected> Filtra por Series</option>
-                                @foreach($series as $serie)
-                                <option value="{{$serie->id}}">{{$serie->name}}</option>
-                                @endforeach
-                            </select>
-                            </label>
-                            <label class="btn btn-secondary">
-                            <input class="filter-btn" type="submit" value="Filtra">
-                            </label>
-                </form>
+                </div>
             </div>
+
+            <div class="modal fade" id="image{{ $obra->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header modal-close">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal-img" src="{{asset('storage').'/'.$obra->image}}" alt="" name="image">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tanca</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            @endforeach
         </div>
-
-
-
-
-
-<div class="content-obra-img">
-    @foreach($obras as $obra)
-
-<div class="content-pintura-data">
-    <div class="content-pintura-img">
-        <img class="img-pintura" src="{{asset('storage').'/'.$obra->image}}" alt="" name="image">
-    </div>
-    <h4><b>{{$obra->name}}</b></h4>
-    <h6>{{$obra->categoria->name}}</h6>
-    <h6>{{$obra->serie->name}}</h6>
 </div>
 
-
-
-
-
-
-
-
-
-    @endforeach
-</div>
+</body>
 @endsection

@@ -100,14 +100,14 @@
 
                 <div class="modal fade" id="image{{ $obra->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
-                        <div class="modal-content modal-lg">
-                            <div class="modal-header">
+                        <div class="modal-content">
+                            <div class="modal-header modal-close-obras">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <img class="img-news-index" src="{{asset('storage').'/'.$obra->image}}" alt="" name="image">
+                                <img class="modal-img" src="{{asset('storage').'/'.$obra->image}}" alt="" name="image">
 
                             </div>
                             <div class="modal-footer">

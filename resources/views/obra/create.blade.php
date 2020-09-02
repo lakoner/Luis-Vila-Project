@@ -21,12 +21,11 @@
 <div class="create">
 <form class="form-group" method="POST" action="{{Route('obra.store')}}" enctype="multipart/form-data">
             @csrf
-            @method('patch')
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
                         <br><div class="form-group form-cards">
-                            <label for="">Nom </label>
+                            <label for="">Nombre </label>
                             <input class="form-control" type="text" name="name">
                         </div>
                     </div>
@@ -135,12 +134,14 @@
 
                 <div class="col-md-12"><br><br>
                     <div class="card-footer footer-buttons">
-                        <input type="submit" class="btn btn-secondary input-button" value="Nueva Obra"/>
-    </form>
+                        <input type="submit" class="btn btn-secondary input-button" value="Nueva Obra">
+
 
                     </div>
-                    <br><br>
                 </div>
+                </form>
+                    <br><br>
+
 
     </div>
 

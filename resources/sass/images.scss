@@ -70,15 +70,50 @@
     background-size: cover;
 
  }
-//pintura
-.content-pintura-img{
-    width: 350px;
-     height:350px;
-     padding: 10px;
-}
- .img-pintura{
-    width: 100%;
-    height:100%;
+
+ //volca
+
+ .volca1{
+    width: 385px;
+    height: 350px;
+    background-image: url("/img/volca/volca1.jpg");
+    background-size: cover;
+
+ }
+ .volca2{
+    width: 385px;
+    height: 350px;
+    background-image: url("/img/volca/volca3.jpg");
+    background-size: cover;
+    margin: 0px 30px 0px 30px;
+
+ }
+ .volca3{
+    width: 385px;
+    height: 350px;
+    background-image: url("/img/volca/volca2.jpg");
+    background-size: cover;
+ }
+    .volca4{
+        width: 385px;
+        height: 350px;
+        background-image: url("/img/volca/volca4.jpg");
+        background-size: cover;
+
+     }
+     .volca5{
+        width: 385px;
+        height: 350px;
+        background-image: url("/img/volca/volca5.jpg");
+        background-size: cover;
+        margin: 0px 30px 0px 30px;
+
+     }
+     .volca6{
+        width: 385px;
+        height: 350px;
+        background-image: url("/img/volca/volca6.jpg");
+        background-size: cover;
  }
 
  //actualidad
@@ -88,8 +123,25 @@
     height: 200px;
 
  }
+
+ //Modals
+
+ .img-modal{
+     width: 500px;
+     height:460px;
+ }
  //BACK
 
+ //components
+
+ .img-edit{
+    width: 140px;
+    height:120px;
+    float: right;
+    clear:left;
+
+
+}
  //obras
 
  .img-obras-index{
@@ -99,15 +151,9 @@
     vertical-align: middle!important;
 
  }
- //obras-edit
+ //edit
 
- .img-obra-edit{
-     width: 120px;
-     height:120px;
-     float: right;
-     clear:left;
-     top:0;
- }
+
 
  //actuaidad
 
@@ -118,6 +164,49 @@
     vertical-align: middle!important;
 
  }
+//noticia
+
+.img-noticia{
+    width: 100%;
+}
+.img-slide{
+    padding: 0px 0px 5px 25px;
+}
+
+
+//prensa
+.prensa-content-img{
+    width: 33%;
+
+    border:solid 1px #545b62;
+    box-sizing: content-box;
+    img{
+        width: 100%;
+    }
+
+}
+.prensa-content-img-middle{
+    width: 33%;
+
+    margin: 0px 30px 0px 30px;
+    border:solid 1px #545b62;
+    box-sizing: content-box;
+    img{
+        width: 100%;
+    }
+
+
+}
+.lluis_coromina{
+    width: 100%!important;
+    padding: 100px;
+    margin:0 auto!important;
+
+}
+.lluis_coromina img{
+    width: 70%!important;
+
+}
 
 
 

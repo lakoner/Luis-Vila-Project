@@ -52,7 +52,14 @@ class PageController extends Controller
     }
     public function diseño()
     {
-        return view('eat_art');
+        $categoria_escultura = Categoria::id('Disseny');
+        $obras = Obra::filterByCategory($categoria_escultura);
+
+        return view('diseño',compact('obras'));
+    }
+    public function volcan()
+    {
+        return view('volcan');
     }
 
 

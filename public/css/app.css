@@ -11160,6 +11160,11 @@ footer {
   color: white;
 }
 
+.admin-panel li:hover {
+  background-color: #545b62;
+  cursor: pointer;
+}
+
 nav {
   width: 100% !important;
   margin: 0 !important;
@@ -11169,11 +11174,6 @@ nav {
 
 .bottom {
   border-bottom: solid 1px white;
-}
-
-li:hover {
-  background-color: #545b62;
-  cursor: pointer;
 }
 
 .active-back {
@@ -11228,29 +11228,6 @@ li:hover {
   margin-top: 65px;
 }
 
-.modal {
-  position: fixed;
-  background: rgba(0, 0, 0, 0.7);
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  position: fixed;
-}
-
-.modal-body {
-  width: 600px !important;
-  height: 700px !important;
-}
-
-.modal-header {
-  border-bottom: none !important;
-}
-
-.modal-footer {
-  border-top: none !important;
-}
-
 .modal-content1 {
   background-image: url("/img/slideWelcome/LluisVila_Absolut_nosaltres.jpg");
   background-size: cover;
@@ -11263,31 +11240,76 @@ li:hover {
   background-position: center;
 }
 
-.modal-news {
-  width: 798px;
-  height: 825px !important;
-}
-
-.modal-body-news {
-  padding: 0 !important;
-  box-sizing: content-box !important;
-}
-
-#exampleModal-text {
-  width: 500px !important;
-  height: 500px !important;
-}
-
-.modal-content-text {
-  width: 650px;
-  background-color: white;
-}
-
-.modal-body-text p {
-  margin: 0 auto;
-  padding: 16px;
+.modal-img-actualidad {
   width: 100%;
-  height: 100%;
+}
+
+.modal-close {
+  padding-top: 0 !important;
+}
+
+.modal-header {
+  background-color: #343a40;
+  height: 30px !important;
+}
+
+.modal-header span {
+  color: white !important;
+}
+
+.close {
+  padding: 5px !important;
+}
+
+.modal-body {
+  background-color: #e7e1e1;
+  padding: 25px;
+}
+
+.text {
+  width: 100% !important;
+  padding: 16px;
+}
+
+.modal-footer {
+  background-color: #343a40;
+}
+
+.modal {
+  overflow-y: hidden;
+}
+
+.modal-img {
+  width: 100%;
+}
+
+.prensa1-modal-img {
+  width: 100%;
+}
+
+.prensa1-modal-img:hover {
+  margin-top: 50%;
+  /* IE 9 */
+  /* Safari 3-8 */
+  transform: scale(1.6);
+}
+
+.prensa-modal-img {
+  width: 100%;
+}
+
+.prensa-modal-img:hover {
+  margin-top: 25%;
+  /* IE 9 */
+  /* Safari 3-8 */
+  transform: scale(1.6);
+}
+
+.modal-img:hover {
+  margin-top: -1%;
+  /* IE 9 */
+  /* Safari 3-8 */
+  transform: scale(1.6);
 }
 
 .half-wide1 {
@@ -11357,20 +11379,65 @@ li:hover {
   background-size: cover;
 }
 
-.content-pintura-img {
-  width: 350px;
+.volca1 {
+  width: 385px;
   height: 350px;
-  padding: 10px;
+  background-image: url("/img/volca/volca1.jpg");
+  background-size: cover;
 }
 
-.img-pintura {
-  width: 100%;
-  height: 100%;
+.volca2 {
+  width: 385px;
+  height: 350px;
+  background-image: url("/img/volca/volca3.jpg");
+  background-size: cover;
+  margin: 0px 30px 0px 30px;
+}
+
+.volca3 {
+  width: 385px;
+  height: 350px;
+  background-image: url("/img/volca/volca2.jpg");
+  background-size: cover;
+}
+
+.volca4 {
+  width: 385px;
+  height: 350px;
+  background-image: url("/img/volca/volca4.jpg");
+  background-size: cover;
+}
+
+.volca5 {
+  width: 385px;
+  height: 350px;
+  background-image: url("/img/volca/volca5.jpg");
+  background-size: cover;
+  margin: 0px 30px 0px 30px;
+}
+
+.volca6 {
+  width: 385px;
+  height: 350px;
+  background-image: url("/img/volca/volca6.jpg");
+  background-size: cover;
 }
 
 .img-news-edit {
   width: 200px;
   height: 200px;
+}
+
+.img-modal {
+  width: 500px;
+  height: 460px;
+}
+
+.img-edit {
+  width: 140px;
+  height: 120px;
+  float: right;
+  clear: left;
 }
 
 .img-obras-index {
@@ -11379,19 +11446,50 @@ li:hover {
   vertical-align: middle !important;
 }
 
-.img-obra-edit {
-  width: 120px;
-  height: 120px;
-  float: right;
-  clear: left;
-  top: 0;
-}
-
 .img-news-index {
   width: 50px;
   height: 50px;
   margin-right: 20px;
   vertical-align: middle !important;
+}
+
+.img-noticia {
+  width: 100%;
+}
+
+.img-slide {
+  padding: 0px 0px 5px 25px;
+}
+
+.prensa-content-img {
+  width: 33%;
+  border: solid 1px #545b62;
+  box-sizing: content-box;
+}
+
+.prensa-content-img img {
+  width: 100%;
+}
+
+.prensa-content-img-middle {
+  width: 33%;
+  margin: 0px 30px 0px 30px;
+  border: solid 1px #545b62;
+  box-sizing: content-box;
+}
+
+.prensa-content-img-middle img {
+  width: 100%;
+}
+
+.lluis_coromina {
+  width: 100% !important;
+  padding: 100px;
+  margin: 0 auto !important;
+}
+
+.lluis_coromina img {
+  width: 70% !important;
 }
 
 body {
@@ -11421,6 +11519,10 @@ body {
 
 .fa-long-arrow-alt-left {
   margin-top: 5px;
+}
+
+.icon-edit-header {
+  color: #545b62;
 }
 
 .content-header {
@@ -11688,6 +11790,10 @@ a:active {
   padding: 100px 100px 50px 100px;
 }
 
+.content-noticias {
+  padding: 100px 200px 50px 200px;
+}
+
 .content-colums {
   display: flex;
   margin: 50px 0px 50px 0px;
@@ -11739,7 +11845,13 @@ h3 {
 }
 
 .inter-menu {
-  float: left;
+  width: 100%;
+  height: 40px !important;
+  float: right;
+}
+
+.inter-menu nav {
+  width: 50% !important;
 }
 
 .inter-menu nav a {
@@ -11748,8 +11860,24 @@ h3 {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.inter-menu nav a:hover {
-  color: black !important;
+#eat_art:hover {
+  color: black;
+}
+
+#diseño:hover {
+  color: black;
+}
+
+#escultura:hover {
+  color: black;
+}
+
+#pintura:hover {
+  color: black;
+}
+
+#volcan:hover {
+  color: black;
 }
 
 .content-obra-menu {
@@ -11905,14 +12033,44 @@ h3 {
 }
 
 .filter-series {
+  display: flex;
+  z-index: 1;
   width: auto !important;
   height: 28px !important;
 }
 
-.filter-series select {
+.filter-series a {
+  text-decoration: none !important;
+}
+
+.filter-series a select {
   margin: 0 !important;
   width: 160px;
   color: black;
+}
+
+.filter-button-color {
+  margin-left: 8px;
+  font-family: "saira" !important;
+  background-color: #6c757d !important;
+  color: white !important;
+}
+
+.filter-button-color:hover {
+  background-color: #e7e1e1 !important;
+  color: white !important;
+}
+
+.filter-todas-button {
+  margin-left: 15px;
+  font-family: "saira" !important;
+  background-color: #6c757d !important;
+  color: white !important;
+}
+
+.filter-todas-button:hover {
+  background-color: #e7e1e1 !important;
+  color: #545b62 !important;
 }
 
 .content-news {
@@ -11924,7 +12082,14 @@ h3 {
   position: relative;
   box-shadow: 5px 5px 10px grey;
   box-sizing: content-box;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 5px 5px 5px 5px;
+  border-color: black;
+}
+
+.content-news:hover {
+  box-shadow: 2px 2px 5px #c7c4c4;
+  right: 5px;
+  bottom: 5px;
 }
 
 .content-data-news {
@@ -11936,10 +12101,14 @@ h3 {
 
 .content-data-news h1 {
   margin-top: 0 !important;
+  margin-bottom: 18px;
+  color: #545b62;
+  font-weight: bold;
 }
 
 .content-data-news h4 {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  color: #6c757d;
 }
 
 .news-front {
@@ -11949,6 +12118,7 @@ h3 {
 
 .text-news-front {
   font-size: 16px;
+  color: black;
   width: 100%;
   height: 80px;
   line-height: 20px;
@@ -11964,6 +12134,8 @@ h3 {
   width: 100% !important;
   vertical-align: bottom !important;
   margin: 10px 0px 0px 0px !important;
+  text-align: right;
+  color: black;
 }
 
 .content-image-news {
@@ -11978,17 +12150,160 @@ h3 {
   height: 200px !important;
 }
 
-.content-obra-img {
+.ellipsis-noticia {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis !important;
+  margin: auto;
+}
+
+.content-noticia {
+  padding: 100px 100px 50px 100px;
+}
+
+.content-noticia h1 {
+  padding-right: 300px;
+}
+
+.content-noticia h4 {
+  padding-right: 300px;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.content-noticia p {
+  font-size: 16px;
+  padding-right: 25px;
+  text-align: justify;
+  margin-top: 50px;
+}
+
+.noticia-top {
+  position: relative;
+}
+
+.content-image-noticia {
+  width: 73%;
+  height: 25%;
+  overflow: hidden;
+}
+
+.slide-noticia {
+  width: 275px;
+  height: 1000px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.scroll {
+  overflow: auto;
+}
+
+.slide-title {
+  height: 20px;
+  width: 100%;
+  padding: 0px 0px 25px 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis !important;
+  margin: auto;
+}
+
+.noticia-text {
+  width: 100%;
+  padding-right: 275px;
+}
+
+.date-noticia {
+  width: 75%;
+  height: 20px;
+  margin-top: 5px !important;
+}
+
+.date-noticia small {
+  float: right;
+}
+
+.fila {
+  width: 100%;
   display: flex;
-  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
-.content-obra-img img {
-  width: 100% !important;
-  height: 100% !important;
+.facebook {
+  width: 50px;
+  height: 50px;
 }
 
-.content-pintura-data {
-  margin: 0 auto;
+.facebook:hover {
+  color: #e7e1e1 !important;
+}
+
+.volca {
+  width: 195px;
+  height: 735px;
+  background-image: url("/img/obra/volca.jpg");
+  background-size: cover;
+  transition: background-image 2s;
+}
+
+.volca h3 {
+  line-height: 735px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.volca:hover {
+  background-image: url("/img/obra/volca_hover.jpg");
+  background-size: cover;
+}
+
+.volca:hover a {
+  text-decoration: none !important;
+}
+
+.volca:hover h3 {
+  opacity: 1;
+  line-height: 735px;
+}
+
+.obra-img {
+  width: 100%;
+  height: 100%;
+  border: solid 1px black;
+  box-sizing: border-box;
+  margin: 0 auto !important;
+}
+
+.modal-close-actualidad {
+  padding-bottom: 18px;
+}
+
+.modal-close-obras {
+  padding-bottom: 18px;
+}
+
+.content-obras {
+  width: 100%;
+  display: flex;
+}
+
+.content-info {
+  width: 100%;
+}
+
+.box {
+  width: 33%;
+  height: 33%;
+  margin: 0 auto !important;
+  padding: 20px;
+}
+
+.name {
+  text-transform: uppercase;
 }
 

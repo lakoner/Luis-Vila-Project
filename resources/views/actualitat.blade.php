@@ -3,16 +3,17 @@
 
 @section('content')
 
-<main class="content-framwork-1">
+<div class="content-noticias">
         @foreach($actualidades as $actualidad)
-            <a href="{{url('/noticia/'.$actualidad->id)}}">
+            <a  href="{{url('/noticia/'.$actualidad->id)}}">
                 <div class="content-news card">
-                    <div class="content-image-news card">
+                    <div class="content-image-news">
                         <img src="{{asset('storage').'/'.$actualidad->image}}" alt="">
                     </div>
+
                     <div class="content-data-news">
-                        <h1>{{$actualidad->title}}</h1>
-                        <h4>{{$actualidad->subtitle}}</h4>
+                        <h1 class="ellipsis-noticia">{{$actualidad->title}}</h1>
+                        <h4 class="ellipsis-noticia">{{$actualidad->subtitle}}</h4>
                     <div class="text-news-front"><p>{{$actualidad->text}}</p></div>
                         <p class="date"><small>{{$actualidad->date}}</small></p>
                     </div>
@@ -21,8 +22,7 @@
         @endforeach
 
 
-</main>
-
+</div>
 @endsection
 
 

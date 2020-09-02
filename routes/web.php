@@ -30,9 +30,9 @@ Route::get('/eat_art','PageController@eat_art');
 
 Route::get('/biografia','PageController@biografia');
 
-Route::get('/actualitat','PageController@actualitat');
+Route::get('/noticias','PageController@actualitat')->name('noticias');
 
-Route::get('/noticia/{actualidad}','ActualidadController@show');
+Route::get('/noticia/{actualidad}','ActualidadController@show')->name('noticia');
 
 Route::get('/prensa','PageController@prensa');
 
@@ -49,6 +49,11 @@ Route::get('/filterSerie', 'PageController@filterSerie')->name('serie.filterSeri
 Route::get('/pintura','PageController@pintura');
 
 Route::get('/escultura','PageController@escultura');
+
+Route::get('/diseño','PageController@diseño');
+
+Route::get('/volcan','PageController@volcan');
+
 
 
 

@@ -1,15 +1,17 @@
 @extends('templates.header_footer_front')
 
 @section('content')
-<main class="content-framwork-1">
+<body onload="menuEat_art()">
+
+
+<div class="content-framwork-1">
     <div class="inter-menu">
         <nav>
-            <a href="">Eat Art</a>
-            <a href="">Disseny</a>
-            <a href="">Escultura</a>
-            <a href="">Pintura</a>
-            <a href="">Volcà</a>
-
+            <a id="eat_art" href="{{url('/eat_art')}}">Eat Art</a>
+            <a id="diseño" href="{{url('/diseño')}}">Diseño</a>
+            <a id="escultura" href="{{url('/escultura')}}">Escultura</a>
+            <a id="pintura" href="{{url('/pintura')}}">Pintura</a>
+            <a id="volcan" href="{{url('/volcan')}}">volcan</a>
         </nav>
     </div>
         <div class="p-all-wide">
@@ -212,9 +214,6 @@
   </div>
 </div>
 
-
-
-
-
-    </main>
+</div>
+</body>
     @endsection

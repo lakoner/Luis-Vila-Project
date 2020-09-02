@@ -6,7 +6,7 @@
     <div class="content-admin">
         <div class="actualidad-content">
             <div class="content-header">
-                <h1><i class="fas fa-upload"></i>&nbsp<b>Nueva Notícia</b>
+                <h1><i class="fas fa-upload"></i>&nbsp;<b>Nueva Notícia</b>
                 <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
                           <a href="{{route('actualidad.index')}}">
                               <label class="btn btn-secondary header-left-button">
@@ -78,7 +78,7 @@
                 </div>
                     <div class="col-md-12">
                         <br><div class="card-footer">
-                            <button class="btn btn-secondary">Nueva Notícia</button>
+                        <input type="submit" class="btn btn-secondary input-button" value="Nueva Noticia"/>
                         </div>
                     </div>
 

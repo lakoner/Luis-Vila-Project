@@ -11,13 +11,13 @@
                               <label class="btn btn-secondary header-left-button">
 
                                 <i class="fas fa-long-arrow-alt-left"> </i>
-                                &nbsp;Torna
+                                &nbsp;Atrás
 
                         </label></a>
                          <a href="{{url('/obra/create')}}">
-                            <label class="btn btn-secondary edit-new-button">
+                            <label class="btn btn-secondary header-right-button">
 
-                                Nova Obra
+                                Nueva Obra
 
                         </label></a>
                     </div>
@@ -131,9 +131,7 @@
                     <div class="card ">
                         <div class="form-group form-cards">
                         <br><label for="">Imagen</label>
-                               <img class="img-obra-edit" src="{{asset('storage').'/'.$obra->image}}" alt="">
-
-
+                               <img class="img-edit" src="{{asset('storage').'/'.$obra->image}}" alt="">
                         </div>
                     </div>
                 </div>
@@ -143,7 +141,7 @@
                     <div class="col-md-5"><br>
                         <div class="card ">
                             <div class="form-group form-file-edit"><br>
-                                <label for=""></label>
+                                <label for="input-file"></label>
                                 <input class="form-group file" id="input-file" type="file" name="image">
                             </div>
                         </div>
@@ -157,15 +155,19 @@
                     <div class="card-footer footer-buttons">
                         <input type="submit" class="btn btn-secondary input-button" value="Guardar"/>
     </form>
-
-
-                        <div>
-                            <a href="{{url('/obra')}}">
-                            <button class="btn btn-secondary">Aceptar</button></a>
+                    <div>
+                        <a href="{{url('/obra')}}">
+                            <buttton class="btn btn-secondary">Acceptar</button></a>
                         </div>
                     </div>
-                    <br><br>
+
                 </div>
+
+
+
+
+                    <br><br>
+            </div>
 
 
 

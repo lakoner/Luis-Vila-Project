@@ -84,10 +84,10 @@
 
                     <ul class="nav nav-pils nav-stacked">
                     <a class="link-a" href="{{url('/obra')}}"><li class="{{'obra' == request()->path() ? 'active-back' : '' }}"><i class="fas fa-palette"></i>&nbsp;<b>Obras</b></li></a>
-                    <a class="link-a" href="{{url('/obra/create')}}"> <li class="{{'obra/create' == request()->path() ? 'active-back' : '' }}"><i class="fas fa-upload"></i>&nbsp;<b>Nueva Obra</b></a></li>
-                    <a class="link-a" href="{{url('/actualidad')}}"> <li class="{{'actualidad' == request()->path() ? 'active-back' : '' }}"><i class="fas fa-newspaper"></i>&nbsp;<b>Noticias</b></a></li>
-                    <a class="link-a" href="{{url('/actualidad/create')}}"> <li class="{{'actualidad/create' == request()->path() ? 'active-back' : '' }}"> <i class="fas fa-upload"></i>&nbsp;<b>Nueva Noticia</b></a></li>
-                    <a class="link-a" href="{{url('/register')}}"><li class="{{'register' == request()->path() ? 'active-back' : '' }} bottom"><i class="fas fa-user"></i>&nbsp;<b>Usuaris</b></a></li>
+                    <a class="link-a" href="{{url('/obra/create')}}"> <li class="{{'obra/create' == request()->path() ? 'active-back' : '' }}"><i class="fas fa-upload"></i>&nbsp;<b>Nueva Obra</b></li></a>
+                    <a class="link-a" href="{{url('/actualidad')}}"> <li class="{{'actualidad' == request()->path() ? 'active-back' : '' }}"><i class="fas fa-newspaper"></i>&nbsp;<b>Noticias</b></li></a>
+                    <a class="link-a" href="{{url('/actualidad/create')}}"> <li class="{{'actualidad/create' == request()->path() ? 'active-back' : '' }}"> <i class="fas fa-upload"></i>&nbsp;<b>Nueva Noticia</b></li></a>
+                    <a class="link-a" href="{{url('/register')}}"><li class="{{'register' == request()->path() ? 'active-back' : '' }} bottom"><i class="fas fa-user"></i>&nbsp;<b>Usuaris</b></li></a>
                     </ul>
         </div>
 
