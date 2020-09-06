@@ -2,7 +2,9 @@
 
 //obras-Front
 
-
+.content-pintura{
+    white-space: normal;
+}
 .obra-img{
     width: 100%;
     height:100%;
@@ -21,6 +23,7 @@
 .content-obras{
 width:100%;
 display: flex;
+flex-direction: row;
 
 }
 .content-info{

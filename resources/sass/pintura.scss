@@ -1,0 +1,40 @@
+.pintura{
+    width: 195px;
+    height: 735px;
+    background-image: url("/img/obra/pintura.jpg");
+    background-size: cover;
+    transition:  background-image 2s;
+    h3{
+        line-height: 735px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 2s;
+    }
+}
+.pintura:hover{
+    background-image: url("/img/obra/pintura_hover.jpg");
+    background-size: cover;
+    a{
+        text-decoration:none!important
+    }
+    h3{
+        opacity: 1;
+        line-height: 735px;
+     }
+}
+.filter-series{
+    display:flex;
+z-index: 1;
+width: auto!important;
+height: 28px!important;
+a{
+        text-decoration: none!important;
+
+ select{
+margin: 0!important;
+    width: 160px;
+    color: black;
+
+}
+}
+}

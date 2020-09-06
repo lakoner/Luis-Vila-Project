@@ -13,7 +13,7 @@
 
                <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
 
-                        <a href="{{url('/obra')}}" target="_blank">
+                        <a href="{{url('/obras')}}" target="_blank">
                             <label class="btn btn-secondary header-left-button">
                                 <b>Vista previa</b>
                             </label>
@@ -92,7 +92,7 @@
                     </td>
                     <td class="cta">
                         <form action="{{Route('obra.destroy', $obra->id)}}" method="post"> @method('delete')@csrf
-                            <button class="btn btn-secondary button-delete" onclick="return confirm ('¿Esta segur que desitja eliminar {{$obra->name}} de manera permanent?')">
+                            <button class="btn btn-secondary button-delete" onclick="return confirm ('¿Estas seguro que quieres eliminar{{$obra->name}} de manera permanente?')">
                             <i class="far fa-trash-alt"></i>
                         </form>
                     </td>

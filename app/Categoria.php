@@ -31,10 +31,10 @@ class Categoria extends Model
     static function filterBySeries($id)
     {
 
-        $series = Serie::where('categoria_id','=', $id)
+        $serie = Serie::where('categoria_id','=', $id)
            ->get();
 
-        return $series;
+        return $serie;
     }
 
     static function id(String $name)

@@ -19,8 +19,12 @@ class ObraController extends Controller
 
         return view('obra.index',compact('categorias','obras'));
 
+    }
 
-
+    public function last()
+    {
+        $obras = Obra::all();
+        return view('/home')->with('obra', $obras->last());
     }
 
 

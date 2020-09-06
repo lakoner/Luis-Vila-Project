@@ -32,12 +32,13 @@
                 </div>
 
 
+
                 <div class="col-md-4">
                     <div class="card">
                         <br><div class="form-group form-cards">
                             <label for="">Categoría</label>
                                 <select class="form-control" name="categoria_id">
-                                <option hidden> </option>
+                                    <option selected hidden> </option>
                                     <option value="1">Pintura</option>
                                     <option value="2">Escultura</option>
                                     <option value="3">Disseny</option>
@@ -48,8 +49,46 @@
 
                 <div class="col-md-4">
                     <div class="card">
-                    <br><div class="form-group form-cards">
-                        <label for="">Técnicas</label>
+                   <div class="form-group form-cards">
+                        <br> <label for="">Series</label>
+                                <select class="form-control" name="serie_id">
+
+                                    <option class="selected" hidden> </option>
+
+                                    <optgroup name="escultura" label="Escultura">
+                                        <option value="1">Derivacions 1994</option>
+                                        <option value="2">Monestir 1995</option>
+                                        <option value="3">Navegants 1997</option>
+                                        <option value="4">Logos 1998-03</option>
+                                        <option value="5">Atmans 2002-03</option>
+                                        <option value="6">Nautes 2006-09</option>
+                                        <option value="7">Exvot 2009</option>
+                                        <option value="8">Congreso del mundo 2010</option>
+                                        <option value="9"> Pa</ option>
+                                    </optgroup>
+                                    <optgroup name="pintura" label="Pintura">
+                                        <option value="10">Georgia 1992</option>
+                                        <option value="11">Contraris 1993-96</option>
+                                        <option value="12">Navegants 1997</option>
+                                        <option value="13">Logos 1998-03</option>
+                                        <option value="14">Regions intermitges 2004</option>
+                                        <option value="15">Barques 2006</option>
+                                        <option value="16">Nautes 2006-09</option>
+                                        <option value="17">Tokyo 2008</option>
+                                        <option value="18">Absolut 2009-10</option>
+                                        <option value="19">- sin series -</option>
+                                    </optgroup>
+
+                                </select>
+                        </div><br>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <br><br><div class="card">
+                    <div class="form-group form-cards">
+                       <br> <label for="">Técnicas</label>
                                 <select class="form-control" name="technique" required>
                                     <option class="selected" hidden></option>
                                     <optgroup label="Escultura">
@@ -77,41 +116,8 @@
                         </div>
                     </div>
                 </div>
-                <br>
-                <div class="col-md-4">
-                    <br><br><div class="card">
-                   <div class="form-group form-cards">
-                        <br> <label for="">Series</label>
-                                <select class="form-control" name="serie_id">
-                                    <option class="selected" hidden> </option>
-                                    <optgroup label="Escultura">
-                                        <option value="1">Derivacions 1994</option>
-                                        <option value="2">Monestir 1995</option>
-                                        <option value="3">Navegants 1997</option>
-                                        <option value="4">Logos 1998-03</option>
-                                        <option value="5">Atmans 2002-03</option>
-                                        <option value="6">Nautes 2006-09</option>
-                                        <option value="7">Exvot 2009</option>
-                                        <option value="8">Congreso del mundo 2010</option>
-                                        <option value="9"> Pa</ option>
-                                    </optgroup>
-                                    <optgroup label="Pintura">
-                                        <option value="10">Georgia 1992</option>
-                                        <option value="11">Contraris 1993-96</option>
-                                        <option value="12">Navegants 1997</option>
-                                        <option value="13">Logos 1998-03</option>
-                                        <option value="14">Regions intermitges 2004</option>
-                                        <option value="15">Barques 2006</option>
-                                        <option value="16">Nautes 2006-09</option>
-                                        <option value="17">Tokyo 2008</option>
-                                        <option value="18">absolut 2009-10</option>
-                                        <option value="19">- sin series -</option>
-                                    </optgroup>
 
-                                </select>
-                        </div>
-                    </div>
-                </div>
+
 
                 <div class="col-md-3">
                     <br><br><div class="card">

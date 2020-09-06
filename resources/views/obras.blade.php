@@ -2,7 +2,7 @@
 
 
 @section('content')
-<main class="content-framwork-1">
+<div class="content-framwork-1">
 <div class="content-obra-menu">
 <div class="eat-art"><a href="{{url('/eat_art/')}} "><h3>EAT ART</h3></a></div>
 <div class="escultura"><a href="{{url('/escultura/')}}"><h3>ESCULTURA</h3></a></div>
@@ -14,7 +14,7 @@
 
 
 </div>
-</main>
+</div>
 @endsection
 
 

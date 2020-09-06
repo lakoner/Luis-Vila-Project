@@ -1,0 +1,24 @@
+.escultura{
+    width: 195px;
+     height: 735px;
+     background-image: url("/img/obra/escultura.jpg");
+     background-size: cover;
+     transition:  background-image 2s;
+     h3{
+         line-height: 735px;
+         text-align: center;
+         opacity: 0;
+         transition: opacity 2s;
+     }
+ }
+ .escultura:hover{
+      background-image: url("/img/obra/escultura_hover.jpg");
+      background-size: cover;
+      a{
+         text-decoration:none!important
+     }
+      h3{
+         opacity: 1;
+         line-height: 735px;
+      }
+  }

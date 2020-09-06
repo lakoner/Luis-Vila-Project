@@ -13,6 +13,4 @@ class Serie extends Model
     return $this->belongsTo(Obra::class);
     }
 
-
-
 }

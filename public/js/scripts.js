@@ -19,6 +19,11 @@ window.onbeforeunload = function () {window.scrollTo (0,0);}
 //  }
 // });
 
+function menuObra(){
+    var obra = document.getElementById("obra");
+    obra.style.color = "black";
+}
+
 function menuDiseño() {
 
     var diseño = document.getElementById("diseño");

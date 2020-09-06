@@ -34,9 +34,6 @@
 <div class="noticia-text"><p>{{$actualidad->text}}</p></div>
 
 <br>
-    <a href="" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436,left=300,top=150'); return false;">
-<img class="facebook" src="{{ asset('img/redes/facebook.png') }}" alt="facebook">
-</a>
 <br>
 
 

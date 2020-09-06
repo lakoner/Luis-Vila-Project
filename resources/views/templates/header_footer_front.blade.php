@@ -44,7 +44,7 @@
         <div class="header">
             <div class="menu"><h1 class="logo"><a href="{{url('/')}}">LLUÍS VILÀ</a></h1>
                 <nav>
-                    <a class="{{'obras' == request()->path() ? 'active-front' : '' }}" href="{{url('/obras/')}}">OBRA</a>
+                    <a class="{{'obras' == request()->path() ? 'active-front' : '' }}" id="obra" href="{{url('/obras/')}}">OBRA</a>
                     <a class="{{'biografia' == request()->path() ? 'active-front' : '' }}" href="{{url('/biografia/')}}">BIOGRAFÍA</a>
                     <a class="{{'noticias' == request()->path() ? 'active-front' : '' }}" id="noticia" href="{{url('/noticias/')}}">NOTICIAS</a>
                     <a class="{{'prensa' == request()->path() ? 'active-front' : '' }}" href="{{url('/prensa/')}}">PRENSA</a>

@@ -18,7 +18,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/register', function () {
+    return view('auth/register');
+});
+
 Auth::routes();
+
+
 
 Route::get('adminupayp1b4', 'Auth\LoginController@showLoginForm')->name('adminupayp1b4');
 
@@ -42,9 +48,13 @@ Route::resource('obra', 'ObraController')->middleware('auth');
 
 Route::resource('actualidad', 'ActualidadController')->middleware('auth');
 
+Route::resource('usuarios', 'UserController');
+
 Route::get('/filter', 'ObraController@filter')->name('obra.filter');
 
-Route::get('/filterSerie', 'PageController@filterSerie')->name('serie.filterSerie');
+Route::get('/filterSerie2', 'PageController@filterSeriePintura')->name('serie.filterSerieP');
+
+Route::get('/filterSerie', 'PageController@filterSerieEscultura')->name('serie.filterSerieE');
 
 Route::get('/pintura','PageController@pintura');
 
@@ -53,6 +63,8 @@ Route::get('/escultura','PageController@escultura');
 Route::get('/diseño','PageController@diseño');
 
 Route::get('/volcan','PageController@volcan');
+
+
 
 
 

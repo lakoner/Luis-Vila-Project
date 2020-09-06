@@ -11,7 +11,7 @@
                               <label class="btn btn-secondary header-left-button">
 
                                 <i class="fas fa-long-arrow-alt-left"> </i>
-                                &nbsp;Atrás
+                                &nbsp;Volver
 
                         </label></a>
                          <a href="{{url('/obra/create')}}">
@@ -44,7 +44,7 @@
                         <br><div class="form-group form-cards">
                             <label for="">Categoria</label>
                                 <select class="form-control" name="categoria_id">
-                                <option class="selected" value="{{$obra->categoria_id}}">{{$obra->categoria->name}}</option>
+                                <option hidden class="selected" value="{{$obra->categoria_id}}">{{$obra->categoria->name}}</option>
                                     <option value="1">Pintura</option>
                                     <option value="2">Escultura</option>
                                     <option value="3">Disseny</option>
@@ -54,38 +54,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card">
-                    <br><div class="form-group form-cards">
-                        <label for="">Técnica</label>
-                                <select class="form-control" name="technique" required>
-                                    <option class="selected"hidden>{{$obra->technique}} </option>
-                                    <optgroup label="Escultura">
-                                        <option value="Mixta, látex y serigrafia de 50x50 cm">Mixta, látex y serigrafia de 50x50 cm</option>
-                                        <option value="Esculturas de bronce.">Esculturas de bronce.</option>
-                                        <option value="Mixta sobre papel y serigrafía">Mixta sobre papel y serigrafía</option>
-                                        <option value="Esculturas de acero oxidado con serigrafía">Esculturas de acero oxidado con serigrafía</option>
-                                        <option value="Escutluras de acero oxidado/Madera con serigrafía">Escutluras de acero oxidado/Madera con serigrafía</option>
-                                        <option value="Esculturas de poliester y elementos variados">Esculturas de poliester y elementos variados</option>
-                                        <option value="Telas técnica mixta y planchas de acero montadas sobre soporte de metal">Telas técnica mixta y planchas de acero montadas sobre soporte de metal</option>
-                                        <option value="Esculturas de acero">Esculturas de acero</option>
-                                    </optgroup>
-                                    <optgroup label="Pintura">
-                                        <option value="Acrílico sobre tela">Acrílico sobre tela</option>
-                                        <option value="Mixta sobre tela y collage">Mixta sobre tela y collage</option>
-                                        <option value="Mixta sobre papel y serigrafía">Mixta sobre papel y serigrafía</option>
-                                        <option value="Mixta sobre papel">Mixta sobre papel</option>
-                                        <option value="Mixta sobre tela i serigrafia">Mixta sobre tela i serigrafia</option>
-                                        <option value="Paper fet a mà amb tècnica mixta i serigrafia">Paper fet a mà amb tècnica mixta i serigrafia</option>
-                                        <option value=" Técnica mixta sobre papel y acrílico sobre tela">Tècnica mixta sobre paper i acrílic sobre tela</option>
-                                        <option value="- tecnica no especificada">- tecnica no especificada -</option>
-                                    </optgroup>
-                                </select>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                <br><br><div class="card">
+               <div class="card">
                     <div class="form-group form-cards">
                    <br><label for="">Series</label>
                                 <select class="form-control" name="serie_id">
@@ -114,16 +83,50 @@
                                         <option value="19"> - sin serie - </option>
                                     </optgroup>
                                 </select>
+
+                        </div><br>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                <br><br> <div class="card">
+                   <br><div class="form-group form-cards">
+                        <label for="">Técnica</label>
+                                <select class="form-control" name="technique" required>
+                                    <option class="selected"hidden>{{$obra->technique}} </option>
+                                    <optgroup label="Escultura">
+                                        <option value="Mixta, látex y serigrafia de 50x50 cm">Mixta, látex y serigrafia de 50x50 cm</option>
+                                        <option value="Esculturas de bronce.">Esculturas de bronce.</option>
+                                        <option value="Mixta sobre papel y serigrafía">Mixta sobre papel y serigrafía</option>
+                                        <option value="Esculturas de acero oxidado con serigrafía">Esculturas de acero oxidado con serigrafía</option>
+                                        <option value="Escutluras de acero oxidado/Madera con serigrafía">Escutluras de acero oxidado/Madera con serigrafía</option>
+                                        <option value="Esculturas de poliester y elementos variados">Esculturas de poliester y elementos variados</option>
+                                        <option value="Telas técnica mixta y planchas de acero montadas sobre soporte de metal">Telas técnica mixta y planchas de acero montadas sobre soporte de metal</option>
+                                        <option value="Esculturas de acero">Esculturas de acero</option>
+                                    </optgroup>
+                                    <optgroup label="Pintura">
+                                        <option value="Acrílico sobre tela">Acrílico sobre tela</option>
+                                        <option value="Mixta sobre tela y collage">Mixta sobre tela y collage</option>
+                                        <option value="Mixta sobre papel y serigrafía">Mixta sobre papel y serigrafía</option>
+                                        <option value="Mixta sobre papel">Mixta sobre papel</option>
+                                        <option value="Mixta sobre tela i serigrafia">Mixta sobre tela i serigrafia</option>
+                                        <option value="Paper fet a mà amb tècnica mixta i serigrafia">Paper fet a mà amb tècnica mixta i serigrafia</option>
+                                        <option value=" Técnica mixta sobre papel y acrílico sobre tela">Tècnica mixta sobre paper i acrílic sobre tela</option>
+                                        <option value="- tecnica no especificada">- tecnica no especificada -</option>
+                                    </optgroup>
+                                </select>
                         </div>
                     </div>
                 </div>
+
+
 
                 <div class="col-md-3">
                     <br><br><div class="card">
                         <div class="form-group form-cards">
                         <br><label for="">Año</label>
                         <input class="form-control" type="text" name="year" value="{{$obra->year}}">
-                        </div>
+                        </div><br>
                     </div>
                 </div>
 
@@ -132,7 +135,7 @@
                         <div class="form-group form-cards">
                         <br><label for="">Imagen</label>
                                <img class="img-edit" src="{{asset('storage').'/'.$obra->image}}" alt="">
-                        </div>
+                        </div><br>
                     </div>
                 </div>
 

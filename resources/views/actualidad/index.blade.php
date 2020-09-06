@@ -3,7 +3,7 @@
 
 @section('content')
 
-<main>
+
 
 <div class="content-admin">
 
@@ -69,7 +69,7 @@
                     </td>
                     <td class="cta">
                         <form action="{{Route('actualidad.destroy', $actualidad->id)}}" method="post"> @method('delete')@csrf
-                            <button class="btn btn-secondary button-delete" onclick="return confirm ('¿Estas segura de borrar esta noticia?')">
+                            <button class="btn btn-secondary button-delete" onclick="return confirm ('¿Estas seguro de borrar esta noticia de manera permanente?')">
                             <i class="far fa-trash-alt"></i>
                         </form>
                     </td>
@@ -129,8 +129,6 @@
 </div>
 
 
-
-</main>
 
 
 @endsection
