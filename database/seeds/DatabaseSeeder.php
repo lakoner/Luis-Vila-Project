@@ -9,6 +9,7 @@ use App\Obra;
 use App\Noticia;
 use App\Actualidad;
 
+
 use App\Seriepintura;
 
 class DatabaseSeeder extends Seeder
@@ -54,7 +55,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call(CategoriaSeeder::class);
         $this->call(SerieSeeder::class);
-        // $this->call(ObraSeeder::class);
-        // $this->call(ActualidadSeeder::class);
+        $this->call(ObraSeeder::class);
+        $this->call(ActualidadSeeder::class);
     }
 }
