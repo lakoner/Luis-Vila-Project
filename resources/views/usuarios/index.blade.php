@@ -99,7 +99,7 @@
 
                         <div class="col-md-3">
                             <div class="card">
-                                <div class="form-group form-cards ">
+                                <div class="form-group form-cards">
                                     <label for="password-confirm" class="col-form-label text-md-right">{{ __('Confirma tu contraseña') }}</label>
                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
 
@@ -113,12 +113,18 @@
                             <div class="card-footer">
                                 <button type="submit" class="btn btn-secondary">
                                     {{ __('Nuevo usuario') }}
+
                                 </button>
+                            </form>
+
+
+
+
                             </div>
                         </div><br>
 
                     </div>
-                </form>
+
             </div>
 
     </div>

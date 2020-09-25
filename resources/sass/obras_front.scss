@@ -2,8 +2,14 @@
 
 //obras-Front
 
-.content-pintura{
-    white-space: normal;
+.content-obras{
+height: 100%;
+width:100%;
+display: flex;
+margin: 50px 0px 75px 0px;
+
+
+
 }
 .obra-img{
     width: 100%;
@@ -20,26 +26,27 @@
 .modal-close-obras{
     padding-bottom:18px;
 }
-.content-obras{
-width:100%;
-display: flex;
-flex-direction: row;
 
-}
 .content-info{
     width: 100%;
+
 }
 .box{
-    width: 33%;
-    height:33%;
-    margin: 0 auto!important;
+    width: 385px!important;
+    height:350px!important;
+    // margin: 0 auto!important;
     padding:20px;
 
 }
-
-.name{
-    text-transform: uppercase;
+.row{
+    width:100%;
 }
+.column{
+    margin-bottom: 75px;
+}
+// .name{
+//     text-transform: uppercase;
+// }
 
 
 //     border:solid 1px #545b62;
@@ -49,7 +56,6 @@ flex-direction: row;
 //     }
 
 
-// }
 
 
 // .content-pintura-img{

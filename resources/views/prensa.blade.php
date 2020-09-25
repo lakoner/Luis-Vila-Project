@@ -4,7 +4,7 @@
 
 
 
-<div class="content-framwork-1">
+<div class="content-prensa">
     <div class="fila">
         <div class="prensa-content-img"> <a href="#" data-toggle="modal" data-target=".bd-prensa1-modal-lg" alt="lluís vilà"><img src="\img\Prensa\prensa1.jpg"></a></div>
         <div class="prensa-content-img-middle"><a href="#" data-toggle="modal" data-target=".bd-prensa2-modal-lg" alt="lluís vilà"><img src="\img\Prensa\prensa2.jpg" alt="lluis vilà"></a></div>

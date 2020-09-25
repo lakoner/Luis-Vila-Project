@@ -36,7 +36,7 @@ Route::get('/eat_art','PageController@eat_art');
 
 Route::get('/biografia','PageController@biografia');
 
-Route::get('/noticias','PageController@actualitat')->name('noticias');
+Route::get('/actualitat','PageController@actualitat')->name('actualidad');
 
 Route::get('/noticia/{actualidad}','ActualidadController@show')->name('noticia');
 

@@ -179,31 +179,31 @@
         </div>
         <div class="p-all-wide">
 
-<p>
+        <p>
         Pero es preciso tener en cuenta que el tratamiento que aplica a la comida no es el de ofrenda ritual ni el de ceremonia festiva como lo hace Miralda, muy al contrario
-Vilŕ lo descontextualiza de su función habitual para transformarlo en un objeto "kitsch", para dejarlo degradar hasta la putrefacción o,
-ya recientemente, para enmarcarlo -una rebanada de pan, por citar un caso en concreto-, por destacar su humilde grandeza. El ritos nutricio deviene en sus manos, así
-pues, grotesco e instintivo al tiempo que alude al factor desagradable y provocador del hecho deglutible, ampliando para ello sus referencias en un entorno distinto a fin de
-enriquecer el sentido de la imagen.</p><br>
+        Vilŕ lo descontextualiza de su función habitual para transformarlo en un objeto "kitsch", para dejarlo degradar hasta la putrefacción o,
+        ya recientemente, para enmarcarlo -una rebanada de pan, por citar un caso en concreto-, por destacar su humilde grandeza. El ritos nutricio deviene en sus manos, así
+        pues, grotesco e instintivo al tiempo que alude al factor desagradable y provocador del hecho deglutible, ampliando para ello sus referencias en un entorno distinto a fin de
+        enriquecer el sentido de la imagen.</p><br>
 
-<p>Su primer material de trabajo es el pan, alimento de primera necesidad y paradigma del consumo de primer orden que se ha convertido en el elemento recurrente
-en su trayectoria y el núcleo central de su investigación. Para Vilŕ, el pan con connotaciones religiosas, litúrgicas, festivas,
-costumbristas, etc ... es el más humilde  de los elementos comestibles y goza de una importante presencia cotidiana que ha hecho imprescindible en todas las culturas;
-un elemento, en definitiva, que sirve a un tiempo de unión entre las civilizaciones y de puente entre los pensamientos más ancestrales y los avances tecnológicos de hoy. De acuerdo
-con las múltiples lecturas rituales, sociales y tradicionales el pan constituye el común denominador en una sociedad de individuos relacionados en una empresa común
-llamada humanidad.
-</p><br>
+        <p>Su primer material de trabajo es el pan, alimento de primera necesidad y paradigma del consumo de primer orden que se ha convertido en el elemento recurrente
+        en su trayectoria y el núcleo central de su investigación. Para Vilŕ, el pan con connotaciones religiosas, litúrgicas, festivas,
+        costumbristas, etc ... es el más humilde  de los elementos comestibles y goza de una importante presencia cotidiana que ha hecho imprescindible en todas las culturas;
+        un elemento, en definitiva, que sirve a un tiempo de unión entre las civilizaciones y de puente entre los pensamientos más ancestrales y los avances tecnológicos de hoy. De acuerdo
+        con las múltiples lecturas rituales, sociales y tradicionales el pan constituye el común denominador en una sociedad de individuos relacionados en una empresa común
+        llamada humanidad.
+        </p><br>
 
-<p>Así, su origen escultórico lo podemos encontrar eun un repertorio de esculturas hechas con panes, utilizados como objetos encontrados en la manera dadaísta,
-aprovechándose de toda la herencia iconográfica surgida de la tradición popular. Barras, panecillos, barritas, bastones, panes de molde y de payés, tortas,
-ensaimadas, rebanadas o mendrugos son los materiales con el que ha trabajado de diferente forma para construir artefactos grotescos, juguetes caseros,
-imágenes populares, personajes estrafalarios y caricaturescos  extraidos de la realidad que nos rodea. Si en los primeros tiempos la utilización del apreciado alimento
-constituía tan sólo una nueva experiencia técnica empleada como física creativa, en sus obras más recientes se ha convertido en el símbolo de un compromiso social.
-</p><br>
-<p>
-Conxita Oliver<br>
-Membre AICA<br>
-</p>
+        <p>Así, su origen escultórico lo podemos encontrar eun un repertorio de esculturas hechas con panes, utilizados como objetos encontrados en la manera dadaísta,
+        aprovechándose de toda la herencia iconográfica surgida de la tradición popular. Barras, panecillos, barritas, bastones, panes de molde y de payés, tortas,
+        ensaimadas, rebanadas o mendrugos son los materiales con el que ha trabajado de diferente forma para construir artefactos grotescos, juguetes caseros,
+        imágenes populares, personajes estrafalarios y caricaturescos  extraidos de la realidad que nos rodea. Si en los primeros tiempos la utilización del apreciado alimento
+        constituía tan sólo una nueva experiencia técnica empleada como física creativa, en sus obras más recientes se ha convertido en el símbolo de un compromiso social.
+        </p><br>
+        <p>
+        Conxita Oliver<br>
+        Membre AICA<br>
+        </p>
 
         <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -241,12 +241,13 @@ Membre AICA<br>
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tanca</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cierra</button>
             </div>
             </div>
         </div>
         </div>
 
-</div>
+    </div>
+    </div>
 </body>
     @endsection

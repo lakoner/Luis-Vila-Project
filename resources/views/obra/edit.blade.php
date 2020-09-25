@@ -112,7 +112,7 @@
                                         <option value="Mixta sobre tela i serigrafia">Mixta sobre tela i serigrafia</option>
                                         <option value="Paper fet a mà amb tècnica mixta i serigrafia">Paper fet a mà amb tècnica mixta i serigrafia</option>
                                         <option value=" Técnica mixta sobre papel y acrílico sobre tela">Tècnica mixta sobre paper i acrílic sobre tela</option>
-                                        <option value="- tecnica no especificada">- tecnica no especificada -</option>
+                                        <option value="- tecnica no especificada -">- tecnica no especificada -</option>
                                     </optgroup>
                                 </select>
                         </div>
@@ -134,7 +134,7 @@
                     <div class="card ">
                         <div class="form-group form-cards">
                         <br><label for="">Imagen</label>
-                               <img class="img-edit" src="{{asset('storage').'/'.$obra->image}}" alt="">
+                               <img class="img-edit" src="{{asset('storage').'/'.$obra->image}}" alt="" name="image">
                         </div><br>
                     </div>
                 </div>

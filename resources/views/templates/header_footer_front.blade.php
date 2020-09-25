@@ -46,7 +46,7 @@
                 <nav>
                     <a class="{{'obras' == request()->path() ? 'active-front' : '' }}" id="obra" href="{{url('/obras/')}}">OBRA</a>
                     <a class="{{'biografia' == request()->path() ? 'active-front' : '' }}" href="{{url('/biografia/')}}">BIOGRAFÍA</a>
-                    <a class="{{'noticias' == request()->path() ? 'active-front' : '' }}" id="noticia" href="{{url('/noticias/')}}">NOTICIAS</a>
+                    <a class="{{'noticias' == request()->path() ? 'active-front' : '' }}" id="noticia" href="{{url('/actualitat/')}}">ACTUALIDAD</a>
                     <a class="{{'prensa' == request()->path() ? 'active-front' : '' }}" href="{{url('/prensa/')}}">PRENSA</a>
                     <a class="{{'contactar' == request()->path() ? 'active-front' : '' }}" href="{{url('/contactar/')}}">CONTACTAR</a>
                 </nav>
@@ -70,7 +70,7 @@
         <div class="content">
             <ul>
                 <li>LLUÍS VILÀ</li><div class="lv"></div>
-                <a href="http://www.fundaciolluiscoromina.org/"> <li> &copy  Fundació Lluís Coromina</a></li><div class="lv"></div>
+                <a href="http://www.fundaciolluiscoromina.org/" target="_blank"> <li> &copy  Fundació Lluís Coromina</a></li><div class="lv"></div>
                 <a href="mailto:fundacio@fundaciolluiscoromina.org"> <li> fundacio@fundaciolluiscoromina.org</a></li><div class="lv"></div>
                 <a href="tel:+3400972583477"> <li>Telf. 972 58 34 77</a></li><a href="#"><div class="insta"></a></div><a href="http://www.factoriaf5.org/"><div class="f5"></div></a>
             </ul>

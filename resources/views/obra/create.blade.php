@@ -37,7 +37,7 @@
                     <div class="card">
                         <br><div class="form-group form-cards">
                             <label for="">Categoría</label>
-                                <select class="form-control" name="categoria_id">
+                                <select class="form-control" name="categoria_id" required>
                                     <option selected hidden> </option>
                                     <option value="1">Pintura</option>
                                     <option value="2">Escultura</option>
@@ -51,7 +51,7 @@
                     <div class="card">
                    <div class="form-group form-cards">
                         <br> <label for="">Series</label>
-                                <select class="form-control" name="serie_id">
+                                <select class="form-control" name="serie_id" required>
 
                                     <option class="selected" hidden> </option>
 

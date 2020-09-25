@@ -21,22 +21,19 @@ class PageController extends Controller
     {
         return view('eat_art');
     }
+
     public function pintura(Request $request)
     {
         $categoria_pintura = Categoria::id('Pintura');
-
         $obras = Obra::filterByCategory($categoria_pintura);
-
-        $series = Serie::whereIn('id',[10,11,12,13,14,15,16,17,18])->get();
-
+        $series = Serie::get()->slice(9,17)->all();
         return view('pintura',compact('obras','series'));
     }
 
     public function filterSeriePintura(Request $request)
     {
         $obras = Obra::filterBySerie($request->serie_id);
-
-        $series = Serie::whereIn('id',[10,11,12,13,14,15,16,17,18])->get();
+        $series = Serie::get()->slice(9,17)->all();
         return view('/pintura',compact('series','obras'));
     }
 
@@ -44,18 +41,15 @@ class PageController extends Controller
     public function escultura()
     {
         $categoria_escultura = Categoria::id('Escultura');
-
         $obras = Obra::filterByCategory($categoria_escultura);
-        $series = Serie::whereIn('id',[1,2,3,4,5,6,7,8,9])->get();
-
+        $series = Serie::get()->slice(0,8)->all();
         return view('escultura',compact('obras','series'));
     }
 
     public function filterSerieEscultura(Request $request)
     {
         $obras = Obra::filterBySerie($request->serie_id);
-
-        $series = Serie::whereIn('id',[1,2,3,4,5,6,7,8,9])->get();
+        $series = Serie::get()->slice(0,8)->all();
         return view('/escultura',compact('series','obras'));
     }
 
@@ -63,14 +57,12 @@ class PageController extends Controller
     {
         $categoria_escultura = Categoria::id('Disseny');
         $obras = Obra::filterByCategory($categoria_escultura);
-
         return view('diseño',compact('obras'));
     }
     public function volcan()
     {
         return view('volcan');
     }
-
 
     public function biografia()
     {
@@ -79,10 +71,7 @@ class PageController extends Controller
 
     public function actualitat()
     {
-
         $actualidades = Actualidad::all();
-
-
         return view('actualitat',compact('actualidades'));
     }
 
@@ -96,6 +85,11 @@ class PageController extends Controller
     public function contactar()
     {
         return view('contactar');
+    }
+
+    public function contactaus()
+    {
+        return view('contactUs');
     }
 
 

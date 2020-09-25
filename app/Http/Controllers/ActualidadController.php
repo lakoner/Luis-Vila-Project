@@ -27,14 +27,12 @@ class ActualidadController extends Controller
 
     public function store(Request $request)
     {
-
         $actualidad = request()->except('_token');
 
         if($request->hasFile('image')){
-
-
-            $actualidad['image'] = $request->file('image')->store('noticies','public');
-
+            $file = $request->file('image');
+            $name = time().$file->getClientOriginalName();
+            $actualidad['image'] = $request->file('image')->storeAs('noticies',$name,'public');
         }
 
         Actualidad::insert($actualidad);
@@ -72,19 +70,18 @@ class ActualidadController extends Controller
         if($request->hasFile('image')){
 
             $noticia = Actualidad::findOrFail($id);
-
-            Storage::delete('public/'.$noticia->image);
-
-            $actualidad['image'] = $request->file('image')->store('noticies','public');
+            $file = $noticia->image;
+            // dd($file);
+            Storage::delete('public/'.$file);
+            $file = $request->file('image');
+            $name = time().$file->getClientOriginalName();
+            $actualidad['image'] = $request->file('image')->storeAs('noticies',$name,'public');
+            Actualidad::where('id','=',$id)->update($actualidad);
+            $actualidad = Actualidad::findOrFail($id);
 
         }
 
-        // $actualidad->update($request->all());
-        Actualidad::where('id','=',$id)->update($actualidad);
-
-        $actualidad = Actualidad::findOrFail($id);
         return view('actualidad.edit',compact('actualidad'));
-        //  return redirect(route('actualidad.index'));
     }
 
 

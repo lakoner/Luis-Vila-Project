@@ -12,6 +12,11 @@ class ObraTest extends TestCase
 {
 use RefreshDatabase;
 
+     /**
+     * A basic test example.
+     *
+     * @test
+     */
     public function test_filtro_categorias()
     {
 
@@ -29,17 +34,4 @@ use RefreshDatabase;
 
     }
 
-    public function text_filtro_series()
-    {
-        $series = factory(Serie::class,2)-create();
-        $obras_devolver = factory(Obra::class,2)->create(['serie_id'=> $series[0]->id]);
-        $obra_descartar = factory(Obra::class)->create(['serie_id'=> $series[1]->id]);
-
-        $obras_filtradas = Obra::filterBySerie($serie_id[0]->id);
-
-        $this->assertEquals(2,count($obras_filtradas));
-        $this->assertEquals($series[0]->id,$obras_filtradas[0]->series_id);
-
-
-    }
 }
