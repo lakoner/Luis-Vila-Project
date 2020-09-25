@@ -24,7 +24,7 @@ class CreateObrasTable extends Migration
             $table->foreignId('serie_id')->nullable();
             $table->foreign('serie_id')->references('id')->on('series');
             $table->timestamp('created_at')->default(\DB::raw('CURRENT_TIMESTAMP'));
-            $table->timestamp('updated_at')->default(\DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->default(\DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 
