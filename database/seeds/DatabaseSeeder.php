@@ -8,7 +8,8 @@ use App\Serie;
 use App\Obra;
 use App\Noticia;
 use App\Actualidad;
-
+use App\Factory;
+use App\Faker;
 
 use App\Seriepintura;
 
