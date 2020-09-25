@@ -49,7 +49,6 @@ class DatabaseSeeder extends Seeder
         factory(Obra::class)->create(['id' => 1, 'name' => 'Nombre no especificado','image'=>asset('Luis-Vila-Project/storage/app/public/obres/Disseny/LluisVila_Paris.jpg'),
         'year'=>'1985','technique'=>'- tecnica no especificada - ','categoria_id'=>3,'serie_id'=>19]);
 
-
         factory(Actualidad::class)->create(['id' => 1, 'title' => 'Noticia1','image'=>'LluisVila__450.jpg','subtitle'=>'subtile1',
         'text'=>'Hola que tal esto es el articulo o el texto de la noticia','date'=>'2013-04-13']);
 
