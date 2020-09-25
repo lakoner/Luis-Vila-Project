@@ -1,0 +1,65 @@
+.content-noticia{
+    padding: 100px 100px 50px 100px;
+    h1{
+        padding-right: 300px;
+
+    }
+    h4{
+        padding-right: 300px;
+        line-height: 25px;
+        font-size:18px;
+
+    }
+    p{
+        font-size: 16px;
+        padding-right: 25px;
+        text-align:justify;
+        margin-top:50px;
+
+    }
+}
+
+.noticia-top{
+    position: relative;
+}
+.content-image-noticia{
+width: 73%;
+height: 25%;
+overflow:hidden;
+}
+
+.slide-noticia{
+width: 275px;
+height:1000px;
+overflow: hidden;
+position: absolute;
+
+    top: 0px;
+    right: 0px;
+}
+.scroll{
+    overflow: auto;
+
+}
+.slide-title{
+    height:20px;
+    width: 100%;
+    padding: 0px 0px 25px 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis!important;
+    margin: auto;
+}
+.noticia-text{
+    width: 100%;
+    padding-right:275px;
+}
+
+.date-noticia{
+    width: 75%;
+    height: 20px;
+    margin-top:5px!important;
+    small{
+        float: right;
+    }
+}

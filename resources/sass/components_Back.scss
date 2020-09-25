@@ -1,0 +1,212 @@
+//BACKEND-------------------------------------------------------------------------------------------------------------//
+body{
+    overflow-x:hidden;
+}
+//icons---------------------------------------------------------------------------------------------------------------//
+.fa-edit{
+    color: white;
+    padding:0;
+}
+
+.fa-trash-alt{
+    color: white;
+    padding:0;
+}
+
+.fa-eye{
+margin-right: 10px;
+color: rgba($color: #000000, $alpha: 0.5)!important;
+text-align: left;
+vertical-align: middle!important;
+}
+.fa-eye:hover{
+    color: rgba($color: #000000, $alpha: 1)!important;
+}
+
+.fa-long-arrow-alt-left{
+    margin-top:5px;
+}
+.icon-edit-header{
+    color:#545b62;
+
+}
+
+//COMPONENTS---------------------------------------------------------------------------------------------------------//
+.background-admin{
+    background-color:#e9ecef;
+}
+.content-admin{
+    background-color:#e9ecef;
+}
+
+.content-header{
+    height:110px;
+    z-index: 1;
+    width: 80%!important;
+    box-sizing: border-box;
+    border-bottom: 2px solid grey;
+    margin-top:0;
+    padding:0px 25px 0px 25px;
+    float: right!important;
+    position: fixed;
+    background-color: #dee2e6;
+    h1{
+        margin-top:35px;
+        font-weight: bold!important;
+        color:#545b62;
+    }
+
+}
+
+label{
+    color: black;
+    font-size: 16px;
+}
+
+input{
+    border-color:black!important;
+}
+select{
+    border-color:black!important;
+    color:black;
+}
+.filter-button{
+    padding:5px 10px 5px 10px!important;
+}
+.input-button{
+    border:none!important;
+}
+
+
+.btn-group {
+    margin-top:5px;
+    float: right;
+    label{
+        line-height: 35px;
+    }
+}
+
+.btn-group a{
+    color:white;
+
+}
+.content-table{
+padding: 0px 25px 0px 25px;
+}
+
+.create{
+    margin-top:80px!important;
+    padding:50px 50px 0px 50px;
+    background-color: #dbd5d5;
+    form{
+        margin:0;
+        .card{
+            border: solid 1px #545b62;
+            input{
+                border: solid 1px #dbd5d5;
+            }
+        }
+    }
+}
+
+
+
+
+// ACTUALIDAD CONTENT
+
+.content-admin{
+    width: 80%;
+    margin-top:75px;
+    float: right;
+
+    position:relative;
+}
+
+td{
+    width: 100px;
+    padding:10px 0px 10px 0px!important;
+    text-align:center;
+    height: 55px!important;
+    background-color: white;
+    font-size: 13px;
+    vertical-align: middle!important;
+
+    .img{
+        padding: 5px 5px 5px 5px!important;
+    }
+}
+
+
+
+.ellipsis{
+    width: 100px;
+
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis!important;
+    margin: auto;
+}
+
+
+table th{
+    text-align: center;
+    width: 150px;
+
+}
+
+.th-small{
+    width: 50px!important;
+
+}
+
+
+.timestamp{
+
+    padding: 0!important;
+    div{
+        width: 139!important;
+    }
+}
+
+
+
+
+
+
+
+//LOGIN
+
+.fondo-login{
+
+    background-color: rgb(231, 226, 226);
+    z-index: 1;
+
+    background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+
+//Nuevo usuario
+
+.card-header{
+    background-color: #6c757d;
+    color:white!important;
+}
+.card-body{
+    border:solid 1px #6c757d;
+    background-color:#e7e1e1;
+
+}
+.background-login{
+    background-color: #e9ecef!important;
+}
+.btn-link{
+    color:#6c757d!important;
+}

@@ -21,6 +21,7 @@ class LoginController extends Controller
 
     use AuthenticatesUsers;
 
+<<<<<<< HEAD
     /**
      * Where to redirect users after login.
      *
@@ -33,8 +34,15 @@ class LoginController extends Controller
      *
      * @return void
      */
+=======
+
+>>>>>>> obras
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> obras
 }

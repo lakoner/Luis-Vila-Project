@@ -1,0 +1,24 @@
+.volca{
+    width: 195px;
+    height: 735px;
+    background-image: url("/img/obra/volca.jpg");
+    background-size: cover;
+    transition:  background-image 2s;
+    h3{
+        line-height: 735px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 2s;
+    }
+}
+.volca:hover{
+    background-image: url("/img/obra/volca_hover.jpg");
+    background-size: cover;
+    a{
+        text-decoration:none!important
+    }
+    h3{
+        opacity: 1;
+        line-height: 735px;
+     }
+}

@@ -24,6 +24,11 @@ class RegisterController extends Controller
 
     use RegistersUsers;
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> obras
     /**
      * Where to redirect users after registration.
      *
