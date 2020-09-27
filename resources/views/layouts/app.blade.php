@@ -102,15 +102,9 @@
         <main class="py-4">
             @yield('content')
         </main>
-<<<<<<< HEAD
-    </div>
-</body>
-</html>
-=======
 </div>
 
 
 </body>
 </html>
 
->>>>>>> obras
