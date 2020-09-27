@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Obra;
-use App\Actualidad;
 
 class HomeController extends Controller
 {
@@ -25,12 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $obras = Obra::all();
-        $actualidades = Actualidad::all();
-
-        // $obras->last();
-        // $actualidades->last();
-
-        return view('home',compact('obras','actualidades'));
+        return view('home');
     }
 }

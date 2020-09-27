@@ -78,3 +78,7 @@ Route::get('/volcan','PageController@volcan');
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
