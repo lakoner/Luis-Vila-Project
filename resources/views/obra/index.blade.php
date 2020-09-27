@@ -77,7 +77,7 @@
                         <a href="#">
                             <i class="far fa-eye fa-2x" data-toggle="modal" data-target="#image{{ $obra->id }}" data-whatever="@mdo"></i>
                         </a>
-                            <img class="img-obras-index" src="{{asset('storage').'/'.$obra->image}}" alt="" name="image">
+                            <img class="img-obras-index" src="{{asset('storage').'/'.$obra->image}}" alt="">
                     </td>
                     <td>{{$obra->name}}</div></td>
                     <td>{{$obra->technique}}</td>
