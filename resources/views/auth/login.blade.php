@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-@extends('layouts.app')
-
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-=======
 @extends('layouts.app-login')
 
 @section('content')
@@ -18,18 +8,13 @@
         <div class="col-md-6">
             <div class="card" >
                 <div class="card-header">{{ __('Acceso') }}</div>
->>>>>>> obras
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="form-group row">
-<<<<<<< HEAD
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-=======
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Correo Electrónico') }}</label>
->>>>>>> obras
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>

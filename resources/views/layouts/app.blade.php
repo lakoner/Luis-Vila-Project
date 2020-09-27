@@ -13,16 +13,6 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
-<<<<<<< HEAD
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-<body>
-    <div id="app">
-=======
     <link href="{{ asset('css/fonts.css') }}" rel="stylesheet">
 
     <!-- Styles -->
@@ -37,7 +27,6 @@
 </head>
 <body class="background-admin">
   <div id="app">
->>>>>>> obras
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -91,8 +80,6 @@
                 </div>
             </div>
         </nav>
-<<<<<<< HEAD
-=======
         <div class="admin-panel">
 
 
@@ -111,7 +98,6 @@
         </div>
 
 
->>>>>>> obras
 
         <main class="py-4">
             @yield('content')
