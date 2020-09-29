@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [0925/114143.768:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0925/114143.769:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0925/114143.769:ERROR:crash_report_database_win.cc(469)] failed to stat report
@@ -82,3 +83,26 @@
 [0929/112400.111:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0929/112400.111:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0929/112400.111:ERROR:crash_report_database_win.cc(469)] failed to stat report
+=======
+[0927/202234.036:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.037:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.037:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.037:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.037:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.037:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.038:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.038:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.038:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.038:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.038:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.038:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.039:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.039:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.039:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.039:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.039:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.039:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.039:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.039:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0927/202234.039:ERROR:crash_report_database_win.cc(469)] failed to stat report
+>>>>>>> obras
