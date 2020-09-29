@@ -14,6 +14,11 @@ class Categoria extends Model
     return $this->hasMany(Obra::class);
     }
 
+    public function series()
+    {
+    return $this-belongsTo(Serie::class);
+    }
+
     static function filterByCategory($id)
     {
 
@@ -26,10 +31,10 @@ class Categoria extends Model
     static function filterBySeries($id)
     {
 
-        $series = Serie::where('categoria_id','=', $id)
+        $serie = Serie::where('categoria_id','=', $id)
            ->get();
 
-        return $series;
+        return $serie;
     }
 
     static function id(String $name)

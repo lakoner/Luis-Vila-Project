@@ -1,8 +1,8 @@
-//BACKEND
+//BACKEND-------------------------------------------------------------------------------------------------------------//
 body{
     overflow-x:hidden;
 }
-//icons
+//icons---------------------------------------------------------------------------------------------------------------//
 .fa-edit{
     color: white;
     padding:0;
@@ -26,11 +26,19 @@ vertical-align: middle!important;
 .fa-long-arrow-alt-left{
     margin-top:5px;
 }
+.icon-edit-header{
+    color:#545b62;
 
-.actualidad-content table{
-    margin-top:100px!important;
-    z-index: -2;
 }
+
+//COMPONENTS---------------------------------------------------------------------------------------------------------//
+.background-admin{
+    background-color:#e9ecef;
+}
+.content-admin{
+    background-color:#e9ecef;
+}
+
 .content-header{
     height:110px;
     z-index: 1;
@@ -41,101 +49,77 @@ vertical-align: middle!important;
     padding:0px 25px 0px 25px;
     float: right!important;
     position: fixed;
-    background-color: rgb(219, 213, 213);
+    background-color: #dee2e6;
     h1{
         margin-top:35px;
+        font-weight: bold!important;
+        color:#545b62;
     }
 
 }
-.actualidad-content{
-    z-index: 1;
+
+label{
+    color: black;
+    font-size: 16px;
 }
+
+input{
+    border-color:black!important;
+}
+select{
+    border-color:black!important;
+    color:black;
+}
+.filter-button{
+    padding:5px 10px 5px 10px!important;
+}
+.input-button{
+    border:none!important;
+}
+
+
+.btn-group {
+    margin-top:5px;
+    float: right;
+    label{
+        line-height: 35px;
+    }
+}
+
+.btn-group a{
+    color:white;
+
+}
+.content-table{
+padding: 0px 25px 0px 25px;
+}
+
+.create{
+    margin-top:80px!important;
+    padding:50px 50px 0px 50px;
+    background-color: #dbd5d5;
+    form{
+        margin:0;
+        .card{
+            border: solid 1px #545b62;
+            input{
+                border: solid 1px #dbd5d5;
+            }
+        }
+    }
+}
+
+
+
+
+// ACTUALIDAD CONTENT
+
 .content-admin{
     width: 80%;
     margin-top:75px;
     float: right;
 
     position:relative;
-}
-#app{
-    box-sizing: border-box;
-    a{
-        color: white;
-    }
-}
-.dropdown-menu{
-    background-color: #545b62!important;
-}
-
-.dropdown-menu a:hover{
-    background-color: #6c757d!important;
-}
-//header admin
-.navbar{
-    background-color: #545b62!important;
-    height:75px;
-    position: fixed!important;
-    z-index: 1;
-
-}
-
-.navbar-brand{
-    color:white!important;
-
-}
- //menu-admin
-.admin-panel{
-    width: 20%;
-    height: 100%;
-    float:left;
-    position:fixed;
-    padding: 0!important;
-    border-right: solid 1px grey;
-    background-color: #6c757d;
-    ul{
-        margin-top:27px;
-    li{
-        height:40px;
-        color:white;
-        width: 100%!important;
-        padding: 0;
-        border-top: solid 1px white;
-        border-right: none;
-    a{
-        padding-left: 70px;
-        line-height: 40px;
-        color:white;
-    }
-    }
-    }
-
-}
-.admin-panel div{
-    margin-top:113px;
-    h1{
-        padding: 0px 25px 0px 25px;
-        text-align: center;
-        color:white;
-    }
-}
-.bottom{
-    border-bottom:solid 1px white;
-}
-li:hover{
-    background-color: #545b62;
-    cursor:pointer;
-}
-.btn-group {
-    margin-top:5px;
-    float: right;
-}
-
-
-//ACTUALIDAD
-
-
-.btn-group a{
-    color:white;
 }
 
 td{
@@ -151,31 +135,19 @@ td{
         padding: 5px 5px 5px 5px!important;
     }
 }
-.text-news-back{
 
-    padding: 0!important;
-    margin: 0!important;
-      width: 50px;
-        height: 40px;
-    padding: 0;
-        overflow:hidden!important;
-        margin: 0!important;
-    div{
-        width: 30px!important;
-        overflow: hidden;
-        padding:0px!important;
-        margin: 0 auto!important;
-        }
-}
+
 
 .ellipsis{
     width: 100px;
+
 
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis!important;
     margin: auto;
 }
+
 
 table th{
     text-align: center;
@@ -197,40 +169,10 @@ table th{
     }
 }
 
-.actualidad-create{
-    margin-top:80px!important;
-    padding:50px 50px 0px 50px;
-    background-color: #dbd5d5;
-    form{
-        margin:0;
-        .card{
-            border: solid 1px #545b62;
-            input{
-                border: solid 1px #dbd5d5;
-            }
-        }
-    }
-}
-select{
-    overflow: auto!important;
-}
-.border-none{
-    border:none!important;
-}
 
-.form-group{
-    padding: 20px!important;
 
-}
 
-//obras
 
-.categorias-obra-index{
-    width: 100%;
-        select{
-            width:20%;
-        }
-    }
 
 
 //LOGIN
@@ -248,4 +190,23 @@ select{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0;
+}
+
+
+//Nuevo usuario
+
+.card-header{
+    background-color: #6c757d;
+    color:white!important;
+}
+.card-body{
+    border:solid 1px #6c757d;
+    background-color:#e7e1e1;
+
+}
+.background-login{
+    background-color: #e9ecef!important;
+}
+.btn-link{
+    color:#6c757d!important;
 }

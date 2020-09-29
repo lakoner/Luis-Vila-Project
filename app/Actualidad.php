@@ -20,4 +20,7 @@ class Actualidad extends Model
         return $actualidades;
     }
 
+
+
+
 }

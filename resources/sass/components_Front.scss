@@ -1,17 +1,24 @@
 //FRONTEND
 
-body, html {
-    margin:0;
-    padding:0;
-    scroll-behavior: smooth;
-    height:100%;
+*{
+    margin: 0px;
+    padding:0px;
 }
+
 a:link, a:visited, a:active {
     text-decoration:none;
 }
 
+
 .content-framwork-1{
     padding: 100px 100px 50px 100px;
+    height: 100%;
+
+}
+
+.content-noticias{
+    padding: 100px 200px 50px 200px;
+
 }
 
 .content-colums{
@@ -28,7 +35,7 @@ a:link, a:visited, a:active {
 }
 
 
-//text
+//TEXT
 
 h2{
     font-family: 'futura-bold'!important;
@@ -38,7 +45,6 @@ h3{
     font-family: 'futura-bold'!important;
     color:white!important;
 }
-
 
 .p-half-wide{
 width: 600px!important;
@@ -61,225 +67,4 @@ margin-left: 25px;
 .p-center p{
     text-align: center;
 }
-
-//MENU INTERNO OBRAS
-.inter-menu {
-float:left;
-    nav a{
-        margin: 0px 30px 0px 0px!important;
-        font-family:'saira'!important;
-        color: rgba($color: #000000, $alpha: 0.5);
-    }
-    nav a:hover{
-        color:black!important;
-    }
-}
-
-//MENU PRINCIPAL OBRAS
-.content-obra-menu
-{
-    width: 975px;
-    display: flex;
-    margin: 0 auto;
-}
-.eat-art{
-    width: 195px;
-    height: 735px;
-    background-image: url("/img/obra/eat-art.jpg");
-    background-size: cover;
-    transition:  background-image 2s;
-
-    h3{
-        line-height: 735px;
-        text-align: center;
-        opacity: 0;
-        transition: opacity 2s;
-
-    }
-}
-
-.eat-art:hover{
-    background-image: url("/img/obra/eat-art_hover.jpg");
-    background-size: cover;
-    transition:  background-image 2s;
-    a{
-        text-decoration:none!important
-    }
-    h3{
-        opacity: 1;
-        line-height: 735px;
-
-    }
-}
-.disseny{
-    width: 195px;
-    height: 735px;
-    background-image: url("/img/obra/disseny.jpg");
-    background-size: cover;
-    transition:  background-image 2s;
-    h3 {
-        line-height: 735px;
-        text-align: center;
-        opacity: 0;
-        transition: opacity 2s;
-    }
-}
-.disseny:hover{
-    background-image: url("/img/obra/disseny_hover.jpg");
-    background-size: cover;
-    a{
-        text-decoration:none!important
-    }
-    h3{
-        opacity: 1;
-        line-height: 735px;
-    }
-}
-.escultura{
-   width: 195px;
-    height: 735px;
-    background-image: url("/img/obra/escultura.jpg");
-    background-size: cover;
-    transition:  background-image 2s;
-    h3{
-        line-height: 735px;
-        text-align: center;
-        opacity: 0;
-        transition: opacity 2s;
-    }
-}
-.escultura:hover{
-     background-image: url("/img/obra/escultura_hover.jpg");
-     background-size: cover;
-     a{
-        text-decoration:none!important
-    }
-     h3{
-        opacity: 1;
-        line-height: 735px;
-     }
- }
-.pintura{
-    width: 195px;
-    height: 735px;
-    background-image: url("/img/obra/pintura.jpg");
-    background-size: cover;
-    transition:  background-image 2s;
-    h3{
-        line-height: 735px;
-        text-align: center;
-        opacity: 0;
-        transition: opacity 2s;
-    }
-}
-.pintura:hover{
-    background-image: url("/img/obra/pintura_hover.jpg");
-    background-size: cover;
-    a{
-        text-decoration:none!important
-    }
-    h3{
-        opacity: 1;
-        line-height: 735px;
-     }
-}
-.volca{
-    width: 195px;
-    height: 735px;
-    background-image: url("/img/obra/volca.jpg");
-    background-size: cover;
-    transition:  background-image 2s;
-    h3{
-        line-height: 735px;
-        text-align: center;
-        opacity: 0;
-        transition: opacity 2s;
-    }
-}
-.volca:hover{
-    background-image: url("/img/obra/volca_hover.jpg");
-    background-size: cover;
-    a{
-        text-decoration:none!important
-    }
-    h3{
-        opacity: 1;
-        line-height: 735px;
-     }
-}
-
-//Actualidad
-
-.content-news{
-    display: flex!important;
-    margin-bottom: 25px;
-    padding: 0;
-    width: 100%;
-    height:250px;
-    position: relative;
-    box-shadow:5px 5px 10px grey;
-    box-sizing: content-box;
-    border-radius: 20px 20px 20px 20px;
-}
-.content-data-news{
-    width: 100%;
-    height: 100%;
-    padding: 25px 50px 25px 250px;
-    position:absolute;
-    h1{
-        margin-top: 0!important;
-    }
-    h4{
-        margin-bottom: 25px;
-    }
-}
-.news-front{
-    width: 200px!important;
-    height: 200px!important;
-}
-.text-news-front{
-
-    font-size: 16px;
-    width: 100%;
-    height: 80px;
-    line-height: 20px;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis!important;
-    margin: auto;
-}
-
-.date {
-    width: 100%!important;
-    vertical-align: bottom!important;
-    margin: 10px 0px 0px 0px!important;
-
-}
-.content-image-news{
-    margin: 25px;
-    width: 200px;
-    height: 200px!important;
-    padding: 0!important;
-    img{
-        width: 200px!important;
-        height: 200px!important;
-    }
-}
-
-//Pintura
-
-.content-obra-img{
-    display:flex;
-    margin: 0 auto;
-    img{
-        width: 100%!important;
-        height: 100%!important;
-    }
-}
-.content-pintura-data{
-    margin: 0 auto;
-}
-
 

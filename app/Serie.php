@@ -8,16 +8,9 @@ class Serie extends Model
 {
     protected $fillable = ['name','year'];
 
-    public function obra()
+    public function obras()
     {
     return $this->belongsTo(Obra::class);
     }
-
-    // static function filter(){
-
-    //     $series = Serie::filterBySerie($categoria->id);
-
-    //     return $series;
-    // }
 
 }

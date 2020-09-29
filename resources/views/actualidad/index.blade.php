@@ -3,32 +3,31 @@
 
 @section('content')
 
-<main>
+
 
 <div class="content-admin">
 
 
     <div class="actualidad-content">
             <div class="content-header">
-                <h1><b>Noticies</b>
+                <h1><i class="fas fa-newspaper"></i>&nbsp;<b>Noticias</b>
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-                        <label class="btn btn-secondary">
-                            <a href="{{url('/actualitat')}}" target="_blank">
-                                <input type="radio" name="options" id="option1" > Vista previa
-                            </a>
+                        <a href="{{url('/actualitat')}}" target="_blank">
+                        <label class="btn btn-secondary header-left-button">
+                               Vista previa
+                        </label> </a>
+                          <a href="{{url('/actualidad/create')}}">
+                          <label class="btn btn-secondary header-right-button">
+                                 Nova Noticia
                         </label>
-                        <label class="btn btn-secondary">
-                            <a href="{{url('/actualidad/create')}}">
-                                <input type="radio" name="options" id="option2"> Nova Noticia
-                            </a>
-                        </label>
+                    </a>
                     </div>
                 </h1>
             </div>
 
 
             <br><br><br>
-
+        <div class="content-table">
             <table class="table">
             <thead class="thead-dark">
                 <tr>
@@ -53,8 +52,8 @@
                         </a>
                             <img class="img-news-index" src="{{asset('storage').'/'.$actualidad->image}}" alt="" name="image">
                     </td>
-                    <td><div class="ellipsis"><a href="#">{{$actualidad->title}}</a></div></td>
-                    <td><div><a href="">{{$actualidad->subtitle}}</a></div></td>
+                    <td><div class="ellipsis">{{$actualidad->title}}</div></td>
+                    <td><div class="ellipsis">{{$actualidad->subtitle}}</div></td>
                     <td class="text-news-back">
                         <div>
                             <a href="#">
@@ -66,64 +65,70 @@
                     <td class="timestamp"><div >{{$actualidad->created_at}}</div></td>
                     <td>{{$actualidad->updated_at}}</td>
                     <td class="cta"><a href="{{Route('actualidad.edit', $actualidad->id)}}">
-                        <button class="button-edit btn btn-primary"><i class="far fa-edit"></i></button> </a>
+                        <button class="button-edit btn btn-secondary"><i class="far fa-edit"></i></button> </a>
                     </td>
                     <td class="cta">
                         <form action="{{Route('actualidad.destroy', $actualidad->id)}}" method="post"> @method('delete')@csrf
-                            <button class="btn btn-danger button-delete" onclick="return confirm ('¿Estas segura de borrar esta noticia?')">
+                            <button class="btn btn-secondary button-delete" onclick="return confirm ('¿Estas seguro de borrar esta noticia de manera permanente?')">
                             <i class="far fa-trash-alt"></i>
                         </form>
                     </td>
                 </tr>
 
                 <div class="modal fade" id="image{{ $actualidad->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content ">
+                            <div class="modal-header modal-close-actualidad">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal-img-actualidad" src="{{asset('storage').'/'.$actualidad->image}}" alt="" name="image">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tanca</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="text{{ $actualidad->id }}" data-backdrop="static" data-keyboard="false" tabindex="-1"  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content modal-lg">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body-news">
-                                <img class="img-news-index" src="{{asset('storage').'/'.$actualidad->image}}" alt="" name="image">
+                            <div class="modal-body">
+                                <div class="text"> {{$actualidad->text}}</div>
 
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Tanca</button>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal fade" id="text{{ $actualidad->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body-news">
-                            {{$actualidad->text}}
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tanca</button>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+
             @endforeach
 
+
+
+
             </table>
+        </div>
 
     </div>
 </div>
 </div>
 
 
-
-</main>
 
 
 @endsection

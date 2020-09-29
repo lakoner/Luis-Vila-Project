@@ -1,0 +1,261 @@
+//FRONTEND
+
+//MENU INTERNO OBRAS
+.inter-menu {
+    width: 100%;
+    height:40px!important;
+    float:right;
+    nav{
+        width: 50%!important;
+     a{
+        margin: 0px 30px 0px 0px!important;
+        font-family:'saira'!important;
+        color: rgba($color: #000000, $alpha: 0.5);
+    }
+    }
+}
+//SELECTED MENU APP.BLADE
+#eat_art:hover{
+    color:black;
+}
+#diseño:hover{
+    color:black;
+}
+#escultura:hover{
+    color:black;
+}
+#pintura:hover{
+    color:black;
+}
+#volcan:hover{
+    color:black;
+}
+
+
+//MENU PRINCIPAL OBRAS
+.content-obra-menu
+{
+    width: 975px;
+    display: flex;
+    margin: 0 auto;
+}
+.eat-art{
+    width: 195px;
+    height: 735px;
+    background-image: url("/img/obra/eat-art.jpg");
+    background-size: cover;
+    transition:  background-image 2s;
+
+    h3{
+        line-height: 735px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 2s;
+
+    }
+}
+.eat-art:hover{
+    background-image: url("/img/obra/eat-art_hover.jpg");
+    background-size: cover;
+    transition:  background-image 2s;
+    a{
+        text-decoration:none!important
+    }
+    h3{
+        opacity: 1;
+        line-height: 735px;
+
+    }
+}
+.disseny{
+    width: 195px;
+    height: 735px;
+    background-image: url("/img/obra/disseny.jpg");
+    background-size: cover;
+    transition:  background-image 2s;
+    h3 {
+        line-height: 735px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 2s;
+    }
+}
+.disseny:hover{
+    background-image: url("/img/obra/disseny_hover.jpg");
+    background-size: cover;
+    a{
+        text-decoration:none!important
+    }
+    h3{
+        opacity: 1;
+        line-height: 735px;
+    }
+}
+
+
+ //volca
+.volca{
+    width: 195px;
+    height: 735px;
+    background-image: url("/img/obra/volca.jpg");
+    background-size: cover;
+    transition:  background-image 2s;
+    h3{
+        line-height: 735px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 2s;
+    }
+}
+.volca:hover{
+    background-image: url("/img/obra/volca_hover.jpg");
+    background-size: cover;
+    a{
+        text-decoration:none!important
+    }
+    h3{
+        opacity: 1;
+        line-height: 735px;
+     }
+}
+
+//FILTER
+
+
+.filter-button{
+    margin-left:8px;
+    font-family:'saira'!important;
+    background-color: #6c757d!important;
+    color:white!important;
+    border:none!important;
+    height: 34px!important;
+    }
+.filter-button:hover{
+    background-color:#e7e1e1!important;;
+    color:#545b62!important;
+}
+.filter-todas-button{
+    margin-left:8px;
+    font-family:'saira'!important;
+    background-color: #6c757d!important;
+    color:white!important;
+    padding-top:7px!important;
+
+}
+.filter-todas-button:hover{
+    background-color:#e7e1e1!important;;
+    color:#545b62!important;
+
+}
+
+//FILTER BACK
+
+
+.header-left-button{
+    border-radius: 6px 0px 0px 6px!important;
+    height:51px;
+    i{
+        color:white!important;
+    }
+}
+.header-left-button i:hover{
+    color:white!important;
+}
+.edit-new-button{
+    border-radius: 0px 4px 4px 0px!important;
+}
+.btn-header-between-buttons{
+    border-radius:0!important;
+    height:51px!important;
+}
+
+.header-right-button{
+    border-radius: 0px 6px 6px 0px!important;
+    height:51px;
+}
+
+
+//pintura
+.filter-series{
+    display:flex;
+z-index: 1;
+width: auto!important;
+height: 25px!important;
+a{
+        text-decoration: none!important;
+
+ select{
+margin: 0!important;
+    width: 160px;
+    color: black;
+
+}
+}
+}
+//BACKEND
+
+.categorias-obra-index{
+    width: 100%;
+        select{
+            width:20%;
+        }
+    }
+.filter{
+    height: 28px;
+    width: 150px;
+    border:none!important;
+}
+
+.filter-btn{
+
+    background-color: #6c757d;
+    color:white;
+    height: 51px!important;
+    font-weight: bold;
+}
+.content-btn{
+    padding:0;
+}
+.filter-btn:hover{
+    background-color: #5a6268;
+}
+.form-cards{
+    padding:20px!important;
+    height:151px!important;
+}
+
+.card-image-edit{
+    height:151px!important;
+    div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+    }
+}
+
+.card-image-create{
+    height:151px!important;
+
+}
+.form-file-edit{
+    padding:10!important;
+}
+
+
+.file{
+    border:none!important;
+    padding-left: 20px!important;
+    margin:0 auto;
+    text-align: center;
+}
+
+.footer-buttons{
+    display: flex;
+    div{
+        margin-left:25px;
+    }
+}

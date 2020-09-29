@@ -13,7 +13,7 @@ class Obra extends Model
     return $this->belongsTo(Categoria::class);
     }
 
-    public function series()
+    public function serie()
     {
     return $this->belongsTo(Serie::class);
     }
@@ -27,6 +27,15 @@ class Obra extends Model
            ->get();
 
         return $obras;
+    }
+
+    static function filterBySerie($id)
+    {
+
+        $obras = Obra::where('serie_id','=', $id)
+        ->get();
+
+     return $obras;
     }
 
 

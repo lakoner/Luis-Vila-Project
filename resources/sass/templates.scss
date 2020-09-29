@@ -61,25 +61,29 @@ nav a:focus{
     color: black;
 }
 
+.active-front{
+   color: black!important;
+}
+
 
 
 //FOOTER FRONT//
 
 footer{
 
+bottom: 0;
+// width: 100%!important;
+// display: flex;
+// flex-direction: row;
 
-width: 100%!important;
-display: flex;
-flex-direction: row;
 }
 
 .footer{
-    width: 100%;
-    height: 80px;
+    // width: 100%;
+    // height: 80px;
     border-top: solid 1px black;
     background-color: white;
-    bottom:0px;
-    z-index:10;
+    // z-index:10;
 
 
 }
@@ -155,7 +159,90 @@ padding: 15px 0px 15px 0px;
 }
 
 
- //HEADER ADMIN
+ //HEADER ADMIN //APP.BLADE
+
+#app{
+    box-sizing: border-box;
+
+    a{
+        color: white;
+    }
+}
+
+ .py-4{
+    width: 100%!important;
+    height: 100%!important;
+    padding: 0!important;
+}
+
+
+.navbar{
+    background-color: #545b62!important;
+    height:75px;
+    position: fixed!important;
+    z-index: 2;
+
+}
+
+.navbar-brand{
+    color:white!important;
+
+}
+.dropdown-menu{
+    background-color: #545b62!important;
+
+}
+
+.dropdown-menu a:hover{
+    background-color: #6c757d!important;
+}
+
+.dropdown-item{
+    text-align: center;
+}
+
+//MENU ADMIN
+.admin-panel{
+    width: 20%;
+    height: 100%;
+    float:left;
+    position:fixed;
+    padding: 0!important;
+    border-right: solid 1px grey;
+    background-color: #6c757d;
+    ul{
+        margin-top:27px;
+    li{
+        height:40px;
+        color:white;
+        width: 100%!important;
+        padding: 0px 0px 0px 70px;
+        border-top: solid 1px white;
+        border-right: none;
+    }
+    }
+
+}
+.link-a{
+    width: 100%!important;
+    text-align:left;
+    line-height:40px;
+    color:white;
+}
+.admin-panel div{
+    margin-top:113px;
+    h1{
+    padding: 0px 25px 0px 25px;
+    text-align: center;
+    color:white;
+    }
+
+}
+
+.admin-panel li:hover{
+        background-color: #545b62;
+        cursor:pointer;
+        }
 
  nav{
      width: 100%!important;
@@ -164,13 +251,18 @@ padding: 15px 0px 15px 0px;
      z-index:1;
  }
 
- //APP.BLADE
- .py-4{
-     width: 100%!important;
-     height: 100%!important;
-     padding: 0!important;
- }
+ .bottom{
+    border-bottom:solid 1px white;
+}
+//
 
+
+.active-back{
+    background-color:#545b62!important;
+    a{
+        color:white;
+    }
+}
 
 
 

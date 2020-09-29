@@ -2,8 +2,11 @@
 @extends('templates.header_footer_front')
 
 
+
 @section('content')
-<div id="carouselExampleFade" class="carousel slide carousel-fade welcome" data-ride="carousel">
+
+<div class="content-framework-1">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade welcome" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
     <a href="#"><img src="/img/slideWelcome/LluisVila_Absolut_nosaltres_slide.jpg" class="d-block w-100" alt="..." data-toggle="modal" data-target="#exampleModal1">
@@ -60,7 +63,11 @@
     </div>
   </div>
 </div>
-<script src="{{ asset('js/scripts.js') }}" defer></script>
+
+
+</div>
+
+
 
 
 @endsection
