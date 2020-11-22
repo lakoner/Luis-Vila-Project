@@ -39,7 +39,7 @@
                             <label for="">Categoría</label>
                                 <select class="form-control" name="categoria_id" required>
                                     <option selected hidden> </option>
-                                    <option value="1">Pintura</option>
+                                    <option value="1">Pintura </option>
                                     <option value="2">Escultura</option>
                                     <option value="3">Disseny</option>
                                 </select>
