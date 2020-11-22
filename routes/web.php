@@ -64,6 +64,12 @@ Route::get('/diseño','PageController@diseño');
 
 Route::get('/volcan','PageController@volcan');
 
+//Heroku Image storage link
+
+Route::get('storage-link', function(){
+    Artisan::call('storage:link');
+});
+
 
 
 
