@@ -95,9 +95,9 @@
                                         <option value="Mixta, látex y serigrafia de 50x50 cm">Mixta, látex y serigrafia de 50x50 cm</option>
                                         <option value="Esculturas de bronce.">Esculturas de bronce.</option>
                                         <option value="Mixta sobre papel y serigrafía">Mixta sobre papel y serigrafía</option>
-                                        <option value="Esculturas de acero oxidado con serigrafía">Esculturas de acero oxidado con serigrafía</option>
-                                        <option value="Escutluras de acero oxidado/Madera con serigrafía">Escutluras de acero oxidado/Madera con serigrafía</option>
-                                        <option value="Esculturas de poliester y elementos variados">Esculturas de poliester y elementos variados</option>
+                                        <option value="Esculturas de acero oxidado con serigrafía">Escultures d'acer oxidat bujit amb serigrafia</option>
+                                        <option value="Escutluras de acero oxidado/Madera con serigrafía">Escutluras d'acer oxidat/Fusta amb serigrafía</option>
+                                        <option value="Esculturas de poliester y elementos variados">Escultures de poliester i elements variats</option>
                                         <option value="Telas técnica mixta y planchas de acero montadas sobre soporte de metal">Telas técnica mixta y planchas de acero montadas sobre soporte de metal</option>
                                         <option value="Esculturas de acero">Esculturas de acero</option>
                                     </optgroup>
