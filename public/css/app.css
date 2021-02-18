@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@charset "UTF-8";
 
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
@@ -2196,11 +2196,6 @@ pre code {
 }
 
 .form-control:-ms-input-placeholder {
-  color: #6c757d;
-  opacity: 1;
-}
-
-.form-control::-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
 }
@@ -10997,7 +10992,9 @@ nav a:focus {
 }
 
 footer {
+  position: absolute;
   bottom: 0;
+  width: 100%;
 }
 
 .footer {
@@ -11683,6 +11680,11 @@ table th {
   padding: 0px;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 a:link,
 a:visited,
 a:active {
@@ -11780,7 +11782,6 @@ h3 {
 .content-obras {
   height: 100%;
   width: 100%;
-  display: flex;
   margin: 50px 0px 75px 0px;
 }
 
@@ -11807,6 +11808,7 @@ h3 {
 .box {
   width: 385px !important;
   height: 350px !important;
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -12211,8 +12213,7 @@ h3 {
   position: relative;
   left: 5px;
   bottom: 5px;
-  -webkit-filter: brightness(1.75);
-          filter: brightness(1.75);
+  filter: brightness(1.75);
 }
 
 .welcome-admin {

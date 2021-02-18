@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'futura';
+    src: url(../../public/fonts/futura_light_bt.ttf);
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face{
+font-family: 'saira';
+src:url(../../public/fonts/Saira-Regular.ttf);
+font-weight: normal;
+font-style: normal;
+}
+@font-face{
+font-family: 'futura-bold';
+src:url(../../public/fonts/FuturaLT-Bold.ttf);
+font-weight: normal;
+font-style: normal; 
+}
+
+a{
+font-family:'futura';
+}
+nav a{
+font-family:'saira'!important;
+font-size: 14px;
+
+}

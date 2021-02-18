@@ -42,9 +42,9 @@
 
 
     <div class="content-obras">
-            <div class="row">
+        <div class="row">
                 @foreach($obras as $obra)
-            <div class="col-md-4 column">
+            <div class="col-md-3 column">
                 <div class="box">
                     <a href="#"> <img class="obra-img" src="{{asset('storage').'/'.$obra->image}}" data-toggle="modal" data-target="#image{{ $obra->id }}" data-whatever="@mdo" alt="" name="image"></a>
                     <!-- <div class="content-info">
@@ -52,7 +52,8 @@
                         <div> <h4><b>{{$obra->technique}}</b></h4></div>
                         <div> <h4><b>{{$obra->serie->name}}</b></h4></div>
                     </div> -->
-            </div>
+                </div>
+            
 
 
             <div class="modal fade" id="image{{ $obra->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -74,13 +75,14 @@
                     </div>
                 </div>
             </div>
+        
 
 
 
             @endforeach
         </div><br><br>
 
-        </div>
+    </div>
 </div>
 </body>
 @endsection
