@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 @charset "UTF-8";
-=======
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
->>>>>>> Seeders
 
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
@@ -11223,6 +11219,10 @@ div img {
   margin-top: 65px;
 }
 
+.modal-dialog {
+  margin-top: 150px !important;
+}
+
 .modal-content1 {
   background-image: url("/img/slideWelcome/LluisVila_Absolut_nosaltres.jpg");
   background-size: cover;
@@ -11814,16 +11814,13 @@ h3 {
 .box {
   width: 385px !important;
   height: 350px !important;
-<<<<<<< HEAD
   margin: 0 auto;
-=======
-  margin: 0 auto !important;
->>>>>>> Seeders
   padding: 20px;
 }
 
 .row {
   width: 100%;
+  margin: 0 !important;
 }
 
 .column {

@@ -37388,13 +37388,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 __webpack_require__(/*! C:\Users\Axel\Documents\AXEL\Dades 2019\WINDOWS 10\CODER\FACTORIAF5\GIT\LLUIS VILA\LLUÍS VILA 2021\Luis-Vila-Project\resources\js\app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! C:\Users\Axel\Documents\AXEL\Dades 2019\WINDOWS 10\CODER\FACTORIAF5\GIT\LLUIS VILA\LLUÍS VILA 2021\Luis-Vila-Project\resources\sass\app.scss */"./resources/sass/app.scss");
-=======
-__webpack_require__(/*! C:\Users\Axel\Documents\AXEL\Dades 2019\WINDOWS 10\CODER\FACTORIAF5\GIT\LLUIS VILA\Luis-Vila-Project\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Axel\Documents\AXEL\Dades 2019\WINDOWS 10\CODER\FACTORIAF5\GIT\LLUIS VILA\Luis-Vila-Project\resources\sass\app.scss */"./resources/sass/app.scss");
->>>>>>> Seeders
 
 
 /***/ })

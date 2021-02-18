@@ -26,14 +26,14 @@ class PageController extends Controller
     {
         $categoria_pintura = Categoria::id('Pintura');
         $obras = Obra::filterByCategory($categoria_pintura);
-        $series = Serie::get()->slice(9,17)->all();
+        $series = Serie::get()->slice(9,18)->all();
         return view('pintura',compact('obras','series'));
     }
 
     public function filterSeriePintura(Request $request)
     {
         $obras = Obra::filterBySerie($request->serie_id);
-        $series = Serie::get()->slice(9,17)->all();
+        $series = Serie::get()->slice(9,18)->all();
         return view('/pintura',compact('series','obras'));
     }
 
@@ -42,14 +42,14 @@ class PageController extends Controller
     {
         $categoria_escultura = Categoria::id('Escultura');
         $obras = Obra::filterByCategory($categoria_escultura);
-        $series = Serie::get()->slice(0,8)->all();
+        $series = Serie::get()->slice(0,9)->all();
         return view('escultura',compact('obras','series'));
     }
 
     public function filterSerieEscultura(Request $request)
     {
         $obras = Obra::filterBySerie($request->serie_id);
-        $series = Serie::get()->slice(0,8)->all();
+        $series = Serie::get()->slice(0,9)->all();
         return view('/escultura',compact('series','obras'));
     }
 

@@ -44,7 +44,7 @@
     <div class="content-obras">
         <div class="row">
                 @foreach($obras as $obra)
-            <div class="col-md-3 column">
+            <div class="col-md-4 column">
                 <div class="box">
                     <a href="#"> <img class="obra-img" src="{{asset('storage').'/'.$obra->image}}" data-toggle="modal" data-target="#image{{ $obra->id }}" data-whatever="@mdo" alt="" name="image"></a>
                     <!-- <div class="content-info">

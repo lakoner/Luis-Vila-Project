@@ -64,7 +64,7 @@
                                         <option value="6">Nautes 2006-09</option>
                                         <option value="7">Exvot 2009</option>
                                         <option value="8">Congreso del mundo 2010</option>
-                                        <option value="9"> Pa</ option>
+                                        <option value="9"> Pà</option>
                                     </optgroup>
                                     <optgroup name="pintura" label="Pintura">
                                         <option value="10">Georgia 1992</option>
